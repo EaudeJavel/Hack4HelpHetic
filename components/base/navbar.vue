@@ -2,11 +2,11 @@
 	<div class="navbar">
 		<div class="left">
 			<nuxt-link to="/" exact class="navbar-item">
-				Accueil
+				logo
 			</nuxt-link>
 		</div>
 		<div class="right">
-			<nuxt-link to="/page-1" exact class="navbar-item">
+			<nuxt-link to="/" exact class="navbar-item">
 				Page 1
 			</nuxt-link>
 			<nuxt-link to="/page-2" exact class="navbar-item">
