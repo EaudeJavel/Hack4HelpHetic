@@ -2,7 +2,8 @@
 	<div class="__layout-wrapper">
 		<!-- <loading-first v-if="firstLoad"/>
 		<loading/> -->
-		<nuxt v-if="dataLoaded"/>
+		<!-- <nuxt v-if="dataLoaded"/> -->
+		<nuxt/>
 	</div>
 </template>
 
