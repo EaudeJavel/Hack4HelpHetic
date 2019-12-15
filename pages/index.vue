@@ -1,6 +1,8 @@
 <template>
 	<div class="container-page container-index">
-		<navbar/>
+		<p>ubkjnlk</p>
+		<h1>{{ texts.BANNER_TITLE }}</h1>
+		<!-- <navbar/> -->
 	</div>
 </template>
 
@@ -11,6 +13,7 @@
 </style>
 
 <script>
+	import { mapGetters } from 'vuex'
 	import navbar from '@/components/base/navbar.vue'
 
 	export default {
@@ -37,9 +40,16 @@
 			}
 		},
 		computed: {
+			...mapGetters({
+				getTexts: "text/getTexts"
+			}),
 			projects() {
 				return this.$store.getters.projects
-			}
+			},
+			texts() {
+				console.log(this.getTexts);
+				return this.getTexts
+			},
 		}
 	}
 </script>

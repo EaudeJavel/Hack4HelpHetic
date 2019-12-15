@@ -1,7 +1,7 @@
 <template>
 	<div class="__layout-wrapper">
-		<loading-first v-if="firstLoad"/>
-		<loading/>
+		<!-- <loading-first v-if="firstLoad"/>
+		<loading/> -->
 		<nuxt v-if="dataLoaded"/>
 	</div>
 </template>
@@ -64,6 +64,7 @@
 	import { mapGetters } from 'vuex'
 	import loadingFirst from '~/components/transition/loading-first.vue'
 	import loading from '~/components/transition/loading.vue'
+	import text from '~/data/text.json'
 	export default {
 		components: {
 			'loading-first': loadingFirst,
@@ -78,9 +79,12 @@
 			this.firstLoad = this.$store.getters['IS_FIRST_LOAD']
 			this.loadData()
 		},
+		mounted() {
+			this.$store.dispatch("text/setTexts", text)
+		},
 		methods: {
 			async loadData() {
-				const local = 'http://localhost:3000/	'
+				const local = 'http://localhost:3000/'
 				const prod = 'test'
 				const data = {}
 				// data.collections = await this.$axios.$get(`${prod}/wp-json/wp/v2/collection?per_page=100`)
