@@ -1,8 +1,9 @@
 <template>
 	<div class="__layout-wrapper">
-		<loading-first v-if="firstLoad"/>
-		<loading/>
-		<nuxt v-if="dataLoaded"/>
+		<!-- <loading-first v-if="firstLoad"/>
+		<loading/> -->
+		<!-- <nuxt v-if="dataLoaded"/> -->
+		<nuxt/>
 	</div>
 </template>
 
@@ -65,7 +66,7 @@
 
 	import loadingFirst from '~/components/transition/loading-first.vue'
 	import loading from '~/components/transition/loading.vue'
-
+	import text from '~/data/text.json'
 	export default {
 		components: {
 			'loading-first': loadingFirst,
@@ -81,11 +82,13 @@
 
 			this.loadData()
 		},
+		mounted() {
+			this.$store.dispatch("text/setTexts", text)
+		},
 		methods: {
 			async loadData() {
 				const local = 'http://localhost:3000/'
-				// const prod = 'https://www.wangyu.fr/db/'
-
+				const prod = 'test'
 				const data = {}
 
 				// data.collections = await this.$axios.$get(`${prod}/wp-json/wp/v2/collection?per_page=100`)
