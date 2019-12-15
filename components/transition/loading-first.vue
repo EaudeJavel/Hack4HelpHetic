@@ -1,13 +1,16 @@
 <template>
 	<div class="loading-first-container" ref="loadingContainer">
 		<div class="center" ref="loadingCenter">
-			<div class="left">
-				<progress-bar stroke="2" :progress="progress.value"/>
+			<div class="center progress-bar-container">
+				<progress-bar height="2" :progress="progress.value"/>				
 			</div>
-			<div class="right">
-				<div class="title">Hack4Help</div>
-				<div class="subtitle">Hackaton Hetic</div>			
-			</div>			
+			
+			<div class="top">
+				<div class="top-title">Hack4Help</div>						
+			</div>
+			<div class="bot">
+				<div class="bot-title">Hackaton Hetic</div>	
+			</div>
 		</div>
 	</div>
 </template>
@@ -28,23 +31,32 @@
 		pointer-events all
 		.center {
 			display flex
+			width 100%
 			justify-content center
 			align-items center
 			opacity 0
 			transition opacity 0.75s ease
-			.left {
-				margin-right 20px
+			.center {
+				width 100%
+				position absolute
 			}
-		 	.right {
-				.title {
+		 	.top {
+				 margin-bottom 10%
+				.top-title {
 					font-size 18px
 					font-weight bold
 					letter-spacing 1px
 					margin-bottom 10px
-				}
-				.subtitle {
-					opacity 0.75
-				}
+				}				
+			}
+			.bot {
+				margin-top 10%
+				.bot-title {
+					font-size 18px
+					font-weight bold
+					letter-spacing 1px
+					margin-bottom 10px
+				}				
 			}
 			&.display {
 				opacity 1
@@ -93,10 +105,10 @@
 				if(newValue >= 100) {
 					const tl = new TimelineLite({ onComplete: this.done })
 					tl.add('start')
-					tl.to('.progress-ring-container', 0.5, { opacity: 0 }, 'start')
-					tl.to('.loading-first-container .title', 0.85, { x: 15, opacity: 0, ease: Power3.easeOut }, 'start+=0.25')
-					tl.to('.loading-first-container .subtitle', 0.75, { x: 20, opacity: 0, ease: Power3.easeOut }, 'start+=0.32')
-					tl.to('.loading-first-container', 0.3, { opacity: 0 }, 'start+=1')
+					tl.to('.progress-bar-container', 0.1, { opacity: 1 }, 'start')
+					tl.to('.loading-first-container .top-title', 0.9, { y: -15, opacity: 0, ease: Power3.easeOut }, 'start+=1')
+					tl.to('.loading-first-container .bot-title', 0.9, { y: 15, opacity: 0, ease: Power3.easeOut }, 'start+=1')
+					tl.to('.loading-first-container', 0.3, { opacity: 0 }, 'start+=1.5') //load content
 				}
 			}
 		},

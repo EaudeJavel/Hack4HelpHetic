@@ -1,17 +1,19 @@
 <template>
-	<div class="progress-ring-container">
-		<svg
+	<div class="progress-bar-container">
+		<div 
 			:height=2
 			:width="width"
 		>
-		</svg>
+			<hr>
+		</div>		
 	</div>
 </template>
 
 
 
 <style lang="stylus" scoped>
-	.progress-ring-container {
+	.progress-bar-container {
+		width 100%
 	}
 </style>
 
@@ -20,7 +22,7 @@
 <script>
 	export default {
 		name: 'progress-bar',
-		props: ['progress', 'stroke', 'width'],
+		props: ['progress', 'height', 'width'],
 		data() {
 			// const r = parseInt(this.radius) - parseInt(this.stroke) * 2
             // const c = r * 2 * Math.PI

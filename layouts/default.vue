@@ -63,6 +63,7 @@
 
 <script>
 	import { mapGetters } from 'vuex'
+
 	import loadingFirst from '~/components/transition/loading-first.vue'
 	import loading from '~/components/transition/loading.vue'
 	import text from '~/data/text.json'
@@ -78,6 +79,7 @@
 		},
 		created() {
 			this.firstLoad = this.$store.getters['IS_FIRST_LOAD']
+
 			this.loadData()
 		},
 		mounted() {
@@ -88,14 +90,20 @@
 				const local = 'http://localhost:3000/'
 				const prod = 'test'
 				const data = {}
+
 				// data.collections = await this.$axios.$get(`${prod}/wp-json/wp/v2/collection?per_page=100`)
+
 				// const oeuvres1 = await this.$axios.$get(`${prod}/wp-json/wp/v2/oeuvre?per_page=100&page=1`)
 				// const oeuvres2 = await this.$axios.$get(`${prod}/wp-json/wp/v2/oeuvre?per_page=100&page=2`)
+
 				// data.oeuvres = oeuvres1.concat(oeuvres2)
+
 				// data.articles = await this.$axios.$get(`${prod}/wp-json/wp/v2/article`)
 				// data.pages = await this.$axios.$get(`${prod}/wp-json/wp/v2/pages`)
-				// this.$store.commit('SET_DATA', data)
+
+				this.$store.commit('SET_DATA', data)
 			}
 		}
 	}
 </script>
+
