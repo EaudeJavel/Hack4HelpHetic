@@ -6,13 +6,17 @@
 		<cta type="small" link="http://google.fr" :label="texts.BANNER_ACTION" />
 		<cta type="small" link="http://google.fr" :label="texts.BANNER_ACTION" :isExternal="true" />
 
-
+		<img src="~/assets/images/images.png">
 	</div>
 </template>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 	.container-index {
 
+	}
+
+	h1 {
+		font-family: $metropolis;
 	}
 </style>
 
