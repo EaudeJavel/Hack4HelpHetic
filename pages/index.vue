@@ -1,36 +1,19 @@
 <template>
 	<div v-if="Object.keys(texts).length" class="container-page container-index">
-		<h1 v-html="texts.BANNER_TITLE"></h1>
-		<!-- <navbar/> -->
-		<numbers />
-		<cta type="small" link="http://google.fr" :label="texts.BANNER_ACTION" />
-		<cta type="small" link="http://google.fr" :label="texts.BANNER_ACTION" :isExternal="true" />
-
-		<img src="~/assets/images/images.png">
+		<banner />
 	</div>
 </template>
 
 <style lang="scss" scoped>
-	.container-index {
-
-	}
-
-	h1 {
-		font-family: $metropolis;
-	}
 </style>
 
 <script>
 	import { mapGetters } from 'vuex'
-	import navbar from '@/components/base/navbar.vue'
-	import numbers from '@/components/numbers/numbers.vue'
-	import cta from '@/components/cta/cta.vue'
+	import banner from '@/components/banner/banner.vue'
 
 	export default {
 		components: {
-			navbar,
-			numbers,
-			cta
+			banner,
 		},
 		transition: {
 			mode: 'out-in',
