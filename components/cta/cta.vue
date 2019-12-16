@@ -1,5 +1,6 @@
 <template>
   <nuxt-link v-if="!isExternal" :to="link" exact class="button" :class="type" v-html="label"></nuxt-link>
+  <a v-else-if="mailTo" :href="`mailTo:${link}`" class="button" :class="type" v-html="label"></a>
   <a v-else :href="link" class="button" :class="type" v-html="label"></a>
 </template>
 
@@ -49,12 +50,16 @@
       },
       link: {
         type: String,
-        required: true
+        required: false
       },
       isExternal: {
         type: Boolean,
         default: false
-      }
+      },
+      mailTo: {
+        type: Boolean,
+        default: false
+      },
     }
 	}
 </script>

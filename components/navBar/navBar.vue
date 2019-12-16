@@ -5,7 +5,7 @@
       <div v-for="(item, i) in links" :key="`number-${i}`">
         <a class="navLinks-item" :href="item.ancre">{{ item.title }}</a>
       </div>
-			<cta :type="type" :link="link" :label="label" :isExternal="isExternal" class="button"/>
+			<cta :type="type" :link="link" :label="label" :isExternal="isExternal" :mailTo="mailTo" class="button"/>
 		</div>
 	</div>
 </template>
@@ -79,6 +79,10 @@
       },
       links: {
         type: Array,
+        default: false
+      },
+      mailTo: {
+        type: Boolean,
         default: false
       }
     },

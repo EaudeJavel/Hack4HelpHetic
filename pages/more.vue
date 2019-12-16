@@ -5,6 +5,7 @@
 				:label="texts.HEADER_LINKS.HEADER_MORE.title"
 				:isExternal="texts.HEADER_LINKS.HEADER_MORE.isExternal"
 				:links="texts.HEADER_LINKS.HEADER_MORE.links"
+				:mailTo="texts.HEADER_LINKS.HEADER_MORE.mailTo"
 				class="button"
 		/>
 	</div>

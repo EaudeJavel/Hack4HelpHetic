@@ -35,7 +35,7 @@
         "HEADER_MORE": {
             "title" : "Contact",
             "isExternal" : true,
-            "href" : "communication@hetic.net",
+            "mailTo" : true,
             "links" : [
                 {
                     "ancre" : "#1",
