@@ -8,6 +8,7 @@
 				class="button"
 		/>
 		<banner />
+		<blockText />
 	</div>
 </template>
 
@@ -18,11 +19,13 @@
 	import { mapGetters } from 'vuex'
 	import banner from '@/components/banner/banner.vue'
 	import navBar from '@/components/navBar/navBar.vue'
+	import blockText from '@/components/blockText/blockText.vue'
 
 	export default {
 		components: {
 			banner,
-			navBar
+			navBar,
+			blockText
 		},
 		transition: {
 			mode: 'out-in',

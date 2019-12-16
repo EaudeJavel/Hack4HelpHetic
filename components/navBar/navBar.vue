@@ -1,6 +1,6 @@
 <template>
 	<div class="navBar container">
-		<img class="logo-hack" src="~/assets/images/logo-hack.svg">
+		<a href="/"><img class="logo-hack" src="~/assets/images/logo-hack.svg"></a>
 		<div class="navLinks" v-if="links && links.length">
       <div v-for="(item, i) in links" :key="`number-${i}`">
         <a class="navLinks-item" :href="item.ancre">{{ item.title }}</a>

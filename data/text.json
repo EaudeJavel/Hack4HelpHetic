@@ -51,5 +51,7 @@
                 }
             ]
         }
-    }
+    },
+    "INITIATIVE_TITLE": "Pourquoi cette initiative ?",
+    "INITIATIVE_TEXT": "HACK4HELP est né de la volonté de mettre la puissance de <b>la tech au service des personnes dans le besoin</b>. Ce projet, monté par Adèle Tanguy et soutenu par Hetic, a été confié aux étudiants de l’école. Accompagnés par des coachs experts du terrain et de la tech, ils proposeront des <b>solutions innovantes</b> pour pallier aux problèmes qu’ils auront identifiés."
 }
