@@ -1,42 +1,47 @@
 <template>
 	<div class="progress-bar-container">
-		<div 
-			:height=2
-			:width="width"
+		<svg
+			:height="radius * 2"
+			:width="radius * 2"
 		>
-			<hr>
-		</div>		
+			<circle
+				stroke="black"
+				:stroke-dasharray="circumference + ' ' + circumference"
+				:style="{ strokeDashoffset: strokeDashoffset }"
+				:stroke-width="stroke"
+				fill="transparent"
+				:r="normalizedRadius"
+				:cx="radius"
+				:cy="radius"
+			/>
+		</svg>
 	</div>
 </template>
 
-
-
 <style lang="stylus" scoped>
 	.progress-bar-container {
-		width 100%
+
 	}
 </style>
-
-
 
 <script>
 	export default {
 		name: 'progress-bar',
-		props: ['progress', 'height', 'width'],
+		props: ['radius', 'progress', 'stroke'],
 		data() {
-			// const r = parseInt(this.radius) - parseInt(this.stroke) * 2
-            // const c = r * 2 * Math.PI
-            const w = parseInt(this.width)
+			const r = parseInt(this.radius) - parseInt(this.stroke) * 2
+			const c = r * 2 * Math.PI
+
 			return {
-				// normalizedRadius: r,
-                // circumference: c
-                totalWidth: w
+				normalizedRadius: r,
+				circumference: c
 			}
 		},
 		computed: {
 			strokeDashoffset() {
-				return this.totalWidth - this.progress / 100 * this.totalWidth
+				return this.circumference - this.progress / 100 * this.circumference
 			}
 		}
 	}
 </script>
+

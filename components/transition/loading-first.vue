@@ -1,22 +1,19 @@
 <template>
 	<div class="loading-first-container" ref="loadingContainer">
 		<div class="center" ref="loadingCenter">
-			<div class="center progress-bar-container">
-				<progress-bar height="2" :progress="progress.value"/>				
+			<div class="left">
+				<progress-bar stroke="2" radius="25" :progress="progress.value"/>
 			</div>
-			
-			<div class="top">
-				<div class="top-title">Hack4Help</div>						
-			</div>
-			<div class="bot">
-				<div class="bot-title">Hackaton Hetic</div>	
+			<div class="right">
+				<div class="title">Wang Yu</div>
+				<div class="subtitle">Artiste peintre</div>
 			</div>
 		</div>
 	</div>
 </template>
 
-
 <style lang="stylus" scoped>
+
 	.loading-first-container {
 		display flex
 		justify-content center
@@ -29,39 +26,36 @@
 		background #fff
 		z-index 10
 		pointer-events all
+
 		.center {
 			display flex
-			width 100%
 			justify-content center
 			align-items center
 			opacity 0
 			transition opacity 0.75s ease
-			.center {
-				width 100%
-				position absolute
+
+			.left {
+				margin-right 20px
 			}
-		 	.top {
-				 margin-bottom 10%
-				.top-title {
+
+			.right {
+				.title {
 					font-size 18px
 					font-weight bold
 					letter-spacing 1px
 					margin-bottom 10px
-				}				
+				}
+
+				.subtitle {
+					opacity 0.75
+				}
 			}
-			.bot {
-				margin-top 10%
-				.bot-title {
-					font-size 18px
-					font-weight bold
-					letter-spacing 1px
-					margin-bottom 10px
-				}				
-			}
+
 			&.display {
 				opacity 1
 			}
 		}
+
 		&.complete {
 			pointer-events none
 		}
@@ -70,13 +64,15 @@
 
 <script>
 	import { mapGetters } from 'vuex'
-	import progressBar from '~/components/transition/progress-bar.vue'
+
+	import progressbar from '~/components/transition/progress-bar.vue'
 	import { TweenLite } from 'gsap'
+
 	export default {
 		name: 'loading-first',
 		props: [],
 		components: {
-			'progress-bar': progressBar
+			'progress-bar': progressbar
 		},
 		data() {
 			return {
@@ -104,16 +100,18 @@
 			progressWatch(newValue) {
 				if(newValue >= 100) {
 					const tl = new TimelineLite({ onComplete: this.done })
+
 					tl.add('start')
-					tl.to('.progress-bar-container', 0.1, { opacity: 1 }, 'start')
-					tl.to('.loading-first-container .top-title', 0.9, { y: -15, opacity: 0, ease: Power3.easeOut }, 'start+=1')
-					tl.to('.loading-first-container .bot-title', 0.9, { y: 15, opacity: 0, ease: Power3.easeOut }, 'start+=1')
-					tl.to('.loading-first-container', 0.3, { opacity: 0 }, 'start+=1.5') //load content
+					tl.to('.progress-bar-container', 0.5, { opacity: 0 }, 'start')
+					tl.to('.loading-first-container .title', 0.85, { x: 15, opacity: 0, ease: Power3.easeOut }, 'start+=0.25')
+					tl.to('.loading-first-container .subtitle', 0.75, { x: 20, opacity: 0, ease: Power3.easeOut }, 'start+=0.32')
+					tl.to('.loading-first-container', 0.3, { opacity: 0 }, 'start+=1')
 				}
 			}
 		},
 		mounted() {
 			this.$refs.loadingCenter.classList.add('display')
+
 			const interval = setInterval(() => {
 				if(!this.dataLoaded) {
 					if(this.progressTo < 50) {
@@ -135,3 +133,4 @@
 		}
 	}
 </script>
+

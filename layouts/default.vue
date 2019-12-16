@@ -1,8 +1,8 @@
 <template>
 	<div class="__layout-wrapper">
-		<!-- <loading-first v-if="firstLoad"/>
-		<loading/> -->
-		<!-- <nuxt v-if="dataLoaded"/> -->
+		<loading-first v-if="firstLoad"/>
+		<loading/>
+		<nuxt v-if="dataLoaded"/>
 		<nuxt/>
 	</div>
 </template>
