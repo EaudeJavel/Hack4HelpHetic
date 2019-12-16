@@ -26,3 +26,11 @@ $mq-desktop: 1440px !default;
         @content;
     }
 }
+
+.container {
+	padding: 0 40px;
+
+	@include tabletLandscape {
+		padding: 0 20px;
+	}
+}

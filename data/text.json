@@ -11,5 +11,45 @@
             "number" : "128",
             "title" : "Participants"
         }
-    ]
+    ],
+    "HEADER_LINKS": {
+        "HEADER_HOME": {
+            "link" : "/more",
+            "title" : "Découvrir",
+            "isExternal" : false,
+            "links" : [
+                {
+                    "ancre" : "#1",
+                    "title" : "Pourquoi"
+                },
+                {
+                    "ancre" : "#2",
+                    "title" : "Comment"
+                },
+                {
+                    "ancre" : "#3",
+                    "title" : "Qui"
+                }
+            ]
+        },
+        "HEADER_MORE": {
+            "title" : "Contact",
+            "isExternal" : true,
+            "href" : "communication@hetic.net",
+            "links" : [
+                {
+                    "ancre" : "#1",
+                    "title" : "TEXTE"
+                },
+                {
+                    "ancre" : "#2",
+                    "title" : "TEXTE"
+                },
+                {
+                    "ancre" : "#3",
+                    "title" : "TEXTE"
+                }
+            ]
+        }
+    }
 }

@@ -22,6 +22,7 @@
     position: relative;
     width: 100%;
     height: 90vh;
+    margin-top: 80px;
 
     .video,
     .imageBg {
@@ -60,8 +61,9 @@
 			left: 40px;
       max-width: 555px;
 			background-color: $white;
-			padding: 45px 120px 117px 115px;
+			padding: 45px 115px 120px;
       box-shadow: $box-shadow;
+      max-height: 90%;
 
       @include tabletLandscape {
         padding: 18px;

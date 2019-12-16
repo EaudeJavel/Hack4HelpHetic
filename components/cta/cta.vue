@@ -27,6 +27,12 @@
     line-height: 1.4;
     font-size: 20px;
   }
+
+  .small {
+    min-width: 115px;
+    font-size: 16px;
+    padding: 10px;
+  }
 </style>
 
 <script>

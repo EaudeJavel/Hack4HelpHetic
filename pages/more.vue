@@ -1,48 +1,36 @@
 <template>
-	<div class="container-page container-page-1">
-		<navbar/>
+	<div v-if="Object.keys(texts).length" class="container-page container-index">
+		<navBar type="small"
+				:link="texts.HEADER_LINKS.HEADER_MORE.link"
+				:label="texts.HEADER_LINKS.HEADER_MORE.title"
+				:isExternal="texts.HEADER_LINKS.HEADER_MORE.isExternal"
+				:links="texts.HEADER_LINKS.HEADER_MORE.links"
+				class="button"
+		/>
 	</div>
 </template>
 
-<style lang="stylus" scoped>
-	.container-page-1 {
-
-	}
+<style lang="scss" scoped>
 </style>
 
 <script>
-	import navbar from '@/components/base/navbar.vue'
+	import { mapGetters } from 'vuex'
+	import navBar from '@/components/navBar/navBar.vue'
 
 	export default {
-		name: 'page-1',
-		asyncData ({ params, error }) {
-			// return axios.get('/api/users/' + params.id)
-			// 	.then((res) => {
-			// 		return { user: res.data }
-			// 	})
-			// 	.catch((e) => {
-			// 		error({ statusCode: 404, message: 'User not found' })
-			// 	})
-		},
-		head () {
-			return {
-				title: 'Page — Title'
-			}
-		},
-		props: [],
 		components: {
-			navbar,
+			navBar
 		},
-		data () {
-			return {
-
-			}
-		},
-		methods: {
-
-		},
-		mounted () {
-
+		computed: {
+			...mapGetters({
+				getTexts: "text/getTexts"
+			}),
+			projects() {
+				return this.$store.getters.projects
+			},
+			texts() {
+				return this.getTexts
+			},
 		}
 	}
 </script>
