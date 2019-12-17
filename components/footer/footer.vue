@@ -34,8 +34,6 @@
 	justify-content center
 	align-items center
 	width 100%
-	position absolute
-	bottom 0
 
 	&__logo
 		background-color green
