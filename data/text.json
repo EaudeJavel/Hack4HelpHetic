@@ -59,9 +59,20 @@
     "BLOCKTEXT_HOME_TITLE": "Qu’est ce que le HACK4HELP ?",
     "BLOCKTEXT_HOME_IMG": "sans-abri.png",
     "PARTNERS_LOGOS": {
-        "URLS": [
+        "IMAGES": [
             {
-                "frenchweb" : "~/assets/logos/FrenchWeb.png"
+                "image" : "frenchweb.png",
+                "image" : "entourage.png",
+                "image" : "october.png",
+                "image" : "fondation.png",
+                "image" : "paris-co.png",
+                "image" : "founded.png",
+                "image" : "avolta.png",
+                "image" : "hetic-for-good.png",
+                "image" : "teads.png",
+                "image" : "altaide.png",
+                "image" : "croix-rouge.png",
+                "image" : "serena.png"
             }
         ]
     }
