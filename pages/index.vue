@@ -9,6 +9,7 @@
 		/>
 		<banner />
 		<blockText />
+		<blockVideo />
 	</div>
 </template>
 
@@ -20,12 +21,14 @@
 	import banner from '@/components/banner/banner.vue'
 	import navBar from '@/components/navBar/navBar.vue'
 	import blockText from '@/components/blockText/blockText.vue'
+	import blockVideo from '@/components/blockVideo/blockVideo.vue'
 
 	export default {
 		components: {
 			banner,
 			navBar,
-			blockText
+			blockText,
+			blockVideo
 		},
 		transition: {
 			mode: 'out-in',
