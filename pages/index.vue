@@ -10,6 +10,8 @@
 		<banner />
 		<blockText />
 		<blockVideo />
+		<brands />
+		<footerDefault />		
 	</div>
 </template>
 
@@ -19,16 +21,20 @@
 <script>
 	import { mapGetters } from 'vuex'
 	import banner from '@/components/banner/banner.vue'
+	import brands from '@/components/brands/brands.vue'
 	import navBar from '@/components/navBar/navBar.vue'
 	import blockText from '@/components/blockText/blockText.vue'
 	import blockVideo from '@/components/blockVideo/blockVideo.vue'
+	import footerDefault from '@/components/footer/footer.vue'
 
 	export default {
 		components: {
 			banner,
 			navBar,
 			blockText,
-			blockVideo
+			blockVideo,
+			footerDefault,
+			brands
 		},
 		transition: {
 			mode: 'out-in',

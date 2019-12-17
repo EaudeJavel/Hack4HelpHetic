@@ -45,7 +45,7 @@
 <style lang="scss" scoped>
 
 .footer-container {
-	height: 194px;
+	height: 200px;
 	background-color: #000;
 	display: flex;
 	justify-content: center;
@@ -53,13 +53,13 @@
 	width: 100%;
 
 	@include tabletLandscape {		
-		height: 360px;
+		height: 200px;
 		justify-content: space-between;	
 	}
 
 	@include tablet {
 		justify-content: center;
-		height: 360px;
+		height: 400px;
 		flex-direction: column;
 		align-items: baseline;		
 	}
@@ -69,6 +69,10 @@
 		display: flex;
 		width: 100%;
 		justify-content: space-around;
+
+		@include tablet {
+			flex-direction: column;				
+		}		
 
 		&__logo {		
 			width: 180px;
@@ -84,7 +88,7 @@
 			@include tablet {
 				margin-left: 15px;
 				width: 110px;	
-				margin-right: 0;	
+				margin-right: 0;					
 			}
 
 			&__img {
