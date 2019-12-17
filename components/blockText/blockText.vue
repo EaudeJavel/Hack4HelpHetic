@@ -1,11 +1,13 @@
 <template>
   <div class="blockText">
     <div class="container">
-      <div class="contentText">
-        <h2 class="is-h2 text">{{ title }}</h2>
-        <p class="text" v-html="text"></p>
-      </div>
       <img class="img" :src="`/images/${image}`">
+      <div class="contentText-placer">
+        <div class="contentText">
+          <h2 class="is-h2 text">{{ title }}</h2>
+          <p class="text" v-html="text"></p>
+        </div>
+      </div>      
     </div>
   </div>
 </template>
@@ -15,6 +17,9 @@
     display: flex;
     align-items: flex-start;
     padding-right: 0;
+    background: linear-gradient(#6326FC, #7B3DCA);
+    justify-content: center;
+    align-items: center;
 
     @include tablet {
       padding-right: 20px;
@@ -22,7 +27,6 @@
   }
 
   .blockText {
-    padding-top: 155px;
     padding-bottom: 80px;
     padding-left: 0;
 
@@ -31,12 +35,14 @@
       padding: 0;
     }
 
-    .contentText {
+    .contentText-placer {
       background: $white;
-      padding: 100px 0 96px;
-      width: 50%;
+      width: 100%;
+      height: 590px;
       box-shadow: $box-shadow;
-      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       @include tablet {
         width: 100%;
@@ -65,7 +71,7 @@
 
     .img {
       width: 50%;
-      height: 590px;
+      height: 430px;
       object-fit: cover;
 
       @include tablet {

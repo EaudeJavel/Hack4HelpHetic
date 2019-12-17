@@ -1,11 +1,10 @@
 <template>
 	<div v-if="Object.keys(texts).length" class="container-page container-index">
 		<navBar />
-		<banner />				
+		<banner />								
 		<blockText :title="texts.BLOCKTEXT_HOME_TITLE" :text="texts.BLOCKTEXT_HOME_TEXT" :image="texts.BLOCKTEXT_HOME_IMG" />
-		<blockVideo />
-		<!-- <blockVideo /> -->
 		<coverImg :title="texts.COVERIMG_HOME_TITLE" :text="texts.COVERIMG_HOME_TEXT" />
+		<blockVideo />
 		<brands />
 		<footerDefault />
 	</div>
