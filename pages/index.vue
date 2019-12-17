@@ -3,7 +3,7 @@
 		<navBar />
 		<banner />
 		<blockText :title="texts.BLOCKTEXT_HOME_TITLE" :text="texts.BLOCKTEXT_HOME_TEXT" :image="texts.BLOCKTEXT_HOME_IMG" />
-		<blockVideo />
+		<!-- <blockVideo /> -->
 		<coverImg :title="texts.COVERIMG_HOME_TITLE" :text="texts.COVERIMG_HOME_TEXT" />
 		<brands />
 		<footerDefault />
