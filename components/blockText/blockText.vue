@@ -1,11 +1,11 @@
 <template>
   <div class="blockText">
     <div class="container">
-      <img class="img" src="~/assets/images/sans-abri.png">
       <div class="contentText">
         <h2 class="is-h2 text">{{ texts.INITIATIVE_TITLE }}</h2>
         <p class="text" v-html="texts.INITIATIVE_TEXT"></p>
       </div>
+      <img class="img" src="~/assets/images/sans-abri.png">
     </div>
   </div>
 </template>
@@ -14,10 +14,10 @@
   .container {
     display: flex;
     align-items: flex-start;
-    padding-left: 0;
+    padding-right: 0;
 
     @include tablet {
-      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 

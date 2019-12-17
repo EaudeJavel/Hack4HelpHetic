@@ -2,11 +2,10 @@
 	<div class="navBar">
     <div class="container">
       <a href="/"><img class="logo-hack" src="~/assets/images/logo-hack.svg"></a>
-      <div class="navLinks" v-if="links && links.length">
-        <div v-for="(item, i) in links" :key="`number-${i}`">
-          <a class="navLinks-item" :href="item.ancre">{{ item.title }}</a>
-        </div>
-        <cta :type="type" :link="link" :label="label" :isExternal="isExternal" :mailTo="mailTo" class="button"/>
+      <div class="navLinks">
+        <a href="/" class="navLinks-item">Accueil</a>
+        <a href="/more" class="navLinks-item">Edition 2019</a>
+        <a href="/" class="navLinks-item">A propos</a>
       </div>
     </div>
 	</div>
@@ -17,8 +16,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 
 	.navBar {
@@ -38,18 +35,30 @@
       align-items: center;
 
       &-item {
+        position: relative;
         font-size: 16px;
         font-weight: 600;
         color: $black;
-        margin-right: 24px;
-        transition: color 250ms ease-in-out;
+        margin-left: 40px;
+        padding: 32px 0;
 
-        @include tabletLandscape {
-          display: none;
+        &.is-active {
+          color: $purple2;
+
+          &:before {
+            content: '';
+            height: 4px;
+            background: $purple2;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+          }
         }
 
         &:hover {
-          color: $grey;
+          color: $purple2;
         }
       }
     }
@@ -58,38 +67,18 @@
 
 <script>
 	import { mapGetters } from 'vuex'
-	import cta from '@/components/cta/cta.vue'
 
 	export default {
-		name: "navBar",
-		components: {
-			cta
-    },
+    name: "navBar",
     props: {
-      label: {
-        type: String,
-        required: true
-      },
-      type: {
-        type: String,
-        required: true
-      },
-      link: {
-        type: String,
-        required: false
-      },
-      isExternal: {
+      isActiveHome: {
         type: Boolean,
         default: false
       },
-      links: {
-        type: Array,
-        default: false
-      },
-      mailTo: {
+      isActiveMore: {
         type: Boolean,
         default: false
-      }
+      },
     },
 		computed: {
 			...mapGetters({

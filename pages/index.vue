@@ -1,17 +1,13 @@
 <template>
 	<div v-if="Object.keys(texts).length" class="container-page container-index">
-		<navBar type="small"
-				:link="texts.HEADER_LINKS.HEADER_HOME.link"
-				:label="texts.HEADER_LINKS.HEADER_HOME.title"
-				:isExternal="texts.HEADER_LINKS.HEADER_HOME.isExternal"
-				:links="texts.HEADER_LINKS.HEADER_HOME.links"
-				class="button"
-		/>
+		<navBar isActiveHome="true" />
 		<banner />
 		<blockText />
 		<blockVideo />
 		<brands />
 		<footerDefault />		
+		<!-- <blockVideo /> -->
+		<coverImg />
 	</div>
 </template>
 
@@ -26,6 +22,7 @@
 	import blockText from '@/components/blockText/blockText.vue'
 	import blockVideo from '@/components/blockVideo/blockVideo.vue'
 	import footerDefault from '@/components/footer/footer.vue'
+	import coverImg from '@/components/coverImg/coverImg.vue'
 
 	export default {
 		components: {
@@ -34,7 +31,8 @@
 			blockText,
 			blockVideo,
 			footerDefault,
-			brands
+			brands,
+			coverImg
 		},
 		transition: {
 			mode: 'out-in',
