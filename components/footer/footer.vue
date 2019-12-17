@@ -7,14 +7,26 @@
 
 			<ul class="footer-container__placer__footer-list">
 				<div class="footer-container__placer__footer-list__title"> Nous contacter</div>
-				<li class="footer-container__placer__footer-list__item"> Lorem : 01-23-45-67-89</li>
-				<li class="footer-container__placer__footer-list__item"> Lorem ipsum : 01-23-45-67-89</li>
-				<li class="footer-container__placer__footer-list__item"> Lorem dolor si amet: 01-23-45-67-89</li>			
+				<li class="footer-container__placer__footer-list__item">
+					<img class="puce" src="~/assets/images/puce.svg" alt="">
+					Lorem : 01-23-45-67-89
+				</li>
+				<li class="footer-container__placer__footer-list__item"> 
+					<img class="puce" src="~/assets/images/puce.svg" alt="">
+					Lorem ipsum : 01-23-45-67-89
+				</li>
+				<li class="footer-container__placer__footer-list__item">
+					<img class="puce" src="~/assets/images/puce.svg" alt=""> 
+					Lorem dolor si amet: 01-23-45-67-89
+				</li>
 			</ul>
 
 			<ul class="footer-container__placer__footer-list">
 				<div class="footer-container__placer__footer-list__title"> Liens</div>
-				<li class="footer-container__placer__footer-list__item"> Mentions légales </li>		
+				<li class="footer-container__placer__footer-list__item">
+					<img class="puce" src="~/assets/images/puce.svg" alt=""> 
+					Mentions légales 
+				</li>		
 			</ul>
 
 			<ul class="footer-container__placer__footer-list">
@@ -45,7 +57,7 @@
 <style lang="scss" scoped>
 
 .footer-container {
-	height: 194px;
+	height: 200px;
 	background-color: #000;
 	display: flex;
 	justify-content: center;
@@ -53,13 +65,13 @@
 	width: 100%;
 
 	@include tabletLandscape {		
-		height: 360px;
+		height: 200px;
 		justify-content: space-between;	
 	}
 
 	@include tablet {
 		justify-content: center;
-		height: 360px;
+		height: 400px;
 		flex-direction: column;
 		align-items: baseline;		
 	}
@@ -69,6 +81,10 @@
 		display: flex;
 		width: 100%;
 		justify-content: space-around;
+
+		@include tablet {
+			flex-direction: column;				
+		}		
 
 		&__logo {		
 			width: 180px;
@@ -84,7 +100,7 @@
 			@include tablet {
 				margin-left: 15px;
 				width: 110px;	
-				margin-right: 0;	
+				margin-right: 0;					
 			}
 
 			&__img {
@@ -119,7 +135,11 @@
 			}
 
 			&__item {	
-				margin-bottom: 15px;				
+				margin-bottom: 15px;		
+				
+				.puce {
+					margin-right: 12px;
+				}
 			}
 		}
 	}

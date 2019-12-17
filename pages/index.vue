@@ -3,8 +3,10 @@
 		<navBar />
 		<banner />
 		<blockText :title="texts.BLOCKTEXT_HOME_TITLE" :text="texts.BLOCKTEXT_HOME_TEXT" :image="texts.BLOCKTEXT_HOME_IMG" />
-		<!-- <blockVideo /> -->
+		<blockVideo />
 		<coverImg :title="texts.COVERIMG_HOME_TITLE" :text="texts.COVERIMG_HOME_TEXT" />
+		<brands />
+		<footerDefault />
 	</div>
 </template>
 
@@ -14,9 +16,11 @@
 <script>
 	import { mapGetters } from 'vuex'
 	import banner from '@/components/banner/banner.vue'
+	import brands from '@/components/brands/brands.vue'
 	import navBar from '@/components/navBar/navBar.vue'
 	import blockText from '@/components/blockText/blockText.vue'
 	import blockVideo from '@/components/blockVideo/blockVideo.vue'
+	import footerDefault from '@/components/footer/footer.vue'
 	import coverImg from '@/components/coverImg/coverImg.vue'
 
 	export default {
@@ -25,6 +29,8 @@
 			navBar,
 			blockText,
 			blockVideo,
+			footerDefault,
+			brands,
 			coverImg
 		},
 		transition: {

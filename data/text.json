@@ -57,5 +57,12 @@
     "COVERIMG_HOME_TEXT": "HACK4HELP est né de la volonté de <b>sensibiliser les acteurs de la tech sur leur impact</b> sur la société. Pour ce faire les étudiants, membres de l’’administration d’HETIC et entrepreneurs de la tech <b>travaillent ensemble</b> sur des projets peu traités, par manque de retours lucratifs ou hors du champs des entreprises.",
     "BLOCKTEXT_HOME_TEXT": "HACK4HELP est un hackathon dedié à l’<b>innovation sociale</b>. Chaque année durant 15 jours, deux promotions d’héticiens mettent leurs <b>compétences technologiques</b> au sercice du bien commun.",
     "BLOCKTEXT_HOME_TITLE": "Qu’est ce que le HACK4HELP ?",
-    "BLOCKTEXT_HOME_IMG": "sans-abri.png"
+    "BLOCKTEXT_HOME_IMG": "sans-abri.png",
+    "PARTNERS_LOGOS": {
+        "URLS": [
+            {
+                "frenchweb" : "~/assets/logos/FrenchWeb.png"
+            }
+        ]
+    }
 }

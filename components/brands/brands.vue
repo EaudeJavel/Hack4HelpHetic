@@ -3,36 +3,7 @@
 		<div class="brands-container">
 			<div class="brands-container__title">Ils nous font confiance...</div>
 			<ul class="brands-container__brands">
-				<li>
-					<a href=""></a>
-				</li>
-				<li>
-					<a href=""></a>
-				</li> 
-				<li>
-					<a href=""></a>
-				</li>
-				<li>
-					<a href=""></a>
-				</li>
-				<li>
-					<a href=""></a>
-				</li>
-				<li>
-					<a href=""></a>
-				</li>
-				<li>
-					<a href=""></a>
-				</li>
-				<li>
-					<a href=""></a>
-				</li>
-				<li>
-					<a href=""></a>
-				</li>
-				<li>
-					<a href=""></a>
-				</li>
+				
 			</ul>
 		</div>
 	</div>
@@ -45,7 +16,7 @@
 	background linear-gradient(#FF9900, FF7A00)
 	height 550px
 	display flex
-	justify-content center
+	margin-left 155px
 
 	.brands-container 
 		height 350px
