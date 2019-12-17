@@ -24,7 +24,8 @@
   }
 
   .large {
-    min-width: 230px;
+    width: 230px;
+    height: 50px;
     line-height: 1.4;
     font-size: 16px;
   }
