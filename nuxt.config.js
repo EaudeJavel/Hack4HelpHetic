@@ -59,7 +59,8 @@ module.exports = {
 			scss: [
 				'~/assets/styles/fonts.scss',
 				'~/assets/styles/vars.scss',
-				'~/assets/styles/mixins.scss'
+				'~/assets/styles/mixins.scss',
+				'~/assets/styles/typographie.scss',
 			]
 		},
 		/*

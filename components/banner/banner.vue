@@ -7,7 +7,8 @@
           <p class="card-label">{{ texts.BANNER_LABEL }}</p>
         </div>
 
-        <img class="logo-hack" src="~/assets/images/logo-hack.svg">
+        <h1 class="is-h1">HACK4HELP</h1>
+        <!-- <img class="logo-hack" src="~/assets/images/logo-hack.svg"> -->
         <p v-html="texts.BANNER_TITLE" class="title"></p>
         <cta type="large" link="/more" :label="texts.BANNER_ACTION" class="button"/>
       </div>
@@ -69,41 +70,50 @@
 			left: 40px;
       max-width: 555px;
 			background-color: $white;
-			padding: 45px 115px 120px;
+			padding: 75px 115px 110px;
       box-shadow: $box-shadow;
       max-height: 90%;
 
       @include tabletLandscape {
+        left: 20px;
+        max-width: 450px;
+        padding: 75px 50px 110px;
+      }
+
+      @include mobile {
         padding: 18px;
-        background-color: $white80;
         left: 0;
         top: 70%;
         max-width: 250px;
         min-height: auto;
+        padding: 40px 20px 55px;
+      }
+
+      .is-h1 {
+        color: $black;
       }
 
 			&-presentation {
 				display: flex;
 				align-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 35px;
 
-        @include tabletLandscape {
-          display: none;
+        @include mobile {
+          margin-bottom: 25px;
         }
       }
 
-      &-logo,
+      &-logo {
+        width: 92px;
+
+        @include mobile {
+          width: 72px;
+        }
+      }
+
       .button {
-        @include tabletLandscape {
+        @include mobile {
          display: none;
-        }
-      }
-
-      .logo-hack {
-        width: 100%;
-
-        @include tabletLandscape {
-          max-width: 160px;
         }
       }
 
@@ -117,30 +127,24 @@
 				opacity: 0.5;
         margin-left: 20px;
 
-        @include tabletLandscape {
-         display: none;
+        @include mobile {
+         font-size: 10px;
         }
 			}
 		}
 
 		.title {
-			font-size: 26px;
+			font-size: 24px;
 			font-family: $metropolis;
-			font-weight: bold;
-			color: $grey;
+			font-weight: 600;
+			color: $purple4;
 			letter-spacing: 2px;
-			margin: 60px 0;
-			line-height: 1.8;
+			margin: 10px 0 40px;
+			line-height: 1.4;
 
-			/deep/ span {
-				background: $orange;
-        color: $white;
-        padding: 8px 10px;
-      }
-
-      @include tabletLandscape {
+      @include mobile {
         font-size: 18px;
-        margin: 40px 0 0;
+        margin: 20px 0 0;
         letter-spacing: 0;
       }
 		}
