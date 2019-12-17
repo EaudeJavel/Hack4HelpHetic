@@ -3,7 +3,8 @@
 		<navBar isActiveHome="true" />
 		<banner />
 		<blockText />
-		<blockVideo />
+		<!-- <blockVideo /> -->
+		<coverImg />
 	</div>
 </template>
 
@@ -16,13 +17,15 @@
 	import navBar from '@/components/navBar/navBar.vue'
 	import blockText from '@/components/blockText/blockText.vue'
 	import blockVideo from '@/components/blockVideo/blockVideo.vue'
+	import coverImg from '@/components/coverImg/coverImg.vue'
 
 	export default {
 		components: {
 			banner,
 			navBar,
 			blockText,
-			blockVideo
+			blockVideo,
+			coverImg
 		},
 		transition: {
 			mode: 'out-in',
