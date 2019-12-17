@@ -13,36 +13,53 @@
 <style lang="scss" scoped>
   .container {
     display: flex;
-    align-items: center;
-  }
-  .blockText {
-    padding-top: 160px;
-    padding-bottom: 225px;
+    align-items: flex-start;
     padding-left: 0;
-    background: $orangeGradient;
 
-    @include tabletLandscape {
+    @include tablet {
+      padding-left: 20px;
+    }
+  }
+
+  .blockText {
+    padding-top: 155px;
+    padding-bottom: 252px;
+    padding-left: 0;
+
+    @include tablet {
       background: $white;
-      padding: 100px 20px 75px;
+      padding: 0;
     }
 
     .contentText {
       background: $white;
-      padding: 100px 0 140px;
+      padding: 100px 0 96px;
       width: 50%;
+      box-shadow: $box-shadow;
+      margin-top: 30px;
 
-      @include tabletLandscape {
-        padding: 0;
+      @include tablet {
         width: 100%;
-      }
-
-      .is-h2 {
-        color: $orange;
+        box-shadow: none;
+        padding: 50px 0 75px;
+        margin-top: 0;
       }
 
       .text {
-        max-width: 440px;
+        max-width: 480px;
         margin: 0 auto 30px;
+        padding: 0 20px;
+
+        @include tablet {
+          margin: 0 auto;
+          padding: 0;
+        }
+      }
+
+      .is-h2 {
+        @include tablet {
+          margin-bottom: 20px;
+        }
       }
     }
 
@@ -51,7 +68,7 @@
       height: 590px;
       object-fit: cover;
 
-      @include tabletLandscape {
+      @include tablet {
         display: none;
       }
     }
