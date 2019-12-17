@@ -13,7 +13,6 @@
 <style lang="scss" scoped>
   .coverImg {
     display: block;
-    margin-bottom: 70px;
 
     .img {
       background-image: url('~assets/images/bg-banner.png');
@@ -34,10 +33,9 @@
 
       .block {
         position: absolute;
-        bottom: -70px;
-        right: 40px;
+        bottom: 50px;
         background: $white;
-        padding: 71px;
+        padding: 50px 30px 50px 30px;
         max-width: 555px;
 
         @include tablet {
