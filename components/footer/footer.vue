@@ -1,6 +1,8 @@
 <template>
     <div class="footer-container">
-		<a src="../../assets/img/logo.svg" href="/" class="footer-container__logo"></a>
+		<a href="/" class="footer-container__logo">
+			<img class="footer-container__logo__img" src="~/assets/images/logo-hack.svg">
+		</a>
 
 		<ul class="footer-container__footer-list">
 			<div class="footer-container__footer-list__title"> Nous contacter</div>
@@ -11,53 +13,114 @@
 
 		<ul class="footer-container__footer-list">
 			<div class="footer-container__footer-list__title"> Suivez-nous</div>
-			<li class="footer-container__footer-list__item">
-				<a href="#" src="../../assets/icons/instagram.svg"></a>
-			</li>
-			<li class="footer-container__footer-list__item">
-				<a href="#" src="../../assets/icons/linkedin.svg"></a>
-			</li>
-			<li class="footer-container__footer-list__item">
-				<a href="#" src="../../assets/icons/twitter.svg"></a>
-			</li>
+			<div class="footer-container__footer-list__items-container">
+				<li class="footer-container__footer-list__items-container__item">
+					<a href="#">
+						<img src="~/assets/icons/instagram.svg" alt="instagram">
+					</a>
+				</li>
+				<li class="footer-container__footer-list__items-container__item">
+					<a href="#">
+						<img src="~/assets/icons/linkedin.svg" alt="">
+					</a>
+				</li>
+				<li class="footer-container__footer-list__items-container__item">
+					<a href="#" >
+						<img src="~/assets/icons/twitter.svg" alt="">
+					</a>
+				</li>
+			</div>
 		</ul>
 
 	</div>
 </template>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 
-.footer-container
-	height 194px
-	background-color #000
-	display flex
-	justify-content center
-	align-items center
-	width 100%
+.footer-container {
+	height: 194px;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 
-	&__logo
-		background-color green
-		width 100px
-		height 100px
-		margin-right 130px
+	@include tabletLandscape {		
+		height: 360px;
+		justify-content: space-between;	
+	}
 
-	&__footer-list
-		color white
-		margin-right 115px
+	@include tablet {
+		justify-content: center;
+		height: 360px;
+		flex-direction: column;
+		align-items: baseline;		
+	}
 
-		&__title 
-			font-weight bold
-			margin-bottom 20px
 
-		&__item		
-			margin-bottom 15px
+	&__logo {		
+		width: 150px;
+		height: 100px;
+		margin-right: 130px;		
+
+		@include tabletLandscape {
+			margin-left: 20px;
+			width: 130px;
+			margin-right: 0;
+		}
+
+		@include tablet {
+			margin-left: 15px;
+			width: 110px;	
+			margin-right: 0;	
+		}
+
+		&__img {
+			width: 100%;			
+		}
+	}
+
+	&__footer-list {
+		color: white;
+		margin-right: 115px;		
+
+		@include tabletLandscape {
+			margin-left: 15px;
+			margin-right: 0;
+		}
+
+		@include tablet {
+			margin-left: 15px;
+			margin-right: 0;
+		}
+
+		&__items-container {
+			display: flex;	
+			
+			&__item {
+				margin-right: 15px;
+			}
+		}
+
+		&__title {
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		&__item {	
+				margin-bottom: 15px;				
+			}
+
+		
+	}
+}
 			
 
 </style>
 
 <script>
 	export default {
-		name: 'footer',
+		name: 'footerCustom',
 	}
 </script>
 
