@@ -1,23 +1,28 @@
 <template>
-	<div class="navBar container">
-		<a href="/"><img class="logo-hack" src="~/assets/images/logo-hack.svg"></a>
-		<div class="navLinks" v-if="links && links.length">
-      <div v-for="(item, i) in links" :key="`number-${i}`">
-        <a class="navLinks-item" :href="item.ancre">{{ item.title }}</a>
+	<div class="navBar">
+    <div class="container">
+      <a href="/"><img class="logo-hack" src="~/assets/images/logo-hack.svg"></a>
+      <div class="navLinks" v-if="links && links.length">
+        <div v-for="(item, i) in links" :key="`number-${i}`">
+          <a class="navLinks-item" :href="item.ancre">{{ item.title }}</a>
+        </div>
+        <cta :type="type" :link="link" :label="label" :isExternal="isExternal" :mailTo="mailTo" class="button"/>
       </div>
-			<cta :type="type" :link="link" :label="label" :isExternal="isExternal" :mailTo="mailTo" class="button"/>
-		</div>
+    </div>
 	</div>
 </template>
 
 <style lang="scss" scoped>
-	.navBar {
-    position: fixed;
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+	.navBar {
+    position: fixed;
     width: 100%;
     box-shadow: $box-shadow;
     z-index: 20;

@@ -28,7 +28,9 @@ $mq-desktop: 1440px !default;
 }
 
 .container {
-	padding: 0 40px;
+    max-width: 1440px;
+    padding: 0 40px;
+    margin: 0 auto;
 
 	@include tabletLandscape {
 		padding: 0 20px;

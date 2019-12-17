@@ -1,14 +1,16 @@
 <template>
 	<div class="banner">
-    <div class="card">
-      <div class="card-presentation">
-        <img class="card-logo" src="~/assets/images/logo-hetic.svg">
-        <p class="card-label">{{ texts.BANNER_LABEL }}</p>
-      </div>
+    <div class="container">
+      <div class="card">
+        <div class="card-presentation">
+          <img class="card-logo" src="~/assets/images/logo-hetic.svg">
+          <p class="card-label">{{ texts.BANNER_LABEL }}</p>
+        </div>
 
-      <img class="logo-hack" src="~/assets/images/logo-hack.svg">
-      <p v-html="texts.BANNER_TITLE" class="title"></p>
-      <cta type="large" link="/more" :label="texts.BANNER_ACTION" class="button"/>
+        <img class="logo-hack" src="~/assets/images/logo-hack.svg">
+        <p v-html="texts.BANNER_TITLE" class="title"></p>
+        <cta type="large" link="/more" :label="texts.BANNER_ACTION" class="button"/>
+      </div>
     </div>
     <video autoplay loop playsinline muted class="video">
       <source src="~/assets/videos/video.mp4" type="video/mp4">
@@ -18,6 +20,12 @@
 </template>
 
 <style lang="scss" scoped>
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
 	.banner {
     position: relative;
     width: 100%;
