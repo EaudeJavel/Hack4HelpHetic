@@ -1,13 +1,12 @@
 <template>
 	<div v-if="Object.keys(texts).length" class="container-page container-index">
 		<h1 v-html="texts.BANNER_TITLE"></h1>
-		<!-- <navbar/> -->
+		<navbar/>
 		<numbers />
-		<cta type="small" link="http://google.fr" :label="texts.BANNER_ACTION" />
-		<cta type="small" link="http://google.fr" :label="texts.BANNER_ACTION" :isExternal="true" />
-
-
-	</div>
+		<cta type="small" link="/decouvrir" :label="texts.BANNER_ACTION" />
+		<cta type="small" link="/decouvrir" :label="texts.BANNER_ACTION" :isExternal="true" />		
+		<brands></brands>
+	</div>	
 </template>
 
 <style lang="stylus" scoped>
@@ -21,12 +20,14 @@
 	import navbar from '@/components/base/navbar.vue'
 	import numbers from '@/components/numbers/numbers.vue'
 	import cta from '@/components/cta/cta.vue'
+	import brands from '@/components/brands/brands.vue'
 
 	export default {
 		components: {
 			navbar,
 			numbers,
-			cta
+			cta,
+			brands
 		},
 		transition: {
 			mode: 'out-in',

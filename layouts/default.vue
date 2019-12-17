@@ -1,9 +1,9 @@
 <template>
 	<div class="__layout-wrapper">
-		<loading-first v-if="firstLoad"/>
-		<loading/>
+		<!-- <loading-first v-if="firstLoad"/>
+		<loading/> -->
 		<nuxt v-if="dataLoaded"/>
-		<nuxt/>
+		<footerDefault></footerDefault>
 	</div>
 </template>
 
@@ -67,10 +67,13 @@
 	import loadingFirst from '~/components/transition/loading-first.vue'
 	import loading from '~/components/transition/loading.vue'
 	import text from '~/data/text.json'
+	import footerDefault from '@/components/footer/footer.vue'
+
 	export default {
 		components: {
 			'loading-first': loadingFirst,
 			'loading': loading,
+			footerDefault
 		},
 		computed: {
 			...mapGetters({

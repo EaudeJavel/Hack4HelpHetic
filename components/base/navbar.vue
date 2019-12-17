@@ -7,14 +7,23 @@
 		</div>
 		<div class="right">
 			<nuxt-link to="/" exact class="navbar-item">
-				Page 1
+				Pourquoi ?
 			</nuxt-link>
 			<nuxt-link to="/page-2" exact class="navbar-item">
-				Page 2
+				Comment ?
 			</nuxt-link>
 			<nuxt-link to="/page-3" exact class="navbar-item">
-				Page 3
+				Qui ?
 			</nuxt-link>
+			<nuxt-link to="/page-1" exact class="navbar-item">
+				Contact
+			</nuxt-link>
+			<cta
+				label="Découvrir"
+				type="header-cta"
+				link="decouvrir"
+				>
+			</cta>
 		</div>
 	</div>
 </template>
@@ -27,9 +36,29 @@
 		padding-top	20px
 
 		.left {
+
 			.navbar-item {
 				// font-family: 'Circular Bold'
 			}
+
+		}
+
+		.right {
+			display flex
+			flex-wrap wrap
+			justify-content center
+			align-items center
+		}
+
+		.header-cta {
+			width 115px
+			height 35px
+			background-color #6326FC
+			display flex
+			justify-content center
+			align-items center
+			border-radius 5px
+			color white
 		}
 
 		@media screen and (max-width: 380px) {
@@ -46,8 +75,8 @@
 
 			.right {
 				display	flex
-				justify-content center
-			}
+				justify-content center				
+			}			
 		}
 
 		@media screen and (max-width: 600px) {
@@ -79,7 +108,14 @@
 </style>
 
 <script>
+
+import cta from '~/components/cta/cta.vue'
+
 	export default {
 		name: 'navbar',
+
+		components: {
+			cta
+		}
 	}
 </script>
