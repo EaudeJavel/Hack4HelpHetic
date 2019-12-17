@@ -2,10 +2,10 @@
   <div class="blockText">
     <div class="container">
       <div class="contentText">
-        <h2 class="is-h2 text">{{ texts.INITIATIVE_TITLE }}</h2>
-        <p class="text" v-html="texts.INITIATIVE_TEXT"></p>
+        <h2 class="is-h2 text">{{ title }}</h2>
+        <p class="text" v-html="text"></p>
       </div>
-      <img class="img" src="~/assets/images/sans-abri.png">
+      <img class="img" :src="`/images/${image}`">
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@
 
   .blockText {
     padding-top: 155px;
-    padding-bottom: 252px;
+    padding-bottom: 80px;
     padding-left: 0;
 
     @include tablet {
@@ -79,7 +79,21 @@
   import { mapGetters } from 'vuex'
 
 	export default {
-		name: 'blockImg',
+    name: 'blockImg',
+    props: {
+      title: {
+        type: String,
+        default: true
+      },
+      text: {
+        type: String,
+        default: true
+      },
+      image: {
+        type: String,
+        default: true
+      },
+    },
 		computed: {
 			...mapGetters({
 				getTexts: "text/getTexts"

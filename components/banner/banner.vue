@@ -7,8 +7,7 @@
           <p class="card-label">{{ texts.BANNER_LABEL }}</p>
         </div>
 
-        <h1 class="is-h1">HACK4HELP</h1>
-        <!-- <img class="logo-hack" src="~/assets/images/logo-hack.svg"> -->
+        <h1 class="is-h1">{{ texts.BANNER_H1 }}</h1>
         <p v-html="texts.BANNER_TITLE" class="title"></p>
         <cta type="large" link="/more" :label="texts.BANNER_ACTION" class="button"/>
       </div>
@@ -69,9 +68,7 @@
       transform: translateY(-50%);
 			left: 40px;
       max-width: 555px;
-			background-color: $white;
 			padding: 75px 115px 110px;
-      box-shadow: $box-shadow;
       max-height: 90%;
 
       @include tabletLandscape {
@@ -96,7 +93,7 @@
 			&-presentation {
 				display: flex;
 				align-items: center;
-        margin-bottom: 35px;
+        margin-bottom: 44px;
 
         @include mobile {
           margin-bottom: 25px;
@@ -112,6 +109,11 @@
       }
 
       .button {
+
+        &:hover {
+          background: transparent
+        }
+
         @include mobile {
          display: none;
         }
@@ -125,7 +127,7 @@
 				text-transform: uppercase;
 				letter-spacing: 3px;
 				opacity: 0.5;
-        margin-left: 20px;
+        margin-left: 30px;
 
         @include mobile {
          font-size: 10px;
@@ -136,10 +138,9 @@
 		.title {
 			font-size: 24px;
 			font-family: $metropolis;
-			font-weight: 600;
-			color: $purple4;
+			color: $black;
 			letter-spacing: 2px;
-			margin: 10px 0 40px;
+			margin: 50px 0 60px;
 			line-height: 1.4;
 
       @include mobile {
