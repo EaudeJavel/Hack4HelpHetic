@@ -6,15 +6,15 @@
 
 <style lang="scss" scoped>
   .button {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: $metropolis;
     background-color: $purple2;
     color: $white;
     font-weight: 600;
-    text-align: center;
     border-radius: 4px;
     border: 1px solid $purple2;
-    padding: 6px;
     transition: all 250ms ease-in-out;
 
     &:hover {

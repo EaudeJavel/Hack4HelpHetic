@@ -67,9 +67,14 @@
       top: 50%;
       transform: translateY(-50%);
 			left: 40px;
-      max-width: 555px;
-			padding: 75px 115px 110px;
-      max-height: 90%;
+      max-width: 444px;
+      // padding: 75px 115px 110px;
+      background-color: rgba(255, 255, 255, 0.7);
+      height: 100%; 
+      display: flex;
+      flex-wrap: wrap;
+      padding: 120px 60px 120px 60px;
+      // max-height: 90%;
 
       @include tabletLandscape {
         left: 20px;
@@ -93,7 +98,7 @@
 			&-presentation {
 				display: flex;
 				align-items: center;
-        margin-bottom: 44px;
+        margin-bottom: 33px;
 
         @include mobile {
           margin-bottom: 25px;
@@ -140,7 +145,7 @@
 			font-family: $metropolis;
 			color: $black;
 			letter-spacing: 2px;
-			margin: 50px 0 60px;
+			margin: 22px 0 22px;
 			line-height: 1.4;
 
       @include mobile {
