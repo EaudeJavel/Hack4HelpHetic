@@ -21,7 +21,7 @@
         <cta type="large" link="/more" label="Découvrir l'édition 2019" class="container__text__cta"></cta >
       </div>
         <div class="container__video">
-          <video src="~/assets/videos/video.mp4" controls autoplay type="video/mp4"></video>
+          <video src="~/assets/videos/video.mp4" controls muted autoplay type="video/mp4"></video>
         </div>
     </div>
   </div>
@@ -58,7 +58,6 @@
 
       &__title {
         max-width: 480px;
-        margin: 0 auto 30px;        
         font-family: "metropolis", arial;
         font-weight: bold;
         font-size: 32px;
@@ -85,7 +84,7 @@
       width: 47%;
 
       video {
-        width: 560px;
+        width: 97%;
         height: 400px;
       }
     }
