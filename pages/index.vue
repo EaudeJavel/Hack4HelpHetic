@@ -1,12 +1,6 @@
 <template>
 	<div v-if="Object.keys(texts).length" class="container-page container-index">
-		<navBar type="small"
-				:link="texts.HEADER_LINKS.HEADER_HOME.link"
-				:label="texts.HEADER_LINKS.HEADER_HOME.title"
-				:isExternal="texts.HEADER_LINKS.HEADER_HOME.isExternal"
-				:links="texts.HEADER_LINKS.HEADER_HOME.links"
-				class="button"
-		/>
+		<navBar isActiveHome="true" />
 		<banner />
 		<blockText />
 		<blockVideo />

@@ -1,13 +1,6 @@
 <template>
 	<div v-if="Object.keys(texts).length" class="container-page container-index">
-		<navBar type="small"
-				:link="texts.HEADER_LINKS.HEADER_MORE.link"
-				:label="texts.HEADER_LINKS.HEADER_MORE.title"
-				:isExternal="texts.HEADER_LINKS.HEADER_MORE.isExternal"
-				:links="texts.HEADER_LINKS.HEADER_MORE.links"
-				:mailTo="texts.HEADER_LINKS.HEADER_MORE.mailTo"
-				class="button"
-		/>
+		<navBar />
 	</div>
 </template>
 
