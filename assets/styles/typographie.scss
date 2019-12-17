@@ -1,20 +1,19 @@
 .is-h1 {
     font-family: $metropolis;
-    font-weight: 600;
-    font-size: 36px;
+    font-weight: 800;
+    font-size: 50px;
+    color: $black;
+
+    @include mobile {
+        font-size: 30px;
+    }
 }
 
 .is-h2 {
-    font-family: $nunito;
+    font-family: $metropolis;
     font-weight: bold;
     font-size: 32px;
-}
-
-.is-h2 {
-    font-family: $nunito;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 1.4;
+    color: $black;
 }
 
 .subtext {
