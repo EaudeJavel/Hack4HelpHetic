@@ -5,7 +5,6 @@
       <div class="navLinks">
         <a href="/" class="navLinks-item">Accueil</a>
         <a href="/more" class="navLinks-item">Edition 2019</a>
-        <a href="/" class="navLinks-item">A propos</a>
       </div>
     </div>
 	</div>
@@ -70,16 +69,6 @@
 
 	export default {
     name: "navBar",
-    props: {
-      isActiveHome: {
-        type: Boolean,
-        default: false
-      },
-      isActiveMore: {
-        type: Boolean,
-        default: false
-      },
-    },
 		computed: {
 			...mapGetters({
 				getTexts: "text/getTexts"
@@ -87,7 +76,10 @@
 			texts() {
 				return this.getTexts
 			},
-		}
+    },
+    mounted() {
+      const root = this.$router.currentRoute.fullPath;
+    }
 	}
 </script>
 

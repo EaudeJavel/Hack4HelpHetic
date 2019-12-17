@@ -3,10 +3,8 @@
     <div class="img"></div>
     <div class="container">
       <div class="block">
-        <h2 class="is-h2 text">Pourquoi cette initiative ?</h2>
-        <p class="text">HACK4HELP est né de la volonté de sensibiliser les acteurs de la tech sur leur impact sur la société.
-            Pour ce faire les étudiants, membres de l’’administration d’HETIC et entrepreneurs de la tech travaillent ensemble
-            sur des projets peu traités, par manque de retours lucratifs ou hors du champs des entreprises.</p>
+        <h2 class="is-h2 text">{{ title }}</h2>
+        <p class="text" v-html="text"></p>
       </div>
     </div>
   </div>
@@ -63,7 +61,17 @@
   import { mapGetters } from 'vuex'
 
 	export default {
-		name: 'coverImg',
+    name: 'coverImg',
+    props: {
+      title: {
+        type: String,
+        default: true
+      },
+      text: {
+        type: String,
+        default: true
+      },
+    },
 		computed: {
 			...mapGetters({
 				getTexts: "text/getTexts"
