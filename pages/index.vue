@@ -3,11 +3,10 @@
 		<navBar isActiveHome="true" />
 		<banner />
 		<blockText />
-		<blockVideo />
-		<brands />
-		<footerDefault />		
-		<!-- <blockVideo /> -->
+		<blockVideo />		
 		<coverImg />
+		<brands />
+		<footerDefault />			
 	</div>
 </template>
 
