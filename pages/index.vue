@@ -1,32 +1,36 @@
 <template>
 	<div v-if="Object.keys(texts).length" class="container-page container-index">
-		<h1 v-html="texts.BANNER_TITLE"></h1>
-		<navbar/>
-		<numbers />
-		<cta type="small" link="/decouvrir" :label="texts.BANNER_ACTION" />
-		<cta type="small" link="/decouvrir" :label="texts.BANNER_ACTION" :isExternal="true" />		
-		<brands></brands>
-	</div>	
+		<navBar type="small"
+				:link="texts.HEADER_LINKS.HEADER_HOME.link"
+				:label="texts.HEADER_LINKS.HEADER_HOME.title"
+				:isExternal="texts.HEADER_LINKS.HEADER_HOME.isExternal"
+				:links="texts.HEADER_LINKS.HEADER_HOME.links"
+				class="button"
+		/>
+		<banner />
+		<blockText />
+		<blockVideo />
+		<brands />
+	</div>
 </template>
 
-<style lang="stylus" scoped>
-	.container-index {
-
-	}
+<style lang="scss" scoped>
 </style>
 
 <script>
 	import { mapGetters } from 'vuex'
-	import navbar from '@/components/base/navbar.vue'
-	import numbers from '@/components/numbers/numbers.vue'
-	import cta from '@/components/cta/cta.vue'
+	import banner from '@/components/banner/banner.vue'
+	import navBar from '@/components/navBar/navBar.vue'
+	import blockText from '@/components/blockText/blockText.vue'
+	import blockVideo from '@/components/blockVideo/blockVideo.vue'
 	import brands from '@/components/brands/brands.vue'
 
 	export default {
 		components: {
-			navbar,
-			numbers,
-			cta,
+			banner,
+			navBar,
+			blockText,
+			blockVideo,
 			brands
 		},
 		transition: {

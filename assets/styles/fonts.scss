@@ -1,0 +1,64 @@
+/* Metropolis */
+@font-face {
+    font-family: 'metropolis';
+    src: url('~assets/fonts/metropolis/metropolis-bold.ttf') format('truetype'),
+         url('~assets/fonts/metropolis/metropolis-bold.woff2') format('woff2'),
+         url('~assets/fonts/metropolis/metropolis-bold.woff') format('woff'),
+         url('~assets/fonts/metropolis/metropolis-bold.eot') format('embedded-opentype');
+
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('~assets/fonts/metropolis/metropolis-extrabold.ttf') format('truetype'),
+         url('~assets/fonts/metropolis/metropolis-extrabold.woff2') format('woff2'),
+         url('~assets/fonts/metropolis/metropolis-extrabold.woff') format('woff'),
+         url('~assets/fonts/metropolis/metropolis-extrabold.eot') format('embedded-opentype');
+
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('~assets/fonts/metropolis/metropolis-light.ttf') format('truetype'),
+         url('~assets/fonts/metropolis/metropolis-light.woff2') format('woff2'),
+         url('~assets/fonts/metropolis/metropolis-light.woff') format('woff'),
+         url('~assets/fonts/metropolis/metropolis-light.eot') format('embedded-opentype');
+
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('~assets/fonts/metropolis/metropolis-semibold.ttf') format('truetype'),
+         url('~assets/fonts/metropolis/metropolis-semibold.woff2') format('woff2'),
+         url('~assets/fonts/metropolis/metropolis-semibold.woff') format('woff'),
+         url('~assets/fonts/metropolis/metropolis-semibold.eot') format('embedded-opentype');
+
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Nunito */
+@font-face {
+    font-family: 'nunito';
+    src: url('~assets/fonts/nunito/nunito-regular.ttf') format('truetype'),
+         url('~assets/fonts/nunito/nunito-regular.woff2') format('woff2'),
+         url('~assets/fonts/nunito/nunito-regular.woff') format('woff'),
+         url('~assets/fonts/nunito/nunito-regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'nunito';
+    src: url('~assets/fonts/nunito/nunito-light.ttf') format('truetype'),
+         url('~assets/fonts/nunito/nunito-light.woff2') format('woff2'),
+         url('~assets/fonts/nunito/nunito-light.woff') format('woff'),
+         url('~assets/fonts/nunito/nunito-light.eot') format('embedded-opentype');
+
+    font-weight: 300;
+    font-style: normal;
+}

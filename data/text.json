@@ -1,5 +1,5 @@
-    {
-    "BANNER_TITLE": "La <span>Première édition</span> d’un Hackathon à impact social",
+{
+    "BANNER_TITLE": "La <span>première édition</span> d’un Hackathon à impact social",
     "BANNER_ACTION": "Découvrir",
     "BANNER_LABEL": "Présente",
     "KEYS": [
@@ -11,5 +11,47 @@
             "number" : "128",
             "title" : "Participants"
         }
-    ]
+    ],
+    "HEADER_LINKS": {
+        "HEADER_HOME": {
+            "link" : "/more",
+            "title" : "Découvrir",
+            "isExternal" : false,
+            "links" : [
+                {
+                    "ancre" : "#1",
+                    "title" : "Pourquoi"
+                },
+                {
+                    "ancre" : "#2",
+                    "title" : "Comment"
+                },
+                {
+                    "ancre" : "#3",
+                    "title" : "Qui"
+                }
+            ]
+        },
+        "HEADER_MORE": {
+            "title" : "Contact",
+            "isExternal" : true,
+            "mailTo" : true,
+            "links" : [
+                {
+                    "ancre" : "#1",
+                    "title" : "TEXTE"
+                },
+                {
+                    "ancre" : "#2",
+                    "title" : "TEXTE"
+                },
+                {
+                    "ancre" : "#3",
+                    "title" : "TEXTE"
+                }
+            ]
+        }
+    },
+    "INITIATIVE_TITLE": "Pourquoi cette initiative ?",
+    "INITIATIVE_TEXT": "HACK4HELP est né de la volonté de mettre la puissance de <b>la tech au service des personnes dans le besoin</b>. Ce projet, monté par Adèle Tanguy et soutenu par Hetic, a été confié aux étudiants de l’école. Accompagnés par des coachs experts du terrain et de la tech, ils proposeront des <b>solutions innovantes</b> pour pallier aux problèmes qu’ils auront identifiés."
 }

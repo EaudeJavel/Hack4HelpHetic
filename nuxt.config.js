@@ -32,35 +32,44 @@ module.exports = {
 	*/
 	loading: { color: '#fff' },
 
+
 	/*
 	** Global CSS
 	*/
 	css: [
 		'~/assets/styles/main.styl'
 	],
-
-
 	/*
 	** Plugins to load before mounting the App
 	*/
-	plugins: [
-	],
-
-	/*
-	** Nuxt.js modules
-	*/
-	modules: [
-	],
-
-	/*
-	** Build configuration
-	*/
-	build: {
+		plugins: [
+		],
+		/*
+		** Nuxt.js dev-modules
+		*/
+		buildModules: [
+		],
+		/*
+		** Nuxt.js modules
+		*/
+		modules: [
+			'@nuxtjs/style-resources'
+		],
+		styleResources: {
+			scss: [
+				'~/assets/styles/fonts.scss',
+				'~/assets/styles/vars.scss',
+				'~/assets/styles/mixins.scss'
+			]
+		},
+		/*
+		** Build configuration
+		*/
+		build: {
 		/*
 		** You can extend webpack config here
 		*/
-		extend(config, ctx) {
-
+			extend (config, ctx) {
+			}
 		}
-	}
 }
