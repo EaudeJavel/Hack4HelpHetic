@@ -57,5 +57,18 @@
                 "image" : "serena.png"
             }
         ]
-    }
+    },
+    "CONTACT_TITLE": "Vous aussi, rejoignez l’aventure !",
+    "CONTACT_LIST": [
+        {
+            "text" : "Vous souhaitez devenir <span>coach</span>"
+        },
+        {
+            "text" : "Vous souhaitez devenir <spanpartenaire</span>"
+        },
+        {
+            "text" : "Vous êtes <spanprofessionnel de l'action sociale</span>"
+        }
+    ],
+    "CONTACT_DESCRIPTION": "Contactez nous par mail à cette adresse <a href='mailto:placeholder@hetic.net' >placeholder@hetic.net"
 }

@@ -6,6 +6,7 @@
 		<coverImg :title="texts.COVERIMG_HOME_TITLE" :text="texts.COVERIMG_HOME_TEXT" />
 		<blockVideo />
 		<!-- <brands /> -->
+		<contact :title="texts.CONTACT_TITLE" :list="texts.CONTACT_LIST" :description="texts.CONTACT_DESCRIPTION" />
 		<footerDefault />
 	</div>
 </template>
@@ -22,6 +23,7 @@
 	import blockVideo from '@/components/blockVideo/blockVideo.vue'
 	import footerDefault from '@/components/footer/footer.vue'
 	import coverImg from '@/components/coverImg/coverImg.vue'
+	import contact from '@/components/contact/contact.vue'
 
 	export default {
 		components: {
@@ -31,7 +33,8 @@
 			blockVideo,
 			footerDefault,
 			brands,
-			coverImg
+			coverImg,
+			contact
 		},
 		transition: {
 			mode: 'out-in',

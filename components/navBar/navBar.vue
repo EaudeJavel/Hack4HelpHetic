@@ -83,7 +83,7 @@
 				return this.getTexts
 			},
     },
-     props: {
+    props: {
       page: {
         type: String,
         required: false
