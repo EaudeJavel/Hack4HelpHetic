@@ -18,42 +18,55 @@
     "BLOCKTEXT_HOME_TEXT": "HACK4HELP est un hackathon dedié à l’<b>innovation sociale</b>. Chaque année durant 15 jours, deux promotions d’héticiens mettent leurs <b>compétences technologiques</b> au sercice du bien commun.",
     "BLOCKTEXT_HOME_TITLE": "Qu’est ce que le HACK4HELP ?",
     "BLOCKTEXT_HOME_IMG": "sans-abri.png",
-    "PARTNERS_LOGOS": [
+    "BRANDS_TITLE": "Ils nous ont fait confiance",
+    "BRANDS_LIST": [
         {
-            "image" : "frenchweb.png"
+            "image" : "frenchweb.png",
+            "lien" : "https://www.google.fr/"
         },
         {
-            "image" : "entourage.png"
+            "image" : "entourage.png",
+            "lien" : "https://www.google.fr/"
         },
         {
-            "image" : "october.png"
+            "image" : "october.png",
+            "lien" : "https://www.google.fr/"
         },
         {
-            "image" : "fondation.png"
+            "image" : "fondation.png",
+            "lien" : "https://www.google.fr/"
         },
         {
-            "image" : "paris-co.png"
+            "image" : "paris-co.png",
+            "lien" : "https://www.google.fr/"
         },
         {
-            "image" : "founded.png"
+            "image" : "founded.png",
+            "lien" : "https://www.google.fr/"
         },
         {
-            "image" : "avolta.png"
+            "image" : "avolta.png",
+            "lien" : "https://www.google.fr/"
         },
         {
-            "image" : "hetic-for-good.png"
+            "image" : "hetic-for-good.png",
+            "lien" : "https://www.google.fr/"
         },
         {
-            "image" : "teads.png"
+            "image" : "teads.png",
+            "lien" : "https://www.google.fr/"
         },
         {
-            "image" : "altaide.png"
+            "image" : "altaide.png",
+            "lien" : "https://www.google.fr/"
         },
         {
-            "image" : "croix-rouge.png"
+            "image" : "croix-rouge.png",
+            "lien" : "https://www.google.fr/"
         },
         {
-            "image" : "serena.png"
+            "image" : "serena.png",
+            "lien" : "https://www.google.fr/"
         }
     ],
     "CONTACT_TITLE": "Vous aussi, rejoignez l’aventure !",
@@ -62,10 +75,10 @@
             "text" : "Vous souhaitez devenir <span>coach</span>"
         },
         {
-            "text" : "Vous souhaitez devenir <spanpartenaire</span>"
+            "text" : "Vous souhaitez devenir <span>partenaire</span>"
         },
         {
-            "text" : "Vous êtes <spanprofessionnel de l'action sociale</span>"
+            "text" : "Vous êtes <span>professionnel de l'action sociale</span>"
         }
     ],
     "CONTACT_DESCRIPTION": "Contactez nous par mail à cette adresse <a href='mailto:placeholder@hetic.net' >placeholder@hetic.net",

@@ -5,8 +5,8 @@
 		<blockText :title="texts.BLOCKTEXT_HOME_TITLE" :text="texts.BLOCKTEXT_HOME_TEXT" :image="texts.BLOCKTEXT_HOME_IMG" />
 		<coverImg :title="texts.COVERIMG_HOME_TITLE" :text="texts.COVERIMG_HOME_TEXT" />
 		<blockVideo />
-		<!-- <brands /> -->
 		<testimonials :title="texts.TESTIMONIALS_TITLE" :list="texts.TESTIMONIALS_LIST" />
+		<brands :title="texts.BRANDS_TITLE" :list="texts.BRANDS_LIST"/>
 		<contact :title="texts.CONTACT_TITLE" :list="texts.CONTACT_LIST" :description="texts.CONTACT_DESCRIPTION" />
 		<footerDefault />
 	</div>
@@ -37,7 +37,8 @@
 			brands,
 			coverImg,
 			contact,
-			testimonials
+			testimonials,
+			brands
 		},
 		transition: {
 			mode: 'out-in',

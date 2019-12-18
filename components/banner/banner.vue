@@ -24,8 +24,12 @@
     position: relative;
     width: 100%;
     height: 85vh;
-    margin-top: 80px;
+    margin-top: 60px;
     min-height: 500px;
+
+    @include tablet {
+      margin-top: 50px;
+    }
 
     .video,
     .imageBg {
@@ -71,7 +75,7 @@
       &-content {
         position: absolute;
         z-index: 2;
-        padding: 0 66px 0 80px;
+        padding: 0 66px 0 40px;
         top: 50%;
         transform: translateY(-50%);
 

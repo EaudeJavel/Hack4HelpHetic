@@ -1,129 +1,103 @@
 <template>
     <div class="footer-container">
-		<div class="footer-container__placer">
+		<div class="footer-container__placer container">
 			<a href="/" class="footer-container__placer__logo">
-				<img class="footer-container__placer__logo__img" src="~/assets/images/logo-hack.svg">
+				<img class="footer-container__placer__logo__img" src="~/assets/images/logo-hack-white.svg">
 			</a>
 
-			<ul class="footer-container__placer__footer-list">
-				<div class="footer-container__placer__footer-list__title"> Nous contacter</div>
-				<li class="footer-container__placer__footer-list__item">
-					<img class="puce" src="~/assets/images/puce.svg" alt="">
-					Lorem : 01-23-45-67-89
-				</li>
-				<li class="footer-container__placer__footer-list__item"> 
-					<img class="puce" src="~/assets/images/puce.svg" alt="">
-					Lorem ipsum : 01-23-45-67-89
-				</li>
-				<li class="footer-container__placer__footer-list__item">
-					<img class="puce" src="~/assets/images/puce.svg" alt=""> 
-					Lorem dolor si amet: 01-23-45-67-89
-				</li>
-			</ul>
+			<div class="footer-infos">
+				<ul class="footer-container__placer__footer-list">
+					<div class="footer-container__placer__footer-list__title"> Nous contacter</div>
+					<li class="footer-container__placer__footer-list__item">
+						Lorem : 01-23-45-67-89
+					</li>
+					<li class="footer-container__placer__footer-list__item">
+						Lorem ipsum : 01-23-45-67-89
+					</li>
+					<li class="footer-container__placer__footer-list__item">
+						Lorem dolor si amet: 01-23-45-67-89
+					</li>
+				</ul>
 
-			<ul class="footer-container__placer__footer-list">
-				<div class="footer-container__placer__footer-list__title"> Liens</div>
-				<li class="footer-container__placer__footer-list__item">
-					<img class="puce" src="~/assets/images/puce.svg" alt=""> 
-					Mentions légales 
-				</li>		
-			</ul>
+				<ul class="footer-container__placer__footer-list">
+					<div class="footer-container__placer__footer-list__title"> Liens</div>
+					<a href="https://www.hetic.net/" class="footer-container__placer__footer-list__item link">
+						Hetic
+					</a>
+					<a href="" class="footer-container__placer__footer-list__item link">
+						Mentions légales
+					</a>
+				</ul>
 
-			<ul class="footer-container__placer__footer-list">
-				<div class="footer-container__placer__footer-list__title"> Suivez-nous</div>
-				<div class="footer-container__placer__footer-list__items-container">
-					<li class="footer-container__placer__footer-list__items-container__item">
-						<a href="#">
-							<img src="~/assets/icons/instagram.svg" alt="instagram">
-						</a>
-					</li>
-					<li class="footer-container__placer__footer-list__items-container__item">
-						<a href="#">
-							<img src="~/assets/icons/linkedin.svg" alt="">
-						</a>
-					</li>
-					<li class="footer-container__placer__footer-list__items-container__item">
-						<a href="#" >
-							<img src="~/assets/icons/twitter.svg" alt="">
-						</a>
-					</li>
-				</div>
-			</ul>
+				<ul class="footer-container__placer__footer-list">
+					<div class="footer-container__placer__footer-list__title"> Suivez-nous</div>
+					<div class="footer-container__placer__footer-list__items-container">
+						<li class="footer-container__placer__footer-list__items-container__item">
+							<a href="#">
+								<img src="~/assets/icons/instagram.svg" alt="instagram">
+							</a>
+						</li>
+						<li class="footer-container__placer__footer-list__items-container__item">
+							<a href="#">
+								<img src="~/assets/icons/linkedin.svg" alt="">
+							</a>
+						</li>
+						<li class="footer-container__placer__footer-list__items-container__item">
+							<a href="#" >
+								<img src="~/assets/icons/twitter.svg" alt="">
+							</a>
+						</li>
+					</div>
+				</ul>
+			</div>
 		</div>
-
 	</div>
 </template>
 
 <style lang="scss" scoped>
 
 .footer-container {
-	height: 200px;
-	background-color: #000;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
+	background-color: $black;
+	padding-top: 55px;
+	padding-bottom: 55px;
 
-	@include tabletLandscape {		
-		height: 200px;
-		justify-content: space-between;	
-	}
+	.footer-infos {
+		display: flex;
+		width: 80%;
+		justify-content: space-between;
 
-	@include tablet {
-		justify-content: center;
-		height: 400px;
-		flex-direction: column;
-		align-items: baseline;		
+		@include tablet {
+			width: 100%;
+			margin-top: 40px;
+		}
+
+		@include mobile {
+			margin-top: 0;
+			flex-direction: column;
+		}
 	}
 
 	&__placer {
-
 		display: flex;
 		width: 100%;
-		justify-content: space-around;
+		justify-content: space-between;
+		align-items: center;
 
 		@include tablet {
-			flex-direction: column;				
-		}		
-
-		&__logo {		
-			width: 180px;
-			height: 100px;
-			margin-right: 130px;		
-
-			@include tabletLandscape {
-				margin-left: 20px;
-				width: 130px;
-				margin-right: 0;
-			}
-
-			@include tablet {
-				margin-left: 15px;
-				width: 110px;	
-				margin-right: 0;					
-			}
-
-			&__img {
-				width: 100%;			
-			}
+			flex-direction: column;
+			align-items: flex-start;
 		}
 
 		&__footer-list {
-			color: white;		
+			color: $white;
 
-			@include tabletLandscape {
-				margin-left: 15px;
-				margin-right: 0;
-			}
-
-			@include tablet {
-				margin-left: 15px;
-				margin-right: 0;
+			@include mobile {
+				margin-top: 40px;
 			}
 
 			&__items-container {
-				display: flex;	
-				
+				display: flex;
+
 				&__item {
 					margin-right: 15px;
 				}
@@ -134,17 +108,29 @@
 				margin-bottom: 20px;
 			}
 
-			&__item {	
-				margin-bottom: 15px;		
-				
-				.puce {
-					margin-right: 12px;
+			&__item {
+				position: relative;
+				padding-left: 30px;
+				margin-bottom: 10px;
+
+				&.link {
+					display: block;
+				}
+
+				&:before {
+					content: '';
+					position: absolute;
+					width: 10px;
+					height: 10px;
+					background-color: $orange;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
 				}
 			}
 		}
 	}
 }
-			
 
 </style>
 
