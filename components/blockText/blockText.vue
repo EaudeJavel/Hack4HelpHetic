@@ -7,7 +7,7 @@
           <h2 class="is-h2 text">{{ title }}</h2>
           <p class="text" v-html="text"></p>
         </div>
-      </div>      
+      </div>
     </div>
   </div>
 </template>
@@ -15,9 +15,6 @@
 <style lang="scss" scoped>
   .container {
     display: flex;
-    align-items: flex-start;
-    padding-right: 0;
-    background: linear-gradient(#6326FC, #7B3DCA);
     justify-content: center;
     align-items: center;
 
@@ -27,28 +24,23 @@
   }
 
   .blockText {
-    padding-bottom: 80px;
-    padding-left: 0;
+    background: $orangeGradient;
 
     @include tablet {
       background: $white;
-      padding: 0;
     }
 
     .contentText-placer {
-      background: $white;
-      width: 100%;
-      height: 590px;
-      box-shadow: $box-shadow;
       display: flex;
       justify-content: center;
       align-items: center;
+      background: $white;
+      width: 100%;
+      min-height: 780px;
 
       @include tablet {
-        width: 100%;
-        box-shadow: none;
-        padding: 50px 0 75px;
-        margin-top: 0;
+        padding: 50px 0 95px;
+        min-height: auto;
       }
 
       .text {
@@ -71,8 +63,9 @@
 
     .img {
       width: 50%;
-      height: 430px;
+      height: 590px;
       object-fit: cover;
+      margin: 90px 0;
 
       @include tablet {
         display: none;
