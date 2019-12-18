@@ -1,11 +1,9 @@
 <template>
 	<div class="navBar">
-    <div class="container">
-      <a href="/"><img class="logo-hack" src="~/assets/images/logo-hack.svg"></a>
-      <div class="navLinks">
-        <a href="/" class="navLinks-item">Accueil</a>
-        <a href="/more" class="navLinks-item">Edition 2019</a>
-      </div>
+    <a href="/"><img class="logo-hack" src="~/assets/images/logo-hack.svg"></a>
+    <div class="navLinks">
+      <a href="/" class="navLinks-item" v-bind:class="[page === 'home' ? 'is-active' : '']">Accueil</a>
+      <a href="/more" class="navLinks-item" v-bind:class="[page === 'more' ? 'is-active' : '']">Edition 2019</a>
     </div>
 	</div>
 </template>
@@ -24,6 +22,14 @@
     z-index: 20;
     top: 0;
     background: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+
+    @include mobile {
+      padding: 0 20px;
+    }
 
 		.logo-hack {
 			width: 70px;
@@ -77,8 +83,11 @@
 				return this.getTexts
 			},
     },
-    mounted() {
-      const root = this.$router.currentRoute.fullPath;
+     props: {
+      page: {
+        type: String,
+        required: false
+      },
     }
 	}
 </script>

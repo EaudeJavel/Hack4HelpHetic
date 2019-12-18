@@ -1,6 +1,6 @@
 <template>
 	<div v-if="Object.keys(texts).length" class="container-page container-index">
-		<navBar />
+		<navBar page="more" />
 	</div>
 </template>
 

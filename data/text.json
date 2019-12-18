@@ -13,46 +13,6 @@
             "title" : "Participants"
         }
     ],
-    "HEADER_LINKS": {
-        "HEADER_HOME": {
-            "link" : "/more",
-            "title" : "Découvrir",
-            "isExternal" : false,
-            "links" : [
-                {
-                    "ancre" : "#1",
-                    "title" : "Pourquoi"
-                },
-                {
-                    "ancre" : "#2",
-                    "title" : "Comment"
-                },
-                {
-                    "ancre" : "#3",
-                    "title" : "Qui"
-                }
-            ]
-        },
-        "HEADER_MORE": {
-            "title" : "Contact",
-            "isExternal" : true,
-            "mailTo" : true,
-            "links" : [
-                {
-                    "ancre" : "#1",
-                    "title" : "TEXTE"
-                },
-                {
-                    "ancre" : "#2",
-                    "title" : "TEXTE"
-                },
-                {
-                    "ancre" : "#3",
-                    "title" : "TEXTE"
-                }
-            ]
-        }
-    },
     "COVERIMG_HOME_TITLE": "Pourquoi cette initiative ?",
     "COVERIMG_HOME_TEXT": "HACK4HELP est né de la volonté de <b>sensibiliser les acteurs de la tech sur leur impact</b> sur la société. Pour ce faire les étudiants, membres de l’’administration d’HETIC et entrepreneurs de la tech <b>travaillent ensemble</b> sur des projets peu traités, par manque de retours lucratifs ou hors du champs des entreprises.",
     "BLOCKTEXT_HOME_TEXT": "HACK4HELP est un hackathon dedié à l’<b>innovation sociale</b>. Chaque année durant 15 jours, deux promotions d’héticiens mettent leurs <b>compétences technologiques</b> au sercice du bien commun.",
@@ -61,17 +21,39 @@
     "PARTNERS_LOGOS": {
         "IMAGES": [
             {
-                "image" : "frenchweb.png",
-                "image" : "entourage.png",
-                "image" : "october.png",
-                "image" : "fondation.png",
-                "image" : "paris-co.png",
-                "image" : "founded.png",
-                "image" : "avolta.png",
-                "image" : "hetic-for-good.png",
-                "image" : "teads.png",
-                "image" : "altaide.png",
-                "image" : "croix-rouge.png",
+                "image" : "frenchweb.png"
+            },
+            {
+                "image" : "entourage.png"
+            },
+            {
+                "image" : "october.png"
+            },
+            {
+                "image" : "fondation.png"
+            },
+            {
+                "image" : "paris-co.png"
+            },
+            {
+                "image" : "founded.png"
+            },
+            {
+                "image" : "avolta.png"
+            },
+            {
+                "image" : "hetic-for-good.png"
+            },
+            {
+                "image" : "teads.png"
+            },
+            {
+                "image" : "altaide.png"
+            },
+            {
+                "image" : "croix-rouge.png"
+            },
+            {
                 "image" : "serena.png"
             }
         ]

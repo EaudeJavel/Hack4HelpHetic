@@ -149,7 +149,7 @@
 			texts() {
 				return this.getTexts
 			},
-		}
+    },
 	}
 </script>
 
