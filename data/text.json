@@ -1,5 +1,5 @@
 {
-    "BANNER_TITLE": "“Le <b>hackathon</b> à <b>impact social</b> de l’école HETIC”",
+    "BANNER_TITLE": "La Première édition d’un Hackathon à impact social ",
     "BANNER_ACTION": "Découvrez l’édition 2019",
     "BANNER_LABEL": "Présente",
     "BANNER_H1": "HACK4HELP",
@@ -13,46 +13,6 @@
             "title" : "Participants"
         }
     ],
-    "HEADER_LINKS": {
-        "HEADER_HOME": {
-            "link" : "/more",
-            "title" : "Découvrir",
-            "isExternal" : false,
-            "links" : [
-                {
-                    "ancre" : "#1",
-                    "title" : "Pourquoi"
-                },
-                {
-                    "ancre" : "#2",
-                    "title" : "Comment"
-                },
-                {
-                    "ancre" : "#3",
-                    "title" : "Qui"
-                }
-            ]
-        },
-        "HEADER_MORE": {
-            "title" : "Contact",
-            "isExternal" : true,
-            "mailTo" : true,
-            "links" : [
-                {
-                    "ancre" : "#1",
-                    "title" : "TEXTE"
-                },
-                {
-                    "ancre" : "#2",
-                    "title" : "TEXTE"
-                },
-                {
-                    "ancre" : "#3",
-                    "title" : "TEXTE"
-                }
-            ]
-        }
-    },
     "COVERIMG_HOME_TITLE": "Pourquoi cette initiative ?",
     "COVERIMG_HOME_TEXT": "HACK4HELP est né de la volonté de <b>sensibiliser les acteurs de la tech sur leur impact</b> sur la société. Pour ce faire les étudiants, membres de l’’administration d’HETIC et entrepreneurs de la tech <b>travaillent ensemble</b> sur des projets peu traités, par manque de retours lucratifs ou hors du champs des entreprises.",
     "BLOCKTEXT_HOME_TEXT": "HACK4HELP est un hackathon dedié à l’<b>innovation sociale</b>. Chaque année durant 15 jours, deux promotions d’héticiens mettent leurs <b>compétences technologiques</b> au sercice du bien commun.",
@@ -61,19 +21,54 @@
     "PARTNERS_LOGOS": {
         "IMAGES": [
             {
-                "image" : "frenchweb.png",
-                "image" : "entourage.png",
-                "image" : "october.png",
-                "image" : "fondation.png",
-                "image" : "paris-co.png",
-                "image" : "founded.png",
-                "image" : "avolta.png",
-                "image" : "hetic-for-good.png",
-                "image" : "teads.png",
-                "image" : "altaide.png",
-                "image" : "croix-rouge.png",
+                "image" : "frenchweb.png"
+            },
+            {
+                "image" : "entourage.png"
+            },
+            {
+                "image" : "october.png"
+            },
+            {
+                "image" : "fondation.png"
+            },
+            {
+                "image" : "paris-co.png"
+            },
+            {
+                "image" : "founded.png"
+            },
+            {
+                "image" : "avolta.png"
+            },
+            {
+                "image" : "hetic-for-good.png"
+            },
+            {
+                "image" : "teads.png"
+            },
+            {
+                "image" : "altaide.png"
+            },
+            {
+                "image" : "croix-rouge.png"
+            },
+            {
                 "image" : "serena.png"
             }
         ]
-    }
+    },
+    "CONTACT_TITLE": "Vous aussi, rejoignez l’aventure !",
+    "CONTACT_LIST": [
+        {
+            "text" : "Vous souhaitez devenir <span>coach</span>"
+        },
+        {
+            "text" : "Vous souhaitez devenir <spanpartenaire</span>"
+        },
+        {
+            "text" : "Vous êtes <spanprofessionnel de l'action sociale</span>"
+        }
+    ],
+    "CONTACT_DESCRIPTION": "Contactez nous par mail à cette adresse <a href='mailto:placeholder@hetic.net' >placeholder@hetic.net"
 }

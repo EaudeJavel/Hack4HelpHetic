@@ -1,14 +1,14 @@
 <template>
 	<div class="banner">
-    <div class="container">
-      <div class="card">
+    <div class="card">
+      <div class="card-content">
         <div class="card-presentation">
           <img class="card-logo" src="~/assets/images/logo-hetic.svg">
           <p class="card-label">{{ texts.BANNER_LABEL }}</p>
         </div>
 
         <h1 class="is-h1">{{ texts.BANNER_H1 }}</h1>
-        <p v-html="texts.BANNER_TITLE" class="title"></p>
+        <h2 v-html="texts.BANNER_TITLE" class="title"></h2>
         <cta type="large" link="/more" :label="texts.BANNER_ACTION" class="button"/>
       </div>
     </div>
@@ -20,17 +20,12 @@
 </template>
 
 <style lang="scss" scoped>
-  .container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-
 	.banner {
     position: relative;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: 85vh;
     margin-top: 80px;
+    min-height: 500px;
 
     .video,
     .imageBg {
@@ -63,36 +58,26 @@
 
 		.card {
       position: absolute;
+      width: 100%;
       z-index: 2;
-      top: 50%;
-      transform: translateY(-50%);
-			left: 40px;
-      max-width: 444px;
-      // padding: 75px 115px 110px;
-      background-color: rgba(255, 255, 255, 0.7);
-      height: 100%; 
-      display: flex;
-      flex-wrap: wrap;
-      padding: 120px 60px 120px 60px;
-      // max-height: 90%;
-
-      @include tabletLandscape {
-        left: 20px;
-        max-width: 450px;
-        padding: 75px 50px 110px;
-      }
+      max-width: 480px;
+      background-color: $white80;
+      height: 100%;
 
       @include mobile {
-        padding: 18px;
-        left: 0;
-        top: 70%;
-        max-width: 250px;
-        min-height: auto;
-        padding: 40px 20px 55px;
+        max-width: 100%;
       }
 
-      .is-h1 {
-        color: $black;
+      &-content {
+        position: absolute;
+        z-index: 2;
+        padding: 0 66px 0 80px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include mobile {
+          padding: 0 20px;
+        }
       }
 
 			&-presentation {
@@ -101,7 +86,7 @@
         margin-bottom: 33px;
 
         @include mobile {
-          margin-bottom: 25px;
+          margin-bottom: 20px;
         }
       }
 
@@ -110,17 +95,6 @@
 
         @include mobile {
           width: 72px;
-        }
-      }
-
-      .button {
-
-        &:hover {
-          background: transparent
-        }
-
-        @include mobile {
-         display: none;
         }
       }
 
@@ -142,15 +116,17 @@
 
 		.title {
 			font-size: 24px;
-			font-family: $metropolis;
+      font-family: $metropolis;
+      font-weight: 600;
 			color: $black;
 			letter-spacing: 2px;
 			margin: 22px 0 22px;
-			line-height: 1.4;
+      line-height: 1.4;
 
       @include mobile {
-        font-size: 18px;
-        margin: 20px 0 0;
+        max-width: 80%;
+        font-size: 24px;
+        margin: 20px 0 40px;
         letter-spacing: 0;
       }
 		}
@@ -173,7 +149,7 @@
 			texts() {
 				return this.getTexts
 			},
-		}
+    },
 	}
 </script>
 

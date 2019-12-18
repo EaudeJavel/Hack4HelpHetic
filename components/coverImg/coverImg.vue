@@ -4,7 +4,7 @@
     <div class="container">
       <div class="block">
         <h2 class="is-h2 text">{{ title }}</h2>
-        <p class="text" v-html="text"></p>
+        <p class="description text" v-html="text"></p>
       </div>
     </div>
   </div>
@@ -14,14 +14,18 @@
   .coverImg {
     display: block;
 
+    @include tablet {
+      margin-bottom: 115px;
+    }
+
     .img {
       background-image: url('~assets/images/bg-banner.png');
       background-size: cover;
       background-repeat: no-repeat;
-      height: 594px;
+      height: 750px;
 
       @include tablet {
-        height: 300px;
+        height: 500px;
       }
     }
 
@@ -35,20 +39,25 @@
         position: absolute;
         bottom: 50px;
         background: $white;
-        padding: 50px 30px 50px 30px;
-        max-width: 555px;
+        padding: 70px 64px 82px 70px;
+        min-width: 555px;
 
         @include tablet {
           position: relative;
-          max-width: auto;
-          padding: 30px;
+          min-width: auto;
+          padding: 20px 20px 105px 20px;
           bottom: inherit;
           right: inherit;
-          margin: -40px auto 0;
+          margin: -200px auto 0;
+          box-shadow: $box-shadow;
         }
 
         .is-h2 {
           margin-bottom: 30px;
+        }
+
+        .description {
+          max-width: 375px;
         }
       }
     }
