@@ -20,8 +20,16 @@
         </ul>
         <cta type="large" link="/more" label="Découvrir l'édition 2019" class="container-block-video__text__cta"></cta >
       </div>
-        <div class="container-block-video__video">
-          <video src="~/assets/videos/video.mp4" controls muted autoplay type="video/mp4"></video>
+        <div class="container-block-video__video-container">
+            <video 
+              src="~/assets/videos/video.mp4" 
+              class="container-block-video__video-container__video"
+              >
+            </video>
+            <div 
+              @click="play" 
+              class="playpause">
+            </div>
         </div>
     </div>
   </div>
@@ -99,7 +107,7 @@
       }
   }
 
-    &__video {
+    &__video-container {
       width: 47%;
       display: flex;
       justify-content: center;
@@ -116,6 +124,16 @@
           width: 92%;
         }
       }
+
+      .playpause {
+        background-image: url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
+        background-repeat: no-repeat;
+        width: 10%;
+        height: 50%;
+        position: absolute;
+        background-size: contain;
+        background-position: center;
+      }
     }
 }
 
@@ -130,8 +148,19 @@
 	export default {
     name: 'blockVideo',
     components: {
-      cta
+      cta,
     },
-	}
+    methods: {
+      play: function(event) {
+        var a = this.$refs.video;
+        if (a.pause) {
+          a.play();
+        } else {
+          a.pause();
+        }
+      }
+    }
+  }
+
 </script>
 
