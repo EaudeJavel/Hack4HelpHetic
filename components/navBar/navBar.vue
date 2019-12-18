@@ -45,7 +45,7 @@
         font-weight: 600;
         color: $black;
         margin-left: 40px;
-        padding: 32px 0;
+        padding: 22px 0;
 
         &.is-active {
           color: $purple2;

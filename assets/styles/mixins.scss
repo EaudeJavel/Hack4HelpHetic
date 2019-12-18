@@ -1,6 +1,7 @@
 $mq-mobile: 575px !default;
 $mq-tablet: 769px !default;
 $mq-tabletLandscape: 1024px !default;
+// $mq-minDesktop: 1024px !default;
 $mq-desktop: 1440px !default;
 
 @mixin tabletLandscape {

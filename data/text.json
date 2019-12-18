@@ -18,46 +18,44 @@
     "BLOCKTEXT_HOME_TEXT": "HACK4HELP est un hackathon dedié à l’<b>innovation sociale</b>. Chaque année durant 15 jours, deux promotions d’héticiens mettent leurs <b>compétences technologiques</b> au sercice du bien commun.",
     "BLOCKTEXT_HOME_TITLE": "Qu’est ce que le HACK4HELP ?",
     "BLOCKTEXT_HOME_IMG": "sans-abri.png",
-    "PARTNERS_LOGOS": {
-        "IMAGES": [
-            {
-                "image" : "frenchweb.png"
-            },
-            {
-                "image" : "entourage.png"
-            },
-            {
-                "image" : "october.png"
-            },
-            {
-                "image" : "fondation.png"
-            },
-            {
-                "image" : "paris-co.png"
-            },
-            {
-                "image" : "founded.png"
-            },
-            {
-                "image" : "avolta.png"
-            },
-            {
-                "image" : "hetic-for-good.png"
-            },
-            {
-                "image" : "teads.png"
-            },
-            {
-                "image" : "altaide.png"
-            },
-            {
-                "image" : "croix-rouge.png"
-            },
-            {
-                "image" : "serena.png"
-            }
-        ]
-    },
+    "PARTNERS_LOGOS": [
+        {
+            "image" : "frenchweb.png"
+        },
+        {
+            "image" : "entourage.png"
+        },
+        {
+            "image" : "october.png"
+        },
+        {
+            "image" : "fondation.png"
+        },
+        {
+            "image" : "paris-co.png"
+        },
+        {
+            "image" : "founded.png"
+        },
+        {
+            "image" : "avolta.png"
+        },
+        {
+            "image" : "hetic-for-good.png"
+        },
+        {
+            "image" : "teads.png"
+        },
+        {
+            "image" : "altaide.png"
+        },
+        {
+            "image" : "croix-rouge.png"
+        },
+        {
+            "image" : "serena.png"
+        }
+    ],
     "CONTACT_TITLE": "Vous aussi, rejoignez l’aventure !",
     "CONTACT_LIST": [
         {
@@ -70,5 +68,37 @@
             "text" : "Vous êtes <spanprofessionnel de l'action sociale</span>"
         }
     ],
-    "CONTACT_DESCRIPTION": "Contactez nous par mail à cette adresse <a href='mailto:placeholder@hetic.net' >placeholder@hetic.net"
+    "CONTACT_DESCRIPTION": "Contactez nous par mail à cette adresse <a href='mailto:placeholder@hetic.net' >placeholder@hetic.net",
+    "TESTIMONIALS_TITLE": "Ils témoignent",
+    "TESTIMONIALS_LIST": [
+        {
+            "name" : "Lilia Sadiki",
+            "entreprise" : "Head & Co-Founder chez Bewize",
+            "job" : "Coach HACK4HELP",
+            "quote" : "C’est important d’avoir des salariés et des étudiants engagés pour transmettre leurs savoirs à des personnes qui sont dans le besoin",
+            "image" : "lilia.png"
+        },
+        {
+            "name" : "Victoria Mainfield",
+            "entreprise" : "Founder chez Solinium",
+            "job" : "Intervenante HACK4HELP",
+            "quote" : "C’est important d’avoir des salariés et des étudiants engagés pour transmettre leurs savoirs à des personnes qui sont dans le besoin",
+            "image" : "victoria.png"
+        },
+        {
+            "name" : "Victor Merz",
+            "entreprise" : "Head & Co-Founder chez Offit",
+            "job" : "Coach HACK4HELP",
+            "quote" : "Je m’implique aujourd’hui dans HACK4HELP pour le pay it forward",
+            "image" : "victor.png"
+        },
+        {
+            "name" : "Victor Bloch",
+            "job" : "Étudiant",
+            "entreprise" : "HETIC",
+            "quote" : "...",
+            "image" : "victor-bloch.png"
+        }
+
+    ]
 }
