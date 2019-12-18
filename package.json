@@ -23,9 +23,7 @@
 		"sass-loader": "^8.0.0",
 		"smoothscroll-polyfill": "^0.4.4",
 		"stylus": "^0.54.7",
-		"stylus-loader": "^3.0.2",
-		"vue-parallax-js": "^0.2.3",
-		"vue-parallaxy": "^1.1.1"
+		"stylus-loader": "^3.0.2"
 	},
 	"devDependencies": {
 		"nodemon": "^1.11.0"

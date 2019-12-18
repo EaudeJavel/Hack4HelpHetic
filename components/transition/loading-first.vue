@@ -64,7 +64,6 @@
 
 <script>
 	import { mapGetters } from 'vuex'
-
 	import progressbar from '~/components/transition/progress-bar.vue'
 	import { TweenLite } from 'gsap'
 

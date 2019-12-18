@@ -1,7 +1,7 @@
 <template>
   <div class="blockText">
     <div class="container">
-      <img class="img" :src="`/images/${image}`">
+        <img ref="img" class="img" :src="`/images/${image}`">
       <div class="contentText-placer">
         <div class="contentText">
           <h2 class="is-h2 text">{{ title }}</h2>
@@ -76,6 +76,8 @@
 
 <script>
   import { mapGetters } from 'vuex'
+  import { TweenLite } from 'gsap'
+  import  parallax  from 'vue-parallax'
 
 	export default {
     name: 'blockImg',
@@ -100,7 +102,17 @@
 			texts() {
 				return this.getTexts
 			},
-		}
+    },
+    components: {
+      parallax
+    },
+    mounted() {
+      const { img } = this.$refs
+      // var tl = new TimelineLite() 
+
+      // tl.to(img, 1, { y: scroll, ease:Linear.easeNone }) 
+
+    }
 	}
 </script>
 
