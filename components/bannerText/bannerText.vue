@@ -83,6 +83,7 @@
       color: $white;
       z-index: 2;
       position: relative;
+      text-transform: uppercase;
 
       @include tabletLandscape {
         font-size: 60px;
@@ -93,13 +94,13 @@
       font-size: 47px;
       font-family: $metropolis;
       line-height: 1.5;
-      font-weight: 600;
+      font-weight: 200;
       color: $white;
       z-index: 2;
       position: relative;
 
-      /deep/ span {
-        font-weight: 200;
+      /deep/ b {
+        font-weight: 600;
       }
 
       @include tabletLandscape {

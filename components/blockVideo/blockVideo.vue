@@ -87,6 +87,12 @@
 
 .textBlock {
   margin-top: 20px;
+
+  /deep/ br {
+    display: flex;
+    height: 30px;
+    content: '';
+  }
 }
 
 .button {
@@ -127,7 +133,7 @@
   }
 
     &__text {
-      width: 45%;
+      width: 38%;
 
       @include tabletLandscape {
         width: 100%;
@@ -169,6 +175,10 @@
           /deep/ span {
             color: $orange;
             font-weight: 500;
+          }
+
+          /deep/ b {
+            font-weight: bold;
           }
         }
       }

@@ -1,7 +1,7 @@
 <template>
 	<div class="testimonials container">
 		<div class="testimonials-grid">
-			<p class="is-h2">{{ title }}</p>
+			<h2 class="is-h2">{{ title }}</h2>
 
 			<div class="testimonials-content" v-if="list && list.length">
 				<div class="testimonials-item" v-for="(item, i) in list" :key="`number-${i}`">
