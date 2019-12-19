@@ -1,10 +1,10 @@
 <template>
 	<div>
-		<div class="footer-container">
+		<div class="">
 			<div class="footer-container">
 				<div class="footer-container__placer container">
 					<a href="/" class="footer-container__placer__logo">
-						<img class="footer-container__placer__logo__img" src="~/assets/images/logo-hack-white.svg">
+						<img class="footer-container__placer__logo__img logo" src="~/assets/images/logo-hack-white.svg">
 					</a>
 
 					<div class="footer-infos">
@@ -59,6 +59,12 @@
 	background-color: $black;
 	padding-top: 55px;
 	padding-bottom: 55px;
+
+	.logo {
+		@include tabletLandscape {
+			width: 100px;
+		}
+	}
 
 	.footer-infos {
 		display: flex;

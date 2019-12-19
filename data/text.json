@@ -103,7 +103,7 @@
             "image" : "lilia.png"
         },
         {
-            "name" : "Victoria Mainfield",
+            "name" : "Victoria Mandefield",
             "entreprise" : "Founder chez Solinium",
             "job" : "Intervenante HACK4HELP",
             "quote" : "Le vrai changement vient quand on arrête de considérer les personnes sans-abri comme une catégorie à part.",
@@ -268,7 +268,7 @@
         }
     ],
     "QUOTE_TITLE": "Le numérique n'est pas une solution. C'est un outil.",
-    "QUOTE_NAME": "Victoria Manfield",
+    "QUOTE_NAME": "Victoria Mandefield",
     "QUOTE_JOB": "Head & Founder Solinium",
     "QUOTE_IMG": "victoria-quote.png",
     "BANNERTEXT_EDITION": "Édition 2019",

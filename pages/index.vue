@@ -1,5 +1,5 @@
 <template>
-	<div v-if="Object.keys(texts).length" class="container-page container-index">
+	<div v-if="Object.keys(texts).length" class="container-page container-index home">
 		<navBar page="home" />
 		<banner />
 		<blockText :isImageLeft="true" :title="texts.BLOCKTEXT_HOME_TITLE" :text="texts.BLOCKTEXT_HOME_TEXT" :image="texts.BLOCKTEXT_HOME_IMG" />

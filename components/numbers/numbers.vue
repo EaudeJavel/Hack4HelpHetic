@@ -65,6 +65,7 @@
 
         @include tabletLandscape {
           margin-top: 20px;
+          font-size: 12px;
         }
       }
 
@@ -91,6 +92,10 @@
             color: $orange;
             font-weight: bold;
           }
+
+          @include tabletLandscape {
+            font-size: 18px;
+          }
         }
 
         &-number {
@@ -101,8 +106,8 @@
           line-height: 1;
           text-align: center;
 
-          @include tablet {
-            font-size: 80px;
+          @include tabletLandscape {
+            font-size: 60px;
           }
 
           /deep/ span {

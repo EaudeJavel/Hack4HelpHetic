@@ -4,8 +4,10 @@
       <div class="img" v-bind:style="{backgroundImage: 'url(' + `/images/${image}` + ')'}"/>
       <div class="quoteBlock-block">
         <h3 class="title">{{ title }}</h3>
-        <p>{{ name }} </p>
-        <p>{{ job }}</p>
+        <div class="job">
+          <p>{{ name }} </p>
+          <p>{{ job }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -30,7 +32,7 @@
     .img {
       min-width: 60%;
       width: 60%;
-      height: 770px;
+      height: 640px;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -38,30 +40,35 @@
       @include tablet {
         min-width: 100%;
         width: 100%;
-        height: 400px;
+        height: 280px;
       }
     }
 
     &-block {
       padding: 100px 38px 0;
 
-      @include tablet {
-        padding: 100px 0 50px;
+      @include tabletLandscape {
+        padding: 60px 0 50px;
+      }
+      .job {
+        padding-left: 40px;
       }
 
       .title {
         position: relative;
-        font-size: 53px;
+        font-size: 40px;
         font-family: $metropolis;
         font-weight: 200;
         font-style: italic;
         line-height: 1.3;
         margin-bottom: 100px;
+        padding-left: 60px;
 
         @include tabletLandscape {
-          font-size: 42px;
+          font-size: 32px;
           margin-bottom: 20px;
           padding-right: 50px;
+          padding-left: 40px;
         }
 
         &:before,
@@ -74,6 +81,11 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
+
+          @include tabletLandscape {
+            width: 40px;
+            height: 28px;
+          }
         }
 
         &:before {
@@ -81,9 +93,9 @@
           top: -70px;
           left: -10px;
 
-          @include tablet {
-            top: -70px;
-            left: 0;
+          @include tabletLandscape {
+            top: -30px;
+            left: 20px;
           }
         }
 
@@ -92,9 +104,9 @@
           bottom: -60px;
           right: -10px;
 
-          @include tablet {
+          @include tabletLandscape {
             bottom: -30px;
-            right: 0;
+            right: -10px;
           }
         }
       }

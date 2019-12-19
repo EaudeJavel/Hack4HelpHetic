@@ -61,6 +61,10 @@
     font-size: 30px;
     margin-top: 30px;
     line-height: 1.4;
+
+    @include tabletLandscape {
+      font-size: 20px;
+    }
   }
 }
 
@@ -85,6 +89,12 @@
   flex-wrap: wrap;
 }
 
+.home {
+  .isWinner {
+    display: none;
+  }
+}
+
 .isImg {
   align-items: flex-start !important;
 
@@ -94,7 +104,6 @@
     align-items: center;
     background: $white;
     width: 100%;
-    // min-height: 780px;
 
     @include tabletLandscape {
       padding: 50px 0;
@@ -184,7 +193,7 @@
 
   @include tabletLandscape {
     flex-direction: column;
-    padding: 40px;
+    padding: 30px;
   }
 
     &__text {
@@ -220,6 +229,10 @@
           font-family: $metropolis;
           padding-left: 30px;
           margin-bottom: 10px;
+
+          @include tabletLandscape {
+            line-height: 1.3;
+          }
 
           &:before {
             content: '';
@@ -293,15 +306,15 @@
     props: {
       titleWinner: {
         type: String,
-        default: true
+        default: ''
       },
       description: {
         type: String,
-        default: true
+        default: ''
       },
       image: {
         type: String,
-        default: true
+        default: ''
       },
       edition: {
         type: String,

@@ -47,6 +47,10 @@
           padding-left: 30px;
           margin-bottom: 28px;
 
+          @include tabletLandscape {
+            font-size: 15px;
+          }
+
           @include mobile {
             margin-bottom: 15px;
           }
@@ -58,8 +62,11 @@
             height: 10px;
             background-color: $orange;
             left: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 10px;
+
+            @include tabletLandscape {
+              top: 7px;
+            }
           }
 
           /deep/ span {
@@ -72,6 +79,10 @@
       &-info {
         font-size: 21px;
         font-family: $metropolis;
+
+        @include tabletLandscape {
+          font-size: 16px;
+        }
 
         /deep/ a {
           color: $purple2;

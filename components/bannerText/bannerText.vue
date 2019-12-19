@@ -91,7 +91,7 @@
       text-transform: uppercase;
 
       @include tabletLandscape {
-        font-size: 60px;
+        font-size: 30px;
       }
     }
 
@@ -109,7 +109,7 @@
       }
 
       @include tabletLandscape {
-        font-size: 35px;
+        font-size: 24px;
       }
     }
   }
