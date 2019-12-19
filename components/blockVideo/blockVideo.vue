@@ -3,7 +3,7 @@
     <div v-bind:class="[isWinner ? 'container-block-video container isWinnerBlur' : 'container-block-video container']">
       <div class="container-block-video__text">
         <div class="container-block-video__text__alias" v-if="edition && edition.length">
-          <p>{{ edition }}</p>
+          {{ edition }}
         </div>
         <h2 class="container-block-video__text__title is-h2">{{ title }}</h2>
         <ul class="container-block-video__text__list" v-if="items && items.length">
@@ -154,6 +154,10 @@
         margin-top: 20px;
         margin-bottom: 40px;
 
+        @include tabletLandscape {
+          margin-bottom: 0;
+        }
+
         &__item {
           position: relative;
           font-size: 16px;
@@ -195,6 +199,7 @@
       @include tabletLandscape {
         width: 100%;
         max-width: 100%;
+        margin-top: 20px;
       }
 
       video {
