@@ -211,5 +211,39 @@
     "QUOTE_JOB": "Head & Founder Solinium",
     "QUOTE_IMG": "victoria-quote.png",
     "BANNERTEXT_EDITION": "Édition 2019",
-    "BANNERTEXT_TITLE": "Créer une <b>solution</b> utilisant le <b>numérique</b> pour que la société intègre mieux les personnes <b>sans-abri</b>"
+    "BANNERTEXT_TITLE": "Créer une <b>solution</b> utilisant le <b>numérique</b> pour que la société intègre mieux les personnes <b>sans-abri</b>",
+    "BLOCKVIDEO_EDITION": "ÉDITION 2019",
+    "BLOCKVIDEO_TITLE": "Créer une solution utilisant le numérique pour que la société intègre mieux les personnes sans-abris",
+    "BLOCKVIDEO_ITEMS": [
+        {
+            "text" : "2 promotions concernées, soit 180 étudiants"
+        },
+        {
+            "text" : "2 semaines dédiées du 9 au 20 décembre 2019 au sein du campus HETIC"
+        },
+        {
+            "text" : "Un travail en collaboration avec l'écosystème de la tech (entrepreneurs et experts métiers engagés)"
+        }
+    ],
+    "BLOCKVIDEO_VIDEO_SOURCE": "video-recap.mp4",
+
+    "BLOCKVIDEO_MORE_TITLE": "2 semaines de hackathon, 12 propositions, 1 projet incubé par Hetic",
+    "BLOCKVIDEO_MORE_VIDEO_SOURCE": "video-recap.mp4",
+    "BLOCKVIDEO_MORE_PAGE_TEXT": "Le projet retenu par le jury incubé et concrétisé pendant 1 an au sein du Hub Hetic autour d'une équipe renforcée",
+
+    "BLOCKVIDEO_WINNER_EDITION": "Le gagant",
+    "BLOCKVIDEO_WINNER_TITLE": "Créer une solution utilisant le numérique pour que la société intègre mieux les personnes sans-abris",
+    "BLOCKVIDEO_WINNER_ITEMS": [
+        {
+            "text" : "2 promotions concernées, soit 180 étudiants"
+        },
+        {
+            "text" : "2 semaines dédiées du 9 au 20 décembre 2019 au sein du campus HETIC"
+        },
+        {
+            "text" : "Un travail en collaboration avec l'écosystème de la tech (entrepreneurs et experts métiers engagés)"
+        }
+    ],
+    "BLOCKVIDEO_WINNER_VIDEO_SOURCE": "video-recap.mp4",
+    "BLOCKVIDEO_WINNER_PAGE_TEXT": "Le projet retenu par le jury incubé et concrétisé pendant 1 an au sein du Hub Hetic autour d'une équipe renforcée"
 }

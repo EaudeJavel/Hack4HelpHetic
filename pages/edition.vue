@@ -6,6 +6,8 @@
 		<numbers :title="texts.KEYS_TITLE" :list="texts.KEYS_LIST" :source="texts.KEYS_SOURCE" />
 		<blockText :isImageLeft="false" :title="texts.BLOCKTEXT_MORE_TERRAIN_TITLE" :text="texts.BLOCKTEXT_MORE_TERRAIN_TEXT" :image="texts.BLOCKTEXT_MORE_TERRAIN_IMG" />
 		<coachs :title="texts.COACHS_TITLE" :list="texts.COACHS_LIST" />
+		<blockVideo :hasText="true" :text="texts.BLOCKVIDEO_MORE_PAGE_TEXT" :title="texts.BLOCKVIDEO_MORE_TITLE" :video="texts.BLOCKVIDEO_MORE_VIDEO_SOURCE" :items="texts.BLOCKVIDEO_MORE_ITEMS" />
+		<blockVideo :hasEdition="true" :isWinner="true" :edition="texts.BLOCKVIDEO_WINNER_EDITION" :title="texts.BLOCKVIDEO_WINNER_TITLE" :video="texts.BLOCKVIDEO_WINNER_VIDEO_SOURCE" :items="texts.BLOCKVIDEO_WINNER_ITEMS" />
 		<quote :title="texts.QUOTE_TITLE" :name="texts.QUOTE_NAME" :job="texts.QUOTE_JOB" :image="texts.QUOTE_IMG" />
 		<contact :title="texts.CONTACT_TITLE" :list="texts.CONTACT_LIST" :description="texts.CONTACT_DESCRIPTION" />
 		<footerDefault />
@@ -32,6 +34,7 @@
 	import numbers from '@/components/numbers/numbers.vue'
 	import quote from '@/components/quote/quote.vue'
 	import bannerText from '@/components/bannerText/bannerText.vue'
+	import blockVideo from '@/components/blockVideo/blockVideo.vue'
 
 	export default {
 		components: {
@@ -42,7 +45,8 @@
 			blockText,
 			numbers,
 			quote,
-			bannerText
+			bannerText,
+			blockVideo
 		},
 		computed: {
 			...mapGetters({

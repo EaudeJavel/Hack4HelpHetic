@@ -15,7 +15,7 @@
     display: block;
 
     @include tablet {
-      margin-bottom: 115px;
+      margin-bottom: 0;
     }
 
     .img {
@@ -42,14 +42,23 @@
         padding: 70px 64px 82px 70px;
         min-width: 555px;
 
-        @include tablet {
-          position: relative;
+        @include tabletLandscape {
           min-width: auto;
-          padding: 20px 20px 105px 20px;
-          bottom: inherit;
-          right: inherit;
-          margin: -200px auto 0;
+          padding: 70px 64px 82px 70px;
+          bottom: -60px;
+          margin: 0 auto;
           box-shadow: $box-shadow;
+          left: 40px;
+          right: 40px;
+        }
+
+        @include tablet {
+          padding: 20px 20px 20px 20px;
+        }
+
+        @include mobile {
+          left: 20px;
+          right: 20px;
         }
 
         .is-h2 {
@@ -58,6 +67,10 @@
 
         .description {
           max-width: 375px;
+
+          @include tabletLandscape {
+            max-width: inherit;
+          }
         }
       }
     }

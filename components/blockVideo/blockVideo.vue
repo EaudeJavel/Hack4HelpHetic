@@ -1,37 +1,33 @@
 <template>
   <div class="bg">
-    <div class="container-block-video">
+    <div class="container-block-video container">
       <div class="container-block-video__text">
-        <div class="container-block-video__text__alias">Édition 2019</div>
-        <h1 class="container-block-video__text__title">Créer une solution utilisant le numérique pour que la société intègre mieux les personnes sans-abris</h1>
-        <ul class="container-block-video__text__list">
-          <li class="container-block-video__text__list__item">
-            <img src="~/assets/images/puce.svg" alt="puce">
-            2 promotions concernées, soit 180 étudiants
-          </li>
-          <li class="container-block-video__text__list__item">
-            <img src="~/assets/images/puce.svg" alt="puce">
-            2 semaines dédiées du 9 au 20 décembre 2019 au sein du campus HETIC
-          </li>
-          <li class="container-block-video__text__list__item">
-            <img src="~/assets/images/puce.svg" alt="puce">
-            Un travail en collaboration avec l'écosystème de la tech (entrepreneurs et experts métiers engagés)
+        <div class="container-block-video__text__alias" v-if="hasEdition">
+          <p>{{ edition }}</p>
+        </div>
+        <h2 class="container-block-video__text__title is-h2">{{ title }}</h2>
+        <ul class="container-block-video__text__list" v-if="items">
+          <li class="container-block-video__text__list__item" v-for="(item, i) in items" :key="`number-${i}`" v-html="item.text" >
           </li>
         </ul>
-        <cta type="large" link="/edition" label="Découvrir l'édition 2019" class="container-block-video__text__cta"></cta >
+        <p v-if="hasText.length" v-html="text" class="textBlock"></p>
+        <cta v-if="isButton" type="large" link="/edition" label="Découvrir" class="container-block-video__text__cta button-desktop"></cta >
       </div>
-        <div class="container-block-video__video-container">
-            <video controlsList="nodownload" disablePictureInPicture muted
-              class="container-block-video__video-container__video" ref="video">
-                <source src="~/assets/videos/video.mp4" type="video/mp4" >
-            </video>
-            <div
-              @click="play"
-              class="playpause"
-              ref="playpause"
-              >
-            </div>
-        </div>
+      <div class="container-block-video__video-container">
+          <video controlsList="nodownload" disablePictureInPicture muted
+            class="container-block-video__video-container__video" ref="video">
+              <source :src="`/videos/${video}`" type="video/mp4" >
+          </video>
+          <div
+            @click="play"
+            class="playpause"
+            ref="playpause"
+          >
+          </div>
+      </div>
+      <div class="button-tablet" v-if="isButton">
+        <cta type="large" link="/edition" label="Découvrir" class="container-block-video__text__cta button"></cta >
+      </div>
     </div>
   </div>
 </template>
@@ -39,14 +35,42 @@
 <style lang="scss" scoped>
 
 .bg {
-  height: 600px;
-  background: linear-gradient(#FF9900, #FF7A00);
   display: flex;
   justify-content: center;
   align-items: center;
+  background: $orangeGradient;
+  padding: 40px;
 
-  @include tablet {
-    height: 100%;
+  @include mobile {
+    padding: 20px;
+  }
+}
+
+.textBlock {
+  margin-top: 20px;
+}
+
+.button {
+  &-desktop {
+    @include tabletLandscape {
+      display: none;
+    }
+  }
+
+  &-tablet {
+    display: none;
+
+     @include tabletLandscape {
+      display: block;
+      width: 100%;
+
+      .button {
+        margin: 30px auto 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+    }
   }
 }
 
@@ -54,81 +78,78 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  height: 540px;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding-left: 50px;
-  padding-right: 50px;
+  background-color: $white;
+  max-width: 1360px;
+  padding: 96px 95px 84px 108px;
 
-  @include tablet {
-    justify-content: initial;
-    align-items: initial;
-    flex-wrap: wrap;
-    height: 100%;
-    margin: 40px;
+  @include tabletLandscape {
+    flex-direction: column;
+    padding: 40px;
   }
 
     &__text {
       width: 45%;
-      transform: translateX(20px);
 
-      @include tablet {
+      @include tabletLandscape {
         width: 100%;
-        padding: 20px;
-        transform: translateX(0px);
       }
 
       &__alias {
         text-transform: uppercase;
-        font-weight: bold;
-        color: #FF7A00;
-        font-family: "metropolis", arial;
+        color: $orange;
+        font-family: $metropolis;
+        font-weight: 500;
       }
 
       &__title {
-        max-width: 480px;
-        font-family: "metropolis", arial;
-        font-weight: bold;
-        font-size: 32px;
-        color: #333333;
-        margin-top: 25px;
+        margin-top: 20px;
       }
 
       &__list {
-        margin-top: 45px;
-        font-family: "nunito", arial;
+        margin-top: 20px;
+        margin-bottom: 40px;
 
         &__item {
-          margin-bottom: 20px;
+          position: relative;
+          font-size: 16px;
+          line-height: 2;
+          font-family: $metropolis;
+          padding-left: 30px;
+          margin-bottom: 10px;
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: $orange;
+            left: 0;
+            top: 10px;
+          }
+
+          /deep/ span {
+            color: $orange;
+            font-weight: 500;
+          }
         }
-      }
-
-      &__cta {
-        font-family: "Metropolis", arial;
-
       }
   }
 
     &__video-container {
+      max-width: 680px;
       width: 47%;
       display: flex;
       justify-content: center;
       align-items: center;
-      // box-shadow: 0 4px 4px 25px;
       filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
 
-      @include tablet {
+      @include tabletLandscape {
         width: 100%;
+        max-width: 100%;
       }
 
       video {
         width: 100%;
-        border: solid 10px #FF7A00;
-
-        @include tablet {
-          width: 92%;
-        }
       }
 
       .playpause {
@@ -140,11 +161,10 @@
         background-size: contain;
         background-position: center;
 
-          &:hover {
-            cursor: pointer;
+        &:hover {
+          cursor: pointer;
         }
       }
-
     }
 }
 
@@ -161,6 +181,40 @@
     components: {
       cta,
     },
+    props: {
+      edition: {
+        type: String,
+        default: false
+      },
+      title: {
+        type: String,
+        default: true
+      },
+      items: {
+        type: Array,
+        required: false
+      },
+      video: {
+        type: String,
+        required: true
+      },
+      text: {
+        type: String,
+        default: false
+      },
+      isButton: {
+        type: Boolean,
+        default: false
+      },
+      hasText: {
+        type: Boolean,
+        default: false
+      },
+      hasEdition: {
+        type: Boolean,
+        default: false
+      },
+    },
     computed: {
       videoElement () {
         return this.$refs.video
@@ -171,7 +225,6 @@
     },
     methods: {
       play: function() {
-
         this.videoElement.play()
         this.videoElement.controls = "controls"
         this.playpause.style.display = "none"

@@ -38,7 +38,7 @@
   .blockText {
     background: $orangeGradient;
 
-    @include tablet {
+    @include tabletLandscape {
       background: $white;
     }
 
