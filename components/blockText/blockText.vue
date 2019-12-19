@@ -89,8 +89,6 @@
         type: String,
         default: true
       },
-<<<<<<< HEAD
-=======
       image: {
         type: String,
         default: true
@@ -99,7 +97,6 @@
         type: Boolean,
         default: true
       },
->>>>>>> 4f62bb6a14306f1d119277ae0540b5c935362351
     },
 		computed: {
 			...mapGetters({
@@ -109,11 +106,6 @@
 				return this.getTexts
 			},
     },
-<<<<<<< HEAD
-    components: {
-      imgBlock
-    },
-=======
     // components: {
     //   parallax
     // },
@@ -124,7 +116,6 @@
     //   // tl.to(img, 1, { y: scroll, ease:Linear.easeNone })
 
     // }
->>>>>>> 4f62bb6a14306f1d119277ae0540b5c935362351
 	}
 </script>
 
