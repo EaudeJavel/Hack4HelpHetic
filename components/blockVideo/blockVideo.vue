@@ -2,20 +2,11 @@
   <div class="bg">
     <div class="container-block-video">
       <div class="container-block-video__text">
-        <div class="container-block-video__text__alias">Édition 2019</div>
-        <h1 class="container-block-video__text__title">Créer une solution utilisant le numérique pour que la société intègre mieux les personnes sans-abris</h1>
+        <div class="container-block-video__text__alias">{{ edition }}</div>
+        <h1 class="container-block-video__text__title">{{ title }}</h1>
         <ul class="container-block-video__text__list">
-          <li class="container-block-video__text__list__item">
-            <img src="~/assets/images/puce.svg" alt="puce">
-            2 promotions concernées, soit 180 étudiants
-          </li>
-          <li class="container-block-video__text__list__item">
-            <img src="~/assets/images/puce.svg" alt="puce">
-            2 semaines dédiées du 9 au 20 décembre 2019 au sein du campus HETIC
-          </li>
-          <li class="container-block-video__text__list__item">
-            <img src="~/assets/images/puce.svg" alt="puce">
-            Un travail en collaboration avec l'écosystème de la tech (entrepreneurs et experts métiers engagés)
+          <li class="container-block-video__text__list__item" v-for="(item, i) in items" >
+            {{ item.text }}
           </li>
         </ul>
         <cta type="large" link="/more" label="Découvrir l'édition 2019" class="container-block-video__text__cta"></cta >
@@ -185,6 +176,20 @@
     name: 'blockVideo',
     components: {
       cta,
+    },
+    props: {
+      edition: {
+        type: String,
+        default: true
+      },
+      title: {
+        type: String,
+        default: true
+      },
+      items: {
+        type: Array,
+        required: true
+      },
     },
     computed: {
       videoElement () {

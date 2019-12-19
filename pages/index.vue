@@ -4,7 +4,7 @@
 		<banner />
 		<blockText :isImageLeft="true" :title="texts.BLOCKTEXT_HOME_TITLE" :text="texts.BLOCKTEXT_HOME_TEXT" :image="texts.BLOCKTEXT_HOME_IMG" />
 		<coverImg :title="texts.COVERIMG_HOME_TITLE" :text="texts.COVERIMG_HOME_TEXT" />
-		<blockVideo />
+		<blockVideo :edition="texts.BLOCKVIDEO_EDITION" :title="texts.BLOCKVIDEO_TITLE" :video="texts.BLOCKVIDEO_VIDEO_SOURCE" :items="texts.BLOCKVIDEO_ITEMS" />
 		<testimonials :title="texts.TESTIMONIALS_TITLE" :list="texts.TESTIMONIALS_LIST" />
 		<brands :title="texts.BRANDS_TITLE" :list="texts.BRANDS_LIST"/>
 		<contact :title="texts.CONTACT_TITLE" :list="texts.CONTACT_LIST" :description="texts.CONTACT_DESCRIPTION" />
