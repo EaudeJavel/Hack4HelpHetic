@@ -8,7 +8,7 @@
           <div class="rectangle__before" v-animate="{speed: -1.2}"></div>
         </div>
          <div class="rectangle-small">
-           <div class="rectangle-small__before" v-animate="{speed: 1.2}"></div>
+           <div class="rectangle-small__before" v-animate="{speed: -1.2}"></div>
          </div>
       </div>
     </div>
