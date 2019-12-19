@@ -18,7 +18,7 @@
             Un travail en collaboration avec l'écosystème de la tech (entrepreneurs et experts métiers engagés)
           </li>
         </ul>
-        <cta type="large" link="/more" label="Découvrir l'édition 2019" class="container-block-video__text__cta"></cta >
+        <cta type="large" link="/edition" label="Découvrir l'édition 2019" class="container-block-video__text__cta"></cta >
       </div>
         <div class="container-block-video__video-container">
             <video controlsList="nodownload" disablePictureInPicture muted
@@ -115,7 +115,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      // box-shadow: 0 4px 4px 25px;  
+      // box-shadow: 0 4px 4px 25px;
       filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
 
       @include tablet {
@@ -124,7 +124,7 @@
 
       video {
         width: 100%;
-        border: solid 10px #FF7A00;        
+        border: solid 10px #FF7A00;
 
         @include tablet {
           width: 92%;
@@ -139,7 +139,7 @@
         position: absolute;
         background-size: contain;
         background-position: center;
-        
+
           &:hover {
             cursor: pointer;
         }

@@ -9,11 +9,11 @@
 
         <h1 class="is-h1">{{ texts.BANNER_H1 }}</h1>
         <h2 v-html="texts.BANNER_TITLE" class="title"></h2>
-        <cta type="large" link="/more" :label="texts.BANNER_ACTION" class="button"/>
+        <cta type="large" link="/edition" :label="texts.BANNER_ACTION" class="button"/>
       </div>
     </div>
     <video autoplay loop playsinline muted class="video">
-      <source src="~/assets/videos/video.mp4" type="video/mp4">
+      <source :src="`/videos/${texts.BANNER_VIDEO}`" type="video/mp4">
     </video>
     <div class="imageBg"></div>
 	</div>

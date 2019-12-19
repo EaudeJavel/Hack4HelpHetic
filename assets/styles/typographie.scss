@@ -15,6 +15,10 @@
     font-size: 32px;
     color: $black;
     line-height: 1.2;
+
+    @include tabletLandscape {
+        font-size: 26px;
+    }
 }
 
 .subtext {

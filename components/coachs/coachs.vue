@@ -7,8 +7,9 @@
         <div class="swiper-wrapper blockCoachs-content">
           <div class="coach swiper-slide" v-for="(item, i) in list" :key="`number-${i}`"
                 v-bind:style="{backgroundImage: 'url(' + `/images/coachs/${item.image}` + ')'}">
-           <p class="coach-name">{{ item.name }}</p>
+            <p class="coach-name">{{ item.name }}</p>
             <p class="coach-job">{{ item.job }}</p>
+            <a :href="item.link" target="_blank" class="coach-linkedin"></a>
           </div>
         </div>
         <div class="swiper-pagination swiper-pagination-bullets"></div>
@@ -22,7 +23,6 @@
 <style lang="scss" scoped>
   .blockCoachs {
     position: relative;
-
 
     .swiper-button-next,
     .swiper-button-prev {
@@ -131,6 +131,24 @@
       background-size: cover;
       background-position: center;
 
+      &-linkedin {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        &:before {
+          content:"";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-image: url('~@/assets/images/linkedin.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+
       &-name {
         position: absolute;
         color: $white;
@@ -139,7 +157,7 @@
         font-size: 16px;
         font-family: $metropolis;
         font-weight: 800;
-        bottom: 50px;
+        top: 70%;
         left: 10px;
       }
 
@@ -151,7 +169,7 @@
         font-size: 12px;
         font-family: $metropolis;
         font-weight: 800;
-        bottom: 30px;
+        top: 80%;
         left: 10px;
       }
     }

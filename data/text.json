@@ -3,25 +3,27 @@
     "BANNER_ACTION": "Découvrez l’édition 2019",
     "BANNER_LABEL": "Présente",
     "BANNER_H1": "HACK4HELP",
+    "BANNER_VIDEO": "video-site.mp4",
     "KEYS_TITLE": "Les personnes sans-abris en quelques chiffres",
     "KEYS_LIST": [
         {
             "number" : "49<span>ans</span>",
-            "title" : "<span>d’espérance de vie</span> dans la rue contre 89 ans en France"
+            "title" : "<span>d’espérance de vie</span> dans la rue contre 89 ans en France*"
         },
         {
             "number" : "65<span>%</span>",
-            "title" : "vivent <span>seuls</span> et sont privés de cercle sociale"
+            "title" : "vivent <span>seuls</span> et sont privés de cercle sociale*"
         },
         {
             "number" : "71<span>%</span>",
-            "title" : "ont <span>un smartphone</span>, dont 58% avec internet"
+            "title" : "ont <span>un smartphone</span>, dont 58% avec internet**"
         },
         {
             "number" : "85<span>%</span>",
-            "title" : "ressentent <span>le rejet</span> des passants"
+            "title" : "ressentent <span>le rejet</span> des passants*"
         }
     ],
+    "KEYS_SOURCE": "Sources : *Entourage et **Solilab",
     "COVERIMG_HOME_TITLE": "Pourquoi cette initiative ?",
     "COVERIMG_HOME_TEXT": "HACK4HELP est né de la volonté de <b>sensibiliser les acteurs de la tech sur leur impact</b> sur la société. Pour ce faire les étudiants, membres de l’’administration d’HETIC et entrepreneurs de la tech <b>travaillent ensemble</b> sur des projets peu traités, par manque de retours lucratifs ou hors du champs des entreprises.",
     "BLOCKTEXT_HOME_TEXT": "HACK4HELP est un hackathon dedié à l’<b>innovation sociale</b>. Chaque année durant 15 jours, deux promotions d’héticiens mettent leurs <b>compétences technologiques</b> au sercice du bien commun.",
@@ -128,62 +130,74 @@
         {
             "name" : "Olivier Bouhris",
             "job" : "Managing Partner - Open Business Consulting",
-            "image": "olivier-bouhris.png"
+            "image": "olivier-bouhris.png",
+            "link": "http://google.fr"
         },
         {
             "name" : "Olivier Bouhris",
             "job" : "Managing Partner - Open Business Consulting",
-            "image": "olivier-bouhris.png"
+            "image": "olivier-bouhris.png",
+            "link": "http://google.fr"
         },
         {
             "name" : "Olivier Bouhris",
             "job" : "Managing Partner - Open Business Consulting",
-            "image": "olivier-bouhris.png"
+            "image": "olivier-bouhris.png",
+            "link": "http://google.fr"
         },
         {
             "name" : "Olivier Bouhris",
             "job" : "Managing Partner - Open Business Consulting",
-            "image": "olivier-bouhris.png"
+            "image": "olivier-bouhris.png",
+            "link": "http://google.fr"
         },
         {
             "name" : "Olivier Bouhris",
             "job" : "Managing Partner - Open Business Consulting",
-            "image": "olivier-bouhris.png"
+            "image": "olivier-bouhris.png",
+            "link": "http://google.fr"
         },
         {
             "name" : "Olivier Bouhris",
             "job" : "Managing Partner - Open Business Consulting",
-            "image": "olivier-bouhris.png"
+            "image": "olivier-bouhris.png",
+            "link": "http://google.fr"
         },
         {
             "name" : "Olivier Bouhris",
             "job" : "Managing Partner - Open Business Consulting",
-            "image": "olivier-bouhris.png"
+            "image": "olivier-bouhris.png",
+            "link": "http://google.fr"
         },
         {
             "name" : "Olivier Bouhris",
             "job" : "Managing Partner - Open Business Consulting",
-            "image": "olivier-bouhris.png"
+            "image": "olivier-bouhris.png",
+            "link": "http://google.fr"
         },
         {
             "name" : "Olivier Bouhris",
             "job" : "Managing Partner - Open Business Consulting",
-            "image": "olivier-bouhris.png"
+            "image": "olivier-bouhris.png",
+            "link": "http://google.fr"
         },
         {
             "name" : "Olivier Bouhris",
             "job" : "Managing Partner - Open Business Consulting",
-            "image": "olivier-bouhris.png"
+            "image": "olivier-bouhris.png",
+            "link": "http://google.fr"
         },
         {
             "name" : "Olivier Bouhris",
             "job" : "Managing Partner - Open Business Consulting",
-            "image": "olivier-bouhris.png"
+            "image": "olivier-bouhris.png",
+            "link": "http://google.fr"
         },
         {
             "name" : "Olivier Bouhris",
             "job" : "Managing Partner - Open Business Consulting",
-            "image": "olivier-bouhris.png"
+            "image": "olivier-bouhris.png",
+            "link": "http://google.fr"
         }
     ],
     "BLOCKTEXT_MORE_TEXT": "La première édition du HACK4HELP est dédiée aux personnes sans-abri.<br> <b>180 élèves</b> d’Hetic ont été répartis en <b>12 équipes</b> de 15 qui en <b>2 semaines</b> devront imaginer et proposer des solutions innovantes pour aider les sans-abri.",
@@ -195,5 +209,7 @@
     "QUOTE_TITLE": "Le numérique n'est pas une solution. C'est un outil.",
     "QUOTE_NAME": "Victoria Manfield",
     "QUOTE_JOB": "Head & Founder Solinium",
-    "QUOTE_IMG": "victoria-quote.png"
+    "QUOTE_IMG": "victoria-quote.png",
+    "BANNERTEXT_EDITION": "Édition 2019",
+    "BANNERTEXT_TITLE": "Créer une <b>solution</b> utilisant le <b>numérique</b> pour que la société intègre mieux les personnes <b>sans-abri</b>"
 }

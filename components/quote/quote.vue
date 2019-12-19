@@ -58,9 +58,10 @@
         line-height: 1.3;
         margin-bottom: 100px;
 
-        @include tablet {
+        @include tabletLandscape {
           font-size: 42px;
           margin-bottom: 20px;
+          padding-right: 50px;
         }
 
         &:before,

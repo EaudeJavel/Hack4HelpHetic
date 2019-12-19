@@ -8,6 +8,7 @@
           <p v-html="item.title" class="item-title"></p>
         </li>
       </ul>
+      <p class="source">{{ source }}</p>
     </div>
   </div>
 </template>
@@ -39,7 +40,7 @@
 
     &-grid {
       background: $white;
-      padding: 100px 114px 120px 70px;
+      padding: 100px 114px 120px 50px;
       max-width: 1360px;
       margin: 0 auto;
 
@@ -52,6 +53,18 @@
 
         @include tabletLandscape {
           margin-bottom: 40px;
+        }
+      }
+
+      .source {
+        text-align: right;
+        font-size: 21px;
+        line-height: 1.3;
+        color: $grey;
+        margin-top: 95px;
+
+        @include tabletLandscape {
+          margin-top: 20px;
         }
       }
 
@@ -72,6 +85,7 @@
           text-align: center;
           font-size: 21px;
           line-height: 1.3;
+          color: $grey;
 
           /deep/ span {
             color: $orange;
@@ -125,6 +139,10 @@
         type: Array,
         default: true
       },
+      source: {
+        type: String,
+        default: true
+      }
     },
 	}
 </script>

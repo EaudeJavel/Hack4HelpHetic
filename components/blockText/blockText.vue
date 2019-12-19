@@ -27,6 +27,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
+    position: relative;
 
     @include tablet {
       padding-right: 20px;
@@ -48,9 +50,9 @@
       width: 100%;
       min-height: 780px;
 
-      @include tablet {
-        padding: 50px 0 95px;
-        min-height: auto;
+      @include tabletLandscape {
+        padding: 50px 0;
+        min-height: inherit;
       }
 
       .text {
@@ -69,7 +71,15 @@
           margin-bottom: 20px;
         }
       }
-    }    
+    }
+
+    .img {
+      width: 60%;
+
+      @include tabletLandscape {
+        display: none;
+      }
+    }
   }
 </style>
 
@@ -105,16 +115,6 @@
 				return this.getTexts
 			},
     },
-    // components: {
-    //   parallax
-    // },
-    // mounted() {
-    //   const { img } = this.$refs
-    //   // var tl = new TimelineLite()
-
-    //   // tl.to(img, 1, { y: scroll, ease:Linear.easeNone })
-
-    // }
 	}
 </script>
 
