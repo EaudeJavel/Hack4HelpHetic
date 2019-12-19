@@ -2,15 +2,15 @@
   <div class="bg">
     <div class="container-block-video container">
       <div class="container-block-video__text">
-        <div class="container-block-video__text__alias" v-if="hasEdition">
+        <div class="container-block-video__text__alias" v-if="hasEdition && hasEdition.length">
           <p>{{ edition }}</p>
         </div>
-        <h2 class="container-block-video__text__title is-h2">{{ title }}</h2>
-        <ul class="container-block-video__text__list" v-if="items">
+        <h2 class="container-block-video__text__title is-h2" v-if="hasTitle && hasTitle.length">{{ title }}</h2>
+        <ul class="container-block-video__text__list" v-if="items && items.length">
           <li class="container-block-video__text__list__item" v-for="(item, i) in items" :key="`number-${i}`" v-html="item.text" >
           </li>
         </ul>
-        <p v-if="hasText.length" v-html="text" class="textBlock"></p>
+        <p v-if="hasText" v-html="text" class="textBlock"></p>
         <cta v-if="isButton" type="large" link="/edition" label="Découvrir" class="container-block-video__text__cta button-desktop"></cta >
       </div>
       <div class="container-block-video__video-container">

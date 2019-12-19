@@ -4,34 +4,34 @@
 			<div class="footer-container">
 				<div class="footer-container__placer container">
 					<a href="/" class="footer-container__placer__logo">
-						<img class="footer-container__placer__logo__img" :src="`/_nuxt/assets/images/${logo}`">
+						<img class="footer-container__placer__logo__img" src="~/assets/images/logo-hack-white.svg">
 					</a>
 
 					<div class="footer-infos">
 						<ul class="footer-container__placer__footer-list" >
 							<div class="footer-container__placer__footer-list__title"> {{ title }}</div>
-							<li class="footer-container__placer__footer-list__item" v-for="(item, i) in items">
+							<li class="footer-container__placer__footer-list__item" v-for="(item, i) in items" :key="`number-${i}`">
 								{{ item.text }}
-							</li>							
+							</li>
 						</ul>
 
 						<ul class="footer-container__placer__footer-list">
 							<div class="footer-container__placer__footer-list__title">{{ titleLiens }}</div>
-							<div v-for="(site, j) in sites">
-								<a :href="`${site.url}`" class="footer-container__placer__footer-list__item link">
+							<div v-for="(site, j) in sites" :key="`number-${j}`">
+								<a :href="site.url" class="footer-container__placer__footer-list__item link">
 									{{ site.libelle }}
 								</a>
-							</div>						
+							</div>
 						</ul>
 
 						<ul class="footer-container__placer__footer-list">
 							<div class="footer-container__placer__footer-list__title">{{ titleFollow }}</div>
 							<div class="footer-container__placer__footer-list__items-container">
-								<li class="footer-container__placer__footer-list__items-container__item" v-for="(reseau, i) in reseaux">
-									<a :href="`${reseau.url}`">
+								<li class="footer-container__placer__footer-list__items-container__item" v-for="(reseau, i) in reseaux" :key="`number-${i}`">
+									<a :href="reseau.url">
 										<img :src="`/_nuxt/assets/icons/${reseau.url_image}`" :alt="`${reseau.alt}`">
 									</a>
-								</li>							
+								</li>
 							</div>
 						</ul>
 					</div>
