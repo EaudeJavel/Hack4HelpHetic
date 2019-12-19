@@ -1,7 +1,7 @@
 <template>
   <div class="blockText">
     <div class="container" v-if="isImageLeft">
-      <img ref="img" class="img" :src="`/images/${image}`">
+      <img ref="img" class="img" :src="`/images/${image}`" v-animate="{speed: 2}">
       <div class="contentText-placer">
         <div class="contentText">
           <h2 class="is-h2 text">{{ title }}</h2>
@@ -17,7 +17,7 @@
           <p class="text" v-html="text"></p>
         </div>
       </div>
-      <img ref="img" class="img" :src="`/images/${image}`">
+      <img ref="img" class="img2" :src="`/images/${image}`">
     </div>
   </div>
 </template>
@@ -75,11 +75,19 @@
 
     .img {
       width: 60%;
+      margin-top: 13%;
 
       @include tabletLandscape {
         display: none;
       }
     }
+    .img2 {
+      width: 60%;
+
+      @include tabletLandscape {
+        display: none;
+      }
+      }
   }
 </style>
 
