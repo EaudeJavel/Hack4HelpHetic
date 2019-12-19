@@ -1,5 +1,6 @@
 <template>
 	<div class="testimonials container">
+		<div class="testimonials__before" v-animate="{speed: 2}" ></div>
 		<div class="testimonials-grid">
 			<h2 class="is-h2">{{ title }}</h2>
 
@@ -15,6 +16,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="testimonials__after" v-animate="{speed: -2}"></div>
 	</div>
 </template>
 
@@ -27,8 +29,8 @@
 			margin: 60px auto 50px;
 		}
 
-		&:before,
-		&:after {
+		&__before,
+		&__after {
 			content:'';
 			position: absolute;
 			display: block;
@@ -43,16 +45,18 @@
 			}
 		}
 
-		&:before {
+		&__before {
 			background-image: url('~@/assets/images/quote.png');
 			top: -20px;
 			left: 3%;
+			margin-top: 30%;
 		}
 
-		&:after {
+		&__after {
 			background-image: url('~@/assets/images/quote2.png');
 			bottom: -80px;
 			right: 3%;
+			margin-bottom: 40%;
 		}
 
 		&-content {

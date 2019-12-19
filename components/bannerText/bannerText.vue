@@ -4,8 +4,12 @@
         <p class="edition">{{ edition }}</p>
         <h1 class="title" v-html="title"></h1>
 
-        <div class="rectangle"></div>
-         <div class="rectangle-small"></div>
+        <div class="rectangle" v-animate="{speed: -1.2}">
+          <div class="rectangle__before"></div>
+        </div>
+         <div class="rectangle-small" v-animate="{speed: -1.2}">
+           <div class="rectangle-small__before" ></div>
+         </div>
       </div>
     </div>
 </template>
@@ -33,8 +37,7 @@
       right: 50px;
       top: 100px;
 
-      &:before {
-        content: "";
+      &__before {
         background-image: url('~@/assets/images/rect-small.png');
         background-position: center;
         background-repeat: no-repeat;
@@ -58,8 +61,7 @@
       left: -290px;
       top: -150px;
 
-      &:before {
-        content: "";
+      &__before {
         background-image: url('~@/assets/images/rect-small.png');
         background-position: center;
         background-repeat: no-repeat;
