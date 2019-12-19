@@ -26,6 +26,9 @@
             >
             </div>
         </div>
+        <div class="isWinner" v-if="!isSay">
+          <p class="text">Rendez-vous le 20 décembre pour connaître le projet retenu qui sera incubé par HETIC !</p>
+        </div>
         <div class="button-tablet" v-if="isButton">
           <cta type="large" link="/edition" label="Découvrir" class="container-block-video__text__cta button"></cta >
         </div>
@@ -33,8 +36,8 @@
     </div>
 
     <!-- IF WINNER -->
-    <div class="winner" v-if="isWinner">
-      <div v-bind:class="[isSay ? 'container-block-video container isImg' : 'container-block-video container isImg isWinnerBlur']">
+    <div class="winner" v-if="isSay">
+      <div v-bind:class="[isSay ? 'container-block-video container isImg' : 'container-block-video container isImg']">
         <img ref="img" class="img" :src="`/images/${image}`">
         <div class="contentText-placer">
           <div class="contentText">
@@ -43,44 +46,26 @@
           </div>
         </div>
       </div>
-      <div class="isWinner" v-if="!isSay">
-        <p class="text">Rendez-vous le 20 décembre pour connaître le projet retenu qui sera incubé par HETIC !</p>
-      </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .isWinner {
-  position: absolute;
-  background: rgba(255, 122, 0, 0.7);
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  width: 100%;
 
   .text {
-    color: $white;
+    color: $black;
     font-weight: 800;
     font-family: $metropolis;
-    font-size: 52px;
-    padding: 155px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-
-    @include tabletLandscape {
-      font-size: 35px;
-      padding: 70px 40px;
-    }
+    font-size: 30px;
+    margin-top: 30px;
+    line-height: 1.4;
   }
 }
 
 .winner {
   position: relative;
-}
-.isWinnerBlur {
-  filter: blur(94px);
 }
 
 .contentBg {
@@ -97,7 +82,7 @@
 }
 
 .videoImg {
-  box-shadow: $box-shadow;
+  flex-wrap: wrap;
 }
 
 .isImg {
