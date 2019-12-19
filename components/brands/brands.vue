@@ -1,7 +1,7 @@
 <template>
 	<div class="brands container">
     <div class="brands-grid">
-      <p class="is-h2">{{ title }}</p>
+      <h2 class="is-h2">{{ title }}</h2>
 
       <div class="brands-list" v-if="list && list.length">
         <a class="brands-list-item" :href="item.lien" target="_blank" v-for="(item, i) in list" :key="`number-${i}`">

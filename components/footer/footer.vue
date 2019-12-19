@@ -10,8 +10,7 @@
 					<div class="footer-infos">
 						<ul class="footer-container__placer__footer-list" >
 							<div class="footer-container__placer__footer-list__title"> {{ title }}</div>
-							<li class="footer-container__placer__footer-list__item" v-for="(item, i) in items" :key="`number-${i}`">
-								{{ item.text }}
+							<li class="footer-container__placer__footer-list__item" v-for="(item, i) in items" :key="`number-${i}`" v-html="item.text">
 							</li>
 						</ul>
 
@@ -112,6 +111,14 @@
 				position: relative;
 				padding-left: 30px;
 				margin-bottom: 10px;
+
+				/deep/ b {
+					font-weight: bold;
+				}
+
+				/deep/ a {
+					cursor: pointer;
+				}
 
 				&.link {
 					display: block;

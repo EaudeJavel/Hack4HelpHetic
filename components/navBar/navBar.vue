@@ -3,7 +3,7 @@
     <a href="/"><img class="logo-hack" src="~/assets/images/logo-hack.svg"></a>
     <div class="navLinks">
       <a href="/" class="navLinks-item" v-bind:class="[page === 'home' ? 'is-active' : '']">Accueil</a>
-      <a href="/edition" class="navLinks-item" v-bind:class="[page === 'more' ? 'is-active' : '']">Edition 2019</a>
+      <a href="/edition" class="navLinks-item" v-bind:class="[page === 'more' ? 'is-active' : '']">Édition 2019</a>
     </div>
 	</div>
 </template>
@@ -32,7 +32,7 @@
     }
 
 		.logo-hack {
-			width: 70px;
+			width: 50px;
     }
 
     .navLinks {

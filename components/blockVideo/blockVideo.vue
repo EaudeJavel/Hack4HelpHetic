@@ -3,7 +3,7 @@
     <div v-bind:class="[isWinner ? 'container-block-video container isWinnerBlur' : 'container-block-video container']">
       <div class="container-block-video__text">
         <div class="container-block-video__text__alias" v-if="edition && edition.length">
-          <p>{{ edition }}</p>
+          {{ edition }}
         </div>
         <h2 class="container-block-video__text__title is-h2">{{ title }}</h2>
         <ul class="container-block-video__text__list" v-if="items && items.length">
@@ -87,6 +87,12 @@
 
 .textBlock {
   margin-top: 20px;
+
+  /deep/ br {
+    display: flex;
+    height: 30px;
+    content: '';
+  }
 }
 
 .button {
@@ -127,7 +133,7 @@
   }
 
     &__text {
-      width: 45%;
+      width: 38%;
 
       @include tabletLandscape {
         width: 100%;
@@ -147,6 +153,10 @@
       &__list {
         margin-top: 20px;
         margin-bottom: 40px;
+
+        @include tabletLandscape {
+          margin-bottom: 0;
+        }
 
         &__item {
           position: relative;
@@ -170,6 +180,10 @@
             color: $orange;
             font-weight: 500;
           }
+
+          /deep/ b {
+            font-weight: bold;
+          }
         }
       }
   }
@@ -185,6 +199,7 @@
       @include tabletLandscape {
         width: 100%;
         max-width: 100%;
+        margin-top: 20px;
       }
 
       video {

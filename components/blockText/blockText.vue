@@ -1,7 +1,7 @@
 <template>
   <div class="blockText">
     <div class="container" v-if="isImageLeft">
-      <img ref="img" class="img" :src="`/images/${image}`" v-animate="{speed: 3}">
+      <img ref="img" class="img" :src="`/images/${image}`" v-animate="{speed: 2}">
       <!-- <img ref="img" class="img" :src="`/images/${image}`" v-animate="{ speed: 17, reverse: true }"> -->
       <div class="contentText-placer">
         <div class="contentText">
@@ -64,6 +64,12 @@
         @include tablet {
           margin: 0 auto;
           padding: 0;
+        }
+
+        /deep/ br {
+          display: flex;
+          height: 30px;
+          content: '';
         }
       }
 

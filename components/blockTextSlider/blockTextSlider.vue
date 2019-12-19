@@ -24,7 +24,12 @@
     z-index: 2;
     position: relative;
 
-    @include tablet {
+    @include tabletLandscape {
+      flex-direction: column;
+      padding-right: 40px;
+    }
+
+    @include mobile {
       padding-right: 20px;
     }
   }
@@ -45,7 +50,7 @@
       min-height: 780px;
 
       @include tabletLandscape {
-        padding: 50px 0;
+        padding: 50px 0 30px;
         min-height: inherit;
         width: 100%;
       }
@@ -55,7 +60,8 @@
         margin: 0 auto 30px;
         padding: 0 20px;
 
-        @include tablet {
+        @include tabletLandscape {
+          max-width: 100%;
           margin: 0 auto;
           padding: 0;
         }
@@ -72,7 +78,8 @@
       width: 60%;
 
       @include tabletLandscape {
-        display: none;
+        width: 100%;
+        margin-bottom: 50px;
       }
     }
   }
@@ -108,12 +115,10 @@
     data () {
       return {
         swiperOption: {
-          // slidesPerView: 2
-          // spaceBetween: 30,
+          slidesPerView: 1,
           centeredSlides: true,
           autoplay: {
             delay: 2500,
-            disableOnInteraction: false
           },
 
         }

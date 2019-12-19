@@ -1,7 +1,7 @@
 <template>
 	<div class="contact">
     <div class="contact-content">
-      <p class="is-h2" v-html="title"></p>
+      <h2 class="is-h2" v-html="title"></h2>
       <ul v-if="list && list.length">
         <li v-for="(item, i) in list" :key="`number-${i}`">
           <p v-html="item.text"></p>

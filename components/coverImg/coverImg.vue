@@ -19,7 +19,7 @@
     }
 
     .img {
-      background-image: url('~assets/images/bg-banner.png');
+      background-image: url('~assets/images/amphi.png');
       background-size: cover;
       background-repeat: no-repeat;
       height: 750px;
@@ -38,7 +38,7 @@
       .block {
         position: absolute;
         bottom: 50px;
-        background: $white;
+        background: $white80;
         padding: 70px 64px 82px 70px;
         min-width: 555px;
 
