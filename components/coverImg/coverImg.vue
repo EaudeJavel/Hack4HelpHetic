@@ -2,7 +2,7 @@
   <div class="coverImg">
     <div class="img"></div>
     <div class="container">
-      <div class="block">
+      <div class="block" v-animate="{speed: 10}">
         <h2 class="is-h2 text">{{ title }}</h2>
         <p class="description text" v-html="text"></p>
       </div>

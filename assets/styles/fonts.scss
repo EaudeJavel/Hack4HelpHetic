@@ -54,6 +54,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'metropolis';
+    src: url('~assets/fonts/metropolis/metropolis-extralightitalic.eot');
+    src: url('~assets/fonts/metropolis/metropolis-extralightitalic.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/metropolis/metropolis-extralightitalic.woff2') format('woff2'),
+        url('~assets/fonts/metropolis/metropolis-extralightitalic.woff') format('woff'),
+        url('~assets/fonts/metropolis/metropolis-extralightitalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
 
 /* Nunito */
 @font-face {
@@ -72,5 +83,16 @@
          url('~assets/fonts/nunito/nunito-light.eot') format('embedded-opentype');
 
     font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito';
+    src: url('~assets/fonts/nunito/nunito-bold.ttf') format('truetype'),
+         url('~assets/fonts/nunito/nunito-bold.woff2') format('woff2'),
+         url('~assets/fonts/nunito/nunito-bold.woff') format('woff'),
+         url('~assets/fonts/nunito/nunito-bold.eot') format('embedded-opentype');
+
+    font-weight: bold;
     font-style: normal;
 }

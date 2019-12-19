@@ -2,7 +2,7 @@
 	<div v-if="Object.keys(texts).length" class="container-page container-index">
 		<navBar page="home" />
 		<banner />
-		<blockText :title="texts.BLOCKTEXT_HOME_TITLE" :text="texts.BLOCKTEXT_HOME_TEXT" :image="texts.BLOCKTEXT_HOME_IMG" />
+		<blockText :isImageLeft="true" :title="texts.BLOCKTEXT_HOME_TITLE" :text="texts.BLOCKTEXT_HOME_TEXT" :image="texts.BLOCKTEXT_HOME_IMG" />
 		<coverImg :title="texts.COVERIMG_HOME_TITLE" :text="texts.COVERIMG_HOME_TEXT" />
 		<blockVideo />
 		<testimonials :title="texts.TESTIMONIALS_TITLE" :list="texts.TESTIMONIALS_LIST" />
@@ -45,17 +45,10 @@
 			css: false,
 			appear: true,
 			enter (el, done) {
-				// let tl = new TimelineMax({ onComplete: done })
-
-				// tl.add('start')
 
 				done()
 			},
 			leave (el, done) {
-				// let tl = new TimelineMax({ onComplete: done })
-
-				// tl.add('start')
-
 				done()
 			}
 		},
