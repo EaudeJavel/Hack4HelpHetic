@@ -1,8 +1,8 @@
 <template>
   <div class="bg">
-    <div class="container-block-video container">
+    <div v-bind:class="[isWinner ? 'container-block-video container isWinnerBlur' : 'container-block-video container']">
       <div class="container-block-video__text">
-        <div class="container-block-video__text__alias" v-if="hasEdition && hasEdition.length">
+        <div class="container-block-video__text__alias" v-if="edition && edition.length">
           <p>{{ edition }}</p>
         </div>
         <h2 class="container-block-video__text__title is-h2">{{ title }}</h2>
@@ -10,7 +10,7 @@
           <li class="container-block-video__text__list__item" v-for="(item, i) in items" :key="`number-${i}`" v-html="item.text" >
           </li>
         </ul>
-        <p v-if="hasText" v-html="text" class="textBlock"></p>
+        <p v-if="text && text.length" v-html="text" class="textBlock"></p>
         <cta v-if="isButton" type="large" link="/edition" label="Découvrir" class="container-block-video__text__cta button-desktop"></cta >
       </div>
       <div class="container-block-video__video-container">
@@ -29,12 +29,51 @@
         <cta type="large" link="/edition" label="Découvrir" class="container-block-video__text__cta button"></cta >
       </div>
     </div>
+    <div class="isWinner" v-if="isWinner">
+      <p class="text">Rendez-vous le 20 décembre pour connaître le projet retenu qui sera incubé par HETIC !</p>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.isWinner {
+  position: absolute;
+  background: rgba(255, 122, 0, 0.5);
+  top: 40px;
+  right: 40px;
+  left: 40px;
+  bottom: 40px;
+
+  @include mobile {
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .text {
+    color: $white;
+    font-weight: 800;
+    font-family: $metropolis;
+    font-size: 52px;
+    padding: 155px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include tabletLandscape {
+      font-size: 35px;
+      padding: 70px 40px;
+    }
+  }
+}
+
+.isWinnerBlur {
+  filter: blur(94px);
+}
 
 .bg {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,33 +223,29 @@
     props: {
       edition: {
         type: String,
-        default: false
+        default: ''
       },
       title: {
         type: String,
-        default: true
+        default: ''
       },
       items: {
         type: Array,
-        required: false
+        default: () => []
       },
       video: {
         type: String,
-        required: true
+        default: ''
       },
       text: {
         type: String,
-        default: false
+        default: ''
       },
       isButton: {
         type: Boolean,
         default: false
       },
-      hasText: {
-        type: Boolean,
-        default: false
-      },
-      hasEdition: {
+      isWinner: {
         type: Boolean,
         default: false
       },

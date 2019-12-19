@@ -3,8 +3,9 @@ const Animate = function (os) {
 }
 
 Animate.prototype = {
-  activate (el, speed, scrollTop) {
-    el.style.transform = `translateY(${-(scrollTop/speed)}px)`
+  activate (el, speed, scrollTop, reverse) {
+    const calc = (reverse) ? (scrollTop/speed) : -(scrollTop/speed);
+    el.style.transform = `translateY(${calc}px)`
   }
 }
 
@@ -16,13 +17,13 @@ export default {
 
     window.addEventListener('scroll', function () {
       items.forEach((item) => {
-        a.activate(item.elem, item.speed, window.scrollY)
+        a.activate(item.elem, item.speed, window.scrollY, item.reverse)
       })
     })
 
     Vue.directive('animate', {
       bind (el, binding) {
-        items.push({ elem: el, speed: binding.value.speed || 10 })
+        items.push({ elem: el, speed: binding.value.speed || 10, reverse: binding.value.reverse || false })
       },
       unbind (el) {
         items.forEach((item, i) => {

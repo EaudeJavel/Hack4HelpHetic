@@ -205,7 +205,23 @@
     "BLOCKTEXT_MORE_IMG": "edition.png",
     "BLOCKTEXT_MORE_TERRAIN_TEXT": "Ils sont allés à la rencontre de sans-abri et d’associations pour confronter leurs idées à la réalité du terrain, puis furent conseillés par des experts de la tech.",
     "BLOCKTEXT_MORE_TERRAIN_TITLE": "L’experience terrain",
-    "BLOCKTEXT_MORE_TERRAIN_IMG": "terrain.png",
+    "BLOCKTEXT_MORE_TERRAIN_LIST": [
+        {
+            "image": "terrain.png"
+        },
+        {
+            "image": "terrain.png"
+        },
+        {
+            "image": "terrain.png"
+        },
+        {
+            "image": "terrain.png"
+        },
+        {
+            "image": "terrain.png"
+        }
+    ],
     "QUOTE_TITLE": "Le numérique n'est pas une solution. C'est un outil.",
     "QUOTE_NAME": "Victoria Manfield",
     "QUOTE_JOB": "Head & Founder Solinium",
