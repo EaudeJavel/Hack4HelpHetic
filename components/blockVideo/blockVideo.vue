@@ -58,6 +58,8 @@
   height: 540px;
   margin-left: 40px;
   margin-right: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
 
   @include tablet {
     justify-content: initial;
@@ -113,13 +115,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      // box-shadow: 0 4px 4px 25px;  
+      filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
 
       @include tablet {
         width: 100%;
       }
 
       video {
-        width: 97%;
+        width: 100%;
+        border: solid 10px #FF7A00;        
 
         @include tablet {
           width: 92%;
@@ -127,14 +132,19 @@
       }
 
       .playpause {
-        background-image: url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
+        background-image: url("../../assets/icons/play-button.svg");
         background-repeat: no-repeat;
-        width: 10%;
-        height: 50%;
+        width: 24%;
+        height: 24%;
         position: absolute;
         background-size: contain;
         background-position: center;
+        
+          &:hover {
+            cursor: pointer;
+        }
       }
+
     }
 }
 
