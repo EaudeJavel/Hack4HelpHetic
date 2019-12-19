@@ -1,36 +1,51 @@
 <template>
-  <div class="bg">
-    <div v-bind:class="[isWinner ? 'container-block-video container isWinnerBlur' : 'container-block-video container']">
-      <div class="container-block-video__text">
-        <div class="container-block-video__text__alias" v-if="edition && edition.length">
-          {{ edition }}
-        </div>
-        <h2 class="container-block-video__text__title is-h2">{{ title }}</h2>
-        <ul class="container-block-video__text__list" v-if="items && items.length">
-          <li class="container-block-video__text__list__item" v-for="(item, i) in items" :key="`number-${i}`" v-html="item.text" >
-          </li>
-        </ul>
-        <p v-if="text && text.length" v-html="text" class="textBlock"></p>
-        <cta v-if="isButton" type="large" link="/edition" label="Découvrir" class="container-block-video__text__cta button-desktop"></cta >
-      </div>
-      <div class="container-block-video__video-container">
-          <video controlsList="nodownload" disablePictureInPicture muted
-            class="container-block-video__video-container__video" ref="video">
-              <source :src="`/videos/${video}`" type="video/mp4" >
-          </video>
-          <div
-            @click="play"
-            class="playpause"
-            ref="playpause"
-          >
+  <div class="contentBg">
+    <div class="bg">
+      <div v-bind:class="[isWinner ? 'container-block-video container videoImg' : 'container-block-video container videoImg']">
+        <div class="container-block-video__text">
+          <div class="container-block-video__text__alias" v-if="edition && edition.length">
+            {{ edition }}
           </div>
-      </div>
-      <div class="button-tablet" v-if="isButton">
-        <cta type="large" link="/edition" label="Découvrir" class="container-block-video__text__cta button"></cta >
+          <h2 class="container-block-video__text__title is-h2">{{ title }}</h2>
+          <ul class="container-block-video__text__list" v-if="items && items.length">
+            <li class="container-block-video__text__list__item" v-for="(item, i) in items" :key="`number-${i}`" v-html="item.text" >
+            </li>
+          </ul>
+          <p v-if="text && text.length" v-html="text" class="textBlock"></p>
+          <cta v-if="isButton" type="large" link="/edition" label="Découvrir" class="container-block-video__text__cta button-desktop"></cta >
+        </div>
+        <div class="container-block-video__video-container">
+            <video controlsList="nodownload" disablePictureInPicture muted
+              class="container-block-video__video-container__video" ref="video">
+                <source :src="`/videos/${video}`" type="video/mp4" >
+            </video>
+            <div
+              @click="play"
+              class="playpause"
+              ref="playpause"
+            >
+            </div>
+        </div>
+        <div class="button-tablet" v-if="isButton">
+          <cta type="large" link="/edition" label="Découvrir" class="container-block-video__text__cta button"></cta >
+        </div>
       </div>
     </div>
-    <div class="isWinner" v-if="isWinner">
-      <p class="text">Rendez-vous le 20 décembre pour connaître le projet retenu qui sera incubé par HETIC !</p>
+
+    <!-- IF WINNER -->
+    <div class="winner" v-if="isWinner">
+      <div v-bind:class="[isSay ? 'container-block-video container isImg' : 'container-block-video container isImg isWinnerBlur']">
+        <img ref="img" class="img" :src="`/images/${image}`">
+        <div class="contentText-placer">
+          <div class="contentText">
+            <h2 class="is-h2 text">{{ titleWinner }}</h2>
+            <p class="text" v-html="description"></p>
+          </div>
+        </div>
+      </div>
+      <div class="isWinner" v-if="!isSay">
+        <p class="text">Rendez-vous le 20 décembre pour connaître le projet retenu qui sera incubé par HETIC !</p>
+      </div>
     </div>
   </div>
 </template>
@@ -38,18 +53,11 @@
 <style lang="scss" scoped>
 .isWinner {
   position: absolute;
-  background: rgba(255, 122, 0, 0.5);
-  top: 40px;
-  right: 40px;
-  left: 40px;
-  bottom: 40px;
-
-  @include mobile {
-    top: 20px;
-    right: 20px;
-    left: 20px;
-    bottom: 20px;
-  }
+  background: rgba(255, 122, 0, 0.7);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 
   .text {
     color: $white;
@@ -68,21 +76,83 @@
   }
 }
 
+.winner {
+  position: relative;
+}
 .isWinnerBlur {
   filter: blur(94px);
 }
 
-.bg {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contentBg {
   background: $orangeGradient;
   padding: 40px;
 
   @include mobile {
     padding: 20px;
   }
+
+  &.container-block-video {
+    padding: 0 95px 0 108px;
+  }
+}
+
+.videoImg {
+  box-shadow: $box-shadow;
+}
+
+.isImg {
+  align-items: flex-start !important;
+
+  .contentText-placer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: $white;
+    width: 100%;
+    // min-height: 780px;
+
+    @include tabletLandscape {
+      padding: 50px 0;
+      min-height: inherit;
+    }
+
+    .text {
+      max-width: 480px;
+      margin: 0 auto 30px;
+      padding: 0 20px;
+
+      @include tablet {
+        margin: 0 auto;
+        padding: 0;
+      }
+
+      /deep/ br {
+        display: flex;
+        height: 30px;
+        content: '';
+      }
+    }
+
+    .is-h2 {
+      @include tablet {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .img {
+    width: 60%;
+
+    @include tabletLandscape {
+      display: none;
+    }
+  }
+}
+.bg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .textBlock {
@@ -236,6 +306,18 @@
       cta,
     },
     props: {
+      titleWinner: {
+        type: String,
+        default: true
+      },
+      description: {
+        type: String,
+        default: true
+      },
+      image: {
+        type: String,
+        default: true
+      },
       edition: {
         type: String,
         default: ''
@@ -264,6 +346,10 @@
         type: Boolean,
         default: false
       },
+      isSay: {
+        type: Boolean,
+        default: false
+      }
     },
     computed: {
       videoElement () {

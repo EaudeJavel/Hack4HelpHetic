@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Espace protégé"
+AuthUserFile /home/hackhelpbr/www/.htpasswd
+Require valid-user
