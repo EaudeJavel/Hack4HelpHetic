@@ -21,6 +21,8 @@
 
     @include tablet {
       padding: 40px;
+      margin-top: 0;
+      margin-bottom: 0;
     }
     @include mobile {
       padding: 20px;
@@ -47,6 +49,10 @@
 
       .is-h2 {
         margin-bottom: 80px;
+
+        @include tabletLandscape {
+          margin-bottom: 40px;
+        }
       }
 
       .item {
@@ -80,6 +86,10 @@
           font-size: 100px;
           line-height: 1;
           text-align: center;
+
+          @include tablet {
+            font-size: 80px;
+          }
 
           /deep/ span {
             font-family: $metropolis;

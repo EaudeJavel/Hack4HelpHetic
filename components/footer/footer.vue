@@ -1,61 +1,78 @@
 <template>
-    <div class="footer-container">
-		<div class="footer-container__placer container">
-			<a href="/" class="footer-container__placer__logo">
-				<img class="footer-container__placer__logo__img" src="~/assets/images/logo-hack-white.svg">
-			</a>
-
-			<div class="footer-infos">
-				<ul class="footer-container__placer__footer-list">
-					<div class="footer-container__placer__footer-list__title"> Nous contacter</div>
-					<li class="footer-container__placer__footer-list__item">
-						Lorem : 01-23-45-67-89
-					</li>
-					<li class="footer-container__placer__footer-list__item">
-						Lorem ipsum : 01-23-45-67-89
-					</li>
-					<li class="footer-container__placer__footer-list__item">
-						Lorem dolor si amet: 01-23-45-67-89
-					</li>
-				</ul>
-
-				<ul class="footer-container__placer__footer-list">
-					<div class="footer-container__placer__footer-list__title"> Liens</div>
-					<a href="https://www.hetic.net/" class="footer-container__placer__footer-list__item link">
-						Hetic
+	<div>
+		<div class="footer-container">
+			<div class="footer-container">
+				<div class="footer-container__placer container">
+					<a href="/" class="footer-container__placer__logo">
+						<img class="footer-container__placer__logo__img" src="~/assets/images/logo-hack-white.svg">
 					</a>
-					<a href="" class="footer-container__placer__footer-list__item link">
-						Mentions légales
-					</a>
-				</ul>
 
-				<ul class="footer-container__placer__footer-list">
-					<div class="footer-container__placer__footer-list__title"> Suivez-nous</div>
-					<div class="footer-container__placer__footer-list__items-container">
-						<li class="footer-container__placer__footer-list__items-container__item">
-							<a href="#">
-								<img src="~/assets/icons/instagram.svg" alt="instagram">
+					<div class="footer-infos">
+						<ul class="footer-container__placer__footer-list">
+							<div class="footer-container__placer__footer-list__title"> Nous contacter</div>
+							<li class="footer-container__placer__footer-list__item">
+								Lorem : 01-23-45-67-89
+							</li>
+							<li class="footer-container__placer__footer-list__item">
+								Lorem ipsum : 01-23-45-67-89
+							</li>
+							<li class="footer-container__placer__footer-list__item">
+								Lorem dolor si amet: 01-23-45-67-89
+							</li>
+						</ul>
+
+						<ul class="footer-container__placer__footer-list">
+							<div class="footer-container__placer__footer-list__title"> Liens</div>
+							<a href="https://www.hetic.net/" class="footer-container__placer__footer-list__item link">
+								Hetic
 							</a>
-						</li>
-						<li class="footer-container__placer__footer-list__items-container__item">
-							<a href="#">
-								<img src="~/assets/icons/linkedin.svg" alt="">
+							<a href="" class="footer-container__placer__footer-list__item link">
+								Mentions légales
 							</a>
-						</li>
-						<li class="footer-container__placer__footer-list__items-container__item">
-							<a href="#" >
-								<img src="~/assets/icons/twitter.svg" alt="">
-							</a>
-						</li>
+						</ul>
+
+						<ul class="footer-container__placer__footer-list">
+							<div class="footer-container__placer__footer-list__title"> Suivez-nous</div>
+							<div class="footer-container__placer__footer-list__items-container">
+								<li class="footer-container__placer__footer-list__items-container__item">
+									<a href="#">
+										<img src="~/assets/icons/instagram.svg" alt="instagram">
+									</a>
+								</li>
+								<li class="footer-container__placer__footer-list__items-container__item">
+									<a href="#">
+										<img src="~/assets/icons/linkedin.svg" alt="">
+									</a>
+								</li>
+								<li class="footer-container__placer__footer-list__items-container__item">
+									<a href="#" >
+										<img src="~/assets/icons/twitter.svg" alt="">
+									</a>
+								</li>
+							</div>
+						</ul>
 					</div>
-				</ul>
+				</div>
 			</div>
+		</div>
+		<div class="subfooter">
+			<p class="text">Copyright 2019 - HACK4HELP - Tout droits réservés</p>
 		</div>
 	</div>
 </template>
 
 <style lang="scss" scoped>
+.subfooter {
+	background-color: #000000;
+	padding: 10px;
 
+	.text {
+		font-size: 14px;
+		font-weight: bold;
+		color: $white;
+		text-align: center;
+	}
+}
 .footer-container {
 	background-color: $black;
 	padding-top: 55px;

@@ -1,7 +1,7 @@
 <template>
 	<div class="blockCoachs container">
     <div class="blockCoachs-grid">
-      <h2 class="is-h2">{{ title }}</h2>
+      <h2 class="is-h2 title">{{ title }}</h2>
 
       <div v-swiper:mySwiper="swiperOption" v-if="list && list.length">
         <div class="swiper-wrapper blockCoachs-content">
@@ -12,15 +12,95 @@
           </div>
         </div>
         <div class="swiper-pagination swiper-pagination-bullets"></div>
-        <div class="swiper-button-prev" slot="button-prev"></div>
-        <div class="swiper-button-next" slot="button-next"></div>
       </div>
+      <div class="swiper-button-prev" slot="button-prev"></div>
+      <div class="swiper-button-next" slot="button-next"></div>
     </div>
 	</div>
 </template>
 
 <style lang="scss" scoped>
   .blockCoachs {
+    position: relative;
+
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 75px;
+      height: 75px;
+      box-shadow: $box-shadow;
+      outline: none;
+
+      @include tabletLandscape {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+    .swiper-button-next {
+      background-image: none;
+      right: 50px;
+
+      @include tabletLandscape {
+        top: 10px;
+        right: 40px;
+      }
+
+      @include mobile {
+        right: 20px;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        background-image: url('~@/assets/images/arrow-left.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 23px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+
+        @include tabletLandscape {
+          width: 12px;
+          height: 23px;
+        }
+      }
+    }
+
+    .swiper-button-prev {
+      background-image: none;
+      left: 50px;
+
+      @include tabletLandscape {
+        right: 110px;
+        left: inherit;
+        top: 10px;
+      }
+
+      @include mobile {
+        right: 80px;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        background-image: url('~@/assets/images/arrow-right.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 23px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+
+        @include tabletLandscape {
+          width: 12px;
+          height: 23px;
+        }
+      }
+    }
 
     &-grid {
       width: 80%;
@@ -32,6 +112,10 @@
 
       @include tablet {
         margin: 0px auto 60px;
+      }
+
+      .title {
+        padding-right: 120px;
       }
     }
 
