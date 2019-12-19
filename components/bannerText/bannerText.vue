@@ -4,11 +4,11 @@
         <p class="edition">{{ edition }}</p>
         <h1 class="title" v-html="title"></h1>
 
-        <div class="rectangle">
-          <div class="rectangle__before" v-animate="{speed: -1.2}"></div>
+        <div class="rectangle" v-animate="{speed: -1.2}">
+          <div class="rectangle__before"></div>
         </div>
-         <div class="rectangle-small">
-           <div class="rectangle-small__before" v-animate="{speed: -1.2}"></div>
+         <div class="rectangle-small" v-animate="{speed: -1.2}">
+           <div class="rectangle-small__before" ></div>
          </div>
       </div>
     </div>
