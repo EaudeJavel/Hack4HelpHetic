@@ -3,12 +3,19 @@ const Animate = function (os) {
 }
 
 Animate.prototype = {
-  activate (el, speed, scrollTop, reverse) {
-    const calc = (reverse) ? (scrollTop/speed) : -(scrollTop/speed);
-    el.style.transform = `translateY(${calc}px)`
+  
+  activate (el, speed, scrollTop) {    
+    
+    el.style.transform = `translateY(${(-(scrollTop/speed)*0.3)}px)`    
+
+    // activate (el, speed, scrollTop, reverse) {
+    //   const calc = (reverse) ? (scrollTop/speed) : -(scrollTop/speed);
+    //   el.style.transform = `translateY(${calc}px)`
+    // }
+
   }
 }
-
+ 
 export default {
   install (Vue, os = {}) {
     let a

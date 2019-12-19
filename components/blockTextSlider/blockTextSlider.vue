@@ -9,7 +9,7 @@
       </div>
       <div v-swiper:mySwiper="swiperOption" v-if="list && list.length">
         <div class="swiper-wrapper">
-          <img ref="img" :src="`/images/terrain/${item.image}`" v-for="(item, i) in list" :key="`number-${i}`" class="swiper-slide img">
+          <img ref="img" :src="`/images/${item.image}`" v-for="(item, i) in list" :key="`number-${i}`" class="swiper-slide img">
         </div>
       </div>
     </div>
