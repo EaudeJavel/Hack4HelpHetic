@@ -291,20 +291,6 @@
     "BLOCKVIDEO_MORE_TITLE": "2 semaines de hackathon, 12 propositions, 1 projet incubé par Hetic",
     "BLOCKVIDEO_MORE_VIDEO_SOURCE": "video-recap.mp4",
     "BLOCKVIDEO_MORE_PAGE_TEXT": "Le projet retenu par le jury sera incubé et concrétisé pendant 1 an au sein du Hub Hetic autour d’une équipe renforcée. <br /> Regardez la <b>vidéo Récap’ #2</b> et retrouvez tous les <b>moments forts</b> de ces deux semaines de Hackathon.",
-
-    "BLOCKVIDEO_WINNER_EDITION": "Le gagant",
-    "BLOCKVIDEO_WINNER_TITLE": "Créer une solution utilisant le numérique pour que la société intègre mieux les personnes sans-abri",
-    "BLOCKVIDEO_WINNER_ITEMS": [
-        {
-            "text" : "2 promotions concernées, soit 180 étudiants"
-        },
-        {
-            "text" : "2 semaines dédiées du 9 au 20 décembre 2019 au sein du campus HETIC"
-        },
-        {
-            "text" : "Un travail en collaboration avec l'écosystème de la tech (entrepreneurs et experts métiers engagés)"
-        }
-    ],
     "BLOCKVIDEO_WINNER_VIDEO_SOURCE": "video-recap.mp4",
     "BLOCKVIDEO_WINNER_PAGE_TEXT": "Le projet retenu par le jury incubé et concrétisé pendant 1 an au sein du Hub Hetic autour d'une équipe renforcée",
     "FOOTER_LOGO": "logo-hack-white.svg",
@@ -346,5 +332,8 @@
             "alt": "twitter"
         }
     ],
-    "FOOTER_COPYRIGHT": "Copyright 2019 - HACK4HELP - Tout droits réservés"
+    "FOOTER_COPYRIGHT": "Copyright 2019 - HACK4HELP - Tout droits réservés",
+    "BLOCKVIDEO_WINNER_TITLE": "VIDEO",
+    "BLOCKVIDEO_WINNER_DESCRIPTION": "Le projet retenu par le jury incubé et concrétisé pendant 1 an au sein du Hub Hetic autour d'une équipe renforcée",
+    "BLOCKVIDEO_WINNER_IMAGE": "victoria-quote.png"
 }
