@@ -12,7 +12,7 @@
         },
         {
             "number" : "65<span>%</span>",
-            "title" : "vivent <span>seuls</span> et sont privés de cercle sociale*"
+            "title" : "vivent <span>seuls</span> et sont privés de cercle social*"
         },
         {
             "number" : "71<span>%</span>",
@@ -25,8 +25,8 @@
     ],
     "KEYS_SOURCE": "Sources : *Entourage et **Solilab",
     "COVERIMG_HOME_TITLE": "Pourquoi cette initiative ?",
-    "COVERIMG_HOME_TEXT": "HHACK4HELP est né de la volonté de <b>sensibiliser les acteurs de la tech sur leur impact</b> sur la société. Pour ce faire, étudiants, membres de l’administration d’HETIC et entrepreneurs de la tech <b>travaillent ensemble</b> sur des projets peu traités, par manque de retours lucratifs ou hors du champ des entreprises.",
-    "BLOCKTEXT_HOME_TEXT": "HACK4HELP est un hackathon dedié à l’<b>innovation sociale</b> et porté par l’école HETIC. Chaque année durant 15 jours, deux promotions d’étudiants mettent leurs <b>compétences technologiques</b> au sercice du bien commun.",
+    "COVERIMG_HOME_TEXT": "HACK4HELP est né de la volonté de <b>sensibiliser les acteurs de la tech sur leur impact</b> sur la société. Pour ce faire, étudiants, membres de l’administration d’HETIC et entrepreneurs de la tech <b>travaillent ensemble</b> sur des projets peu traités, par manque de retours lucratifs ou hors du champ des entreprises.",
+    "BLOCKTEXT_HOME_TEXT": "HACK4HELP est un hackathon dedié à l’<b>innovation sociale</b> et porté par l’école HETIC. Chaque année durant 15 jours, deux promotions d’étudiants mettent leurs <b>compétences technologiques</b> au service du bien commun.",
     "BLOCKTEXT_HOME_TITLE": "Qu’est-ce que le HACK4HELP ?",
     "BLOCKTEXT_HOME_IMG": "chomel.png",
     "BRANDS_TITLE": "Les partenaires de l’édition 2019",
@@ -92,7 +92,7 @@
             "text" : "Vous êtes un <span>professionnel de l'action sociale ?</span>"
         }
     ],
-    "CONTACT_DESCRIPTION": "Contactez nous par mail à cette adresse <a href='mailto:hack4help@hetic.net' >hack4help@hetic.net",
+    "CONTACT_DESCRIPTION": "Contactez-nous par mail à cette adresse <a href='mailto:hack4help@hetic.net' >hack4help@hetic.net",
     "TESTIMONIALS_TITLE": "Ils témoignent",
     "TESTIMONIALS_LIST": [
         {
@@ -106,7 +106,7 @@
             "name" : "Victoria Mainfield",
             "entreprise" : "Founder chez Solinium",
             "job" : "Intervenante HACK4HELP",
-            "quote" : "Le vrai changement vient quand on arrête de considérer les personnes sans abri comme une catégorie à part.",
+            "quote" : "Le vrai changement vient quand on arrête de considérer les personnes sans-abri comme une catégorie à part.",
             "image" : "victoria.png"
         },
         {
@@ -120,12 +120,12 @@
             "name" : "Victor Bloch",
             "job" : "Étudiant",
             "entreprise" : "HETIC",
-            "quote" : "HACK4HELP m'a apporté une nouvelle vision de ce qu'on peut apporter avec le numérique",
+            "quote" : "HACK4HELP m'a apporté une nouvelle vision de ce que nous pouvons apporter avec le numérique",
             "image" : "victor-bloch.png"
         }
 
     ],
-    "COACHS_TITLE": "Ils ont suivis nos étudiant",
+    "COACHS_TITLE": "Ils ont suivis nos étudiants",
     "COACHS_LIST": [
         {
             "name" : "David Schwarz",
@@ -236,10 +236,10 @@
             "link": "https://fr.linkedin.com/in/fintechentrepreneur"
         }
     ],
-    "BLOCKTEXT_MORE_TEXT": "La première édition du HACK4HELP est dédiée aux personnes sans-abri.<br /> <b>180 élèves</b> d’Hetic ont été répartis en <b>12 équipes</b> de 15 qui en <b>2 semaines</b> devront imaginer et proposer des solutions innovantes pour aider les sans-abri.",
+    "BLOCKTEXT_MORE_TEXT": "La première édition du HACK4HELP est dédiée aux personnes sans-abri.<br /> <b>180 élèves</b> d’Hetic ont été répartis en <b>12 équipes</b> de 15 qui en <b>2 semaines</b> ont du imaginer et proposer des solutions innovantes pour aider les sans-abri.",
     "BLOCKTEXT_MORE_TITLE": "L’édition 2019 en bref",
     "BLOCKTEXT_MORE_IMG": "edition.png",
-    "BLOCKTEXT_MORE_TERRAIN_TEXT": "Les étudiants sont allés à la rencontre de personnes sans-abri et d’associations pour confronter leurs idées à la réalité du terrain, puis furent conseillés par des experts de la tech.",
+    "BLOCKTEXT_MORE_TERRAIN_TEXT": "Les étudiants sont allés à la rencontre de personnes sans-abri et d’associations pour confronter leurs idées à la réalité du terrain, puis ont été conseillés par des experts de la tech.",
     "BLOCKTEXT_MORE_TERRAIN_TITLE": "L’expérience terrain",
     "BLOCKTEXT_MORE_TERRAIN_LIST": [
         {
@@ -283,7 +283,7 @@
             "text" : "<b>2 semaines</b> dédiées du 9 au 20 décembre 2019 au sein du campus HETIC"
         },
         {
-            "text" : "Un travail en <b>collaboration avec l’écosystème de la tech</b> (entrepreneurs et experts métiers engagés ...)"
+            "text" : "Un travail en <b>collaboration avec l’écosystème de la tech</b> (entrepreneurs et experts métiers engagés...)"
         }
     ],
     "BLOCKVIDEO_VIDEO_SOURCE": "video-recap.mp4",
