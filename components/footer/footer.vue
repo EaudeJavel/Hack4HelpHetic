@@ -4,25 +4,19 @@
 			<div class="footer-container">
 				<div class="footer-container__placer container">
 					<a href="/" class="footer-container__placer__logo">
-						<img class="footer-container__placer__logo__img" src="~/assets/images/logo-hack-white.svg">
+						<img class="footer-container__placer__logo__img" :src="`/_nuxt/assets/images/${logo}`">
 					</a>
 
 					<div class="footer-infos">
-						<ul class="footer-container__placer__footer-list">
-							<div class="footer-container__placer__footer-list__title"> Nous contacter</div>
-							<li class="footer-container__placer__footer-list__item">
-								Lorem : 01-23-45-67-89
-							</li>
-							<li class="footer-container__placer__footer-list__item">
-								Lorem ipsum : 01-23-45-67-89
-							</li>
-							<li class="footer-container__placer__footer-list__item">
-								Lorem dolor si amet: 01-23-45-67-89
-							</li>
+						<ul class="footer-container__placer__footer-list" >
+							<div class="footer-container__placer__footer-list__title"> {{ title }}</div>
+							<li class="footer-container__placer__footer-list__item" v-for="(item, i) in items">
+								{{ item.text }}
+							</li>							
 						</ul>
 
 						<ul class="footer-container__placer__footer-list">
-							<div class="footer-container__placer__footer-list__title"> Liens</div>
+							<div class="footer-container__placer__footer-list__title">{{ titleLiens }}</div>
 							<a href="https://www.hetic.net/" class="footer-container__placer__footer-list__item link">
 								Hetic
 							</a>
@@ -32,23 +26,13 @@
 						</ul>
 
 						<ul class="footer-container__placer__footer-list">
-							<div class="footer-container__placer__footer-list__title"> Suivez-nous</div>
+							<div class="footer-container__placer__footer-list__title">{{ titleFollow }}</div>
 							<div class="footer-container__placer__footer-list__items-container">
-								<li class="footer-container__placer__footer-list__items-container__item">
-									<a href="#">
-										<img src="~/assets/icons/instagram.svg" alt="instagram">
+								<li class="footer-container__placer__footer-list__items-container__item" v-for="(reseau, i) in reseaux">
+									<a :href="`${reseau.url}`">
+										<img :src="`/_nuxt/assets/icons/${reseau.url_image}`" :alt="`${reseau.alt}`">
 									</a>
-								</li>
-								<li class="footer-container__placer__footer-list__items-container__item">
-									<a href="#">
-										<img src="~/assets/icons/linkedin.svg" alt="">
-									</a>
-								</li>
-								<li class="footer-container__placer__footer-list__items-container__item">
-									<a href="#" >
-										<img src="~/assets/icons/twitter.svg" alt="">
-									</a>
-								</li>
+								</li>							
 							</div>
 						</ul>
 					</div>
@@ -56,7 +40,7 @@
 			</div>
 		</div>
 		<div class="subfooter">
-			<p class="text">Copyright 2019 - HACK4HELP - Tout droits réservés</p>
+			<p class="text">{{ copyright }}</p>
 		</div>
 	</div>
 </template>
@@ -154,6 +138,36 @@
 <script>
 	export default {
 		name: 'footerCustom',
+		props: {
+			title: {
+        		type: String,
+        		default: true
+			},
+			logo: {
+        		type: String,
+        		default: true
+			},
+			titleLiens: {
+        		type: String,
+        		default: true
+			},
+			titleFollow: {
+        		type: String,
+        		default: true
+			},
+			items: {
+        		type: Array,
+        		required: true
+			},
+			reseaux: {
+        		type: Array,
+        		required: true
+			},
+			copyright: {
+        		type: String,
+        		required: true
+			},
+		}
 	}
 </script>
 

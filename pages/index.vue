@@ -8,7 +8,7 @@
 		<testimonials :title="texts.TESTIMONIALS_TITLE" :list="texts.TESTIMONIALS_LIST" />
 		<brands :title="texts.BRANDS_TITLE" :list="texts.BRANDS_LIST"/>
 		<contact :title="texts.CONTACT_TITLE" :list="texts.CONTACT_LIST" :description="texts.CONTACT_DESCRIPTION" />
-		<footerDefault />
+		<footerDefault :title="texts.FOOTER_TITLE" :logo="texts.FOOTER_LOGO" :items="texts.FOOTER_ITEMS" :titleLiens="texts.FOOTER_TITLE_LIENS" :titleFollow="texts.FOOTER_TITLE_FOLLOW" :reseaux="texts.FOOTER_RESEAUX" :copyright="texts.FOOTER_COPYRIGHT" />
 	</div>
 </template>
 

@@ -212,5 +212,38 @@
     "BLOCKVIDEO_VIDEO_SOURCE": "video.mp4",
     "BLOCKVIDEO_PAGE_TEXT": "Le projet retenu par le jury incubé et concrétisé pendant 1 an au sein du Hub Hetic autour d'une équipe renforcée",
     "BLOCKVIDEO_PAGE_TEXT2": "Regardez la vidéo Récap' #2 et retrouvez tous les moments forts de ces deux semaines de Hacktaton",
-    "BLOCKVIDEO_PAGE_VIDEO_SOURCE": "~/assets/videos/video.mp4"
+    "BLOCKVIDEO_PAGE_VIDEO_SOURCE": "~/assets/videos/video.mp4",
+    "FOOTER_LOGO": "logo-hack-white.svg",
+    "FOOTER_TITLE": "Nous contacter",
+    "FOOTER_ITEMS": [
+        {
+            "text": "Lorem : 01-23-45-67-89"
+        },
+        {
+            "text": "Lorem ipsum : 01-23-45-67-89"
+        },
+        {
+            "text": "Lorem dolor si amet: 01-23-45-67-89"
+        }
+    ],
+    "FOOTER_TITLE_LIENS": "Liens",
+    "FOOTER_TITLE_FOLLOW": "Suivez-nous",
+    "FOOTER_RESEAUX": [
+        {
+            "url": "https://www.instagram.com/instahetic/?hl=fr",
+            "url_image": "instagram.svg",
+            "alt": "instagram"
+        },
+        {
+            "url": "https://www.linkedin.com/school/hetic/?originalSubdomain=fr",
+            "url_image": "linkedin.svg",
+            "alt": "linkedin"
+        },
+        {
+            "url": "https://twitter.com/hetic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            "url_image": "twitter.svg",
+            "alt": "twitter"
+        }
+    ],
+    "FOOTER_COPYRIGHT": "Copyright 2019 - HACK4HELP - Tout droits réservés"
 }
