@@ -51,6 +51,9 @@
       @include tabletLandscape {
         right: -60px;
       }
+       @include tablet {
+        display: none;
+      }
     }
 
     .rectangle {
