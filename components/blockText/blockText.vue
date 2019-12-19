@@ -69,25 +69,13 @@
           margin-bottom: 20px;
         }
       }
-    }
-
-    .img {
-      width: 50%;
-      height: 590px;
-      object-fit: cover;
-      margin: 90px 0;
-
-      @include tablet {
-        display: none;
-      }
-    }
+    }    
   }
 </style>
 
 <script>
   import { mapGetters } from 'vuex'
   import { TweenLite } from 'gsap'
-  import  parallax  from 'vue-parallax'
 
 	export default {
     name: 'blockImg',
