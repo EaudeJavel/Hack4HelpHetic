@@ -17,12 +17,11 @@
 
 						<ul class="footer-container__placer__footer-list">
 							<div class="footer-container__placer__footer-list__title">{{ titleLiens }}</div>
-							<a href="https://www.hetic.net/" class="footer-container__placer__footer-list__item link">
-								Hetic
-							</a>
-							<a href="" class="footer-container__placer__footer-list__item link">
-								Mentions légales
-							</a>
+							<div v-for="(site, j) in sites">
+								<a :href="`${site.url}`" class="footer-container__placer__footer-list__item link">
+									{{ site.libelle }}
+								</a>
+							</div>						
 						</ul>
 
 						<ul class="footer-container__placer__footer-list">
@@ -156,6 +155,10 @@
         		default: true
 			},
 			items: {
+        		type: Array,
+        		required: true
+			},
+			sites: {
         		type: Array,
         		required: true
 			},

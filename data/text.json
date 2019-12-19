@@ -227,6 +227,16 @@
         }
     ],
     "FOOTER_TITLE_LIENS": "Liens",
+    "FOOTER_SITES": [
+        {
+            "url": "https://www.hetic.net/",
+            "libelle": "Hetic"
+        },
+        {
+            "url": "https://www.hetic.net/",
+            "libelle": "Mentions légales"
+        }
+    ],
     "FOOTER_TITLE_FOLLOW": "Suivez-nous",
     "FOOTER_RESEAUX": [
         {
