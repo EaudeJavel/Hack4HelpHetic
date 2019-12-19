@@ -21,12 +21,12 @@
         <cta type="large" link="/more" label="Découvrir l'édition 2019" class="container-block-video__text__cta"></cta >
       </div>
         <div class="container-block-video__video-container">
-            <video               
+            <video controlsList="nodownload" disablePictureInPicture muted
               class="container-block-video__video-container__video" ref="video">
                 <source src="~/assets/videos/video.mp4" type="video/mp4" >
             </video>
-            <div 
-              @click="play" 
+            <div
+              @click="play"
               class="playpause"
               ref="playpause"
               >
@@ -63,7 +63,7 @@
     justify-content: initial;
     align-items: initial;
     flex-wrap: wrap;
-    height: 100%;    
+    height: 100%;
     margin: 40px;
   }
 
@@ -96,15 +96,15 @@
       &__list {
         margin-top: 45px;
         font-family: "nunito", arial;
-        
+
         &__item {
           margin-bottom: 20px;
-        } 
+        }
       }
 
       &__cta {
         font-family: "Metropolis", arial;
-      
+
       }
   }
 
@@ -165,7 +165,6 @@
         this.videoElement.play()
         this.videoElement.controls = "controls"
         this.playpause.style.display = "none"
-
       }
     }
   }

@@ -37,40 +37,43 @@ module.exports = {
 	** Global CSS
 	*/
 	css: [
-		'~/assets/styles/main.styl'
+		'~/assets/styles/main.styl',
+		'swiper/dist/css/swiper.css'
 	],
 	/*
 	** Plugins to load before mounting the App
 	*/
-		plugins: [
-		],
-		/*
-		** Nuxt.js dev-modules
-		*/
-		buildModules: [
-		],
-		/*
-		** Nuxt.js modules
-		*/
-		modules: [
-			'@nuxtjs/style-resources'
-		],
-		styleResources: {
-			scss: [
-				'~/assets/styles/fonts.scss',
-				'~/assets/styles/vars.scss',
-				'~/assets/styles/mixins.scss',
-				'~/assets/styles/typographie.scss',
-			]
-		},
-		/*
-		** Build configuration
-		*/
-		build: {
-		/*
-		** You can extend webpack config here
-		*/
-			extend (config, ctx) {
-			}
+	plugins: [
+		{ src: '~/plugins/swiper.js', ssr: false },
+		{ src: '~/plugins/vue-scroll-parallax/index.js', ssr: false }
+	],
+	/*
+	** Nuxt.js dev-modules
+	*/
+	buildModules: [
+	],
+	/*
+	** Nuxt.js modules
+	*/
+	modules: [
+		'@nuxtjs/style-resources'
+	],
+	styleResources: {
+		scss: [
+			'~/assets/styles/fonts.scss',
+			'~/assets/styles/vars.scss',
+			'~/assets/styles/mixins.scss',
+			'~/assets/styles/typographie.scss',
+		]
+	},
+	/*
+	** Build configuration
+	*/
+	build: {
+	/*
+	** You can extend webpack config here
+	*/
+		extend (config, ctx) {
 		}
+	}
 }

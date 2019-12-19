@@ -3,14 +3,23 @@
     "BANNER_ACTION": "Découvrez l’édition 2019",
     "BANNER_LABEL": "Présente",
     "BANNER_H1": "HACK4HELP",
-    "KEYS": [
+    "KEYS_TITLE": "Les personnes sans-abris en quelques chiffres",
+    "KEYS_LIST": [
         {
-            "number" : "128",
-            "title" : "Participants"
+            "number" : "49<span>ans</span>",
+            "title" : "<span>d’espérance de vie</span> dans la rue contre 89 ans en France"
         },
         {
-            "number" : "128",
-            "title" : "Participants"
+            "number" : "65<span>%</span>",
+            "title" : "vivent <span>seuls</span> et sont privés de cercle sociale"
+        },
+        {
+            "number" : "71<span>%</span>",
+            "title" : "ont <span>un smartphone</span>, dont 58% avec internet"
+        },
+        {
+            "number" : "85<span>%</span>",
+            "title" : "ressentent <span>le rejet</span> des passants"
         }
     ],
     "COVERIMG_HOME_TITLE": "Pourquoi cette initiative ?",
@@ -113,5 +122,78 @@
             "image" : "victor-bloch.png"
         }
 
-    ]
+    ],
+    "COACHS_TITLE": "Ils ont suivis nos étudiant",
+    "COACHS_LIST": [
+        {
+            "name" : "Olivier Bouhris",
+            "job" : "Managing Partner - Open Business Consulting",
+            "image": "olivier-bouhris.png"
+        },
+        {
+            "name" : "Olivier Bouhris",
+            "job" : "Managing Partner - Open Business Consulting",
+            "image": "olivier-bouhris.png"
+        },
+        {
+            "name" : "Olivier Bouhris",
+            "job" : "Managing Partner - Open Business Consulting",
+            "image": "olivier-bouhris.png"
+        },
+        {
+            "name" : "Olivier Bouhris",
+            "job" : "Managing Partner - Open Business Consulting",
+            "image": "olivier-bouhris.png"
+        },
+        {
+            "name" : "Olivier Bouhris",
+            "job" : "Managing Partner - Open Business Consulting",
+            "image": "olivier-bouhris.png"
+        },
+        {
+            "name" : "Olivier Bouhris",
+            "job" : "Managing Partner - Open Business Consulting",
+            "image": "olivier-bouhris.png"
+        },
+        {
+            "name" : "Olivier Bouhris",
+            "job" : "Managing Partner - Open Business Consulting",
+            "image": "olivier-bouhris.png"
+        },
+        {
+            "name" : "Olivier Bouhris",
+            "job" : "Managing Partner - Open Business Consulting",
+            "image": "olivier-bouhris.png"
+        },
+        {
+            "name" : "Olivier Bouhris",
+            "job" : "Managing Partner - Open Business Consulting",
+            "image": "olivier-bouhris.png"
+        },
+        {
+            "name" : "Olivier Bouhris",
+            "job" : "Managing Partner - Open Business Consulting",
+            "image": "olivier-bouhris.png"
+        },
+        {
+            "name" : "Olivier Bouhris",
+            "job" : "Managing Partner - Open Business Consulting",
+            "image": "olivier-bouhris.png"
+        },
+        {
+            "name" : "Olivier Bouhris",
+            "job" : "Managing Partner - Open Business Consulting",
+            "image": "olivier-bouhris.png"
+        }
+    ],
+    "BLOCKTEXT_MORE_TEXT": "La première édition du HACK4HELP est dédiée aux personnes sans-abri.<br> <b>180 élèves</b> d’Hetic ont été répartis en <b>12 équipes</b> de 15 qui en <b>2 semaines</b> devront imaginer et proposer des solutions innovantes pour aider les sans-abri.",
+    "BLOCKTEXT_MORE_TITLE": "L’édition 2019 en bref",
+    "BLOCKTEXT_MORE_IMG": "edition.png",
+    "BLOCKTEXT_MORE_TERRAIN_TEXT": "Ils sont allés à la rencontre de sans-abri et d’associations pour confronter leurs idées à la réalité du terrain, puis furent conseillés par des experts de la tech.",
+    "BLOCKTEXT_MORE_TERRAIN_TITLE": "L’experience terrain",
+    "BLOCKTEXT_MORE_TERRAIN_IMG": "terrain.png",
+    "QUOTE_TITLE": "Le numérique n'est pas une solution. C'est un outil.",
+    "QUOTE_NAME": "Victoria Manfield",
+    "QUOTE_JOB": "Head & Founder Solinium",
+    "QUOTE_IMG": "victoria-quote.png"
 }
