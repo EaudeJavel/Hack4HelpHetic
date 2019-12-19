@@ -27,7 +27,7 @@
 			margin: 60px auto 50px;
 		}
 
-		&:	,
+		&:before,
 		&:after {
 			content:'';
 			position: absolute;
