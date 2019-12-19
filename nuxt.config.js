@@ -46,7 +46,7 @@ module.exports = {
 	plugins: [
 		{ src: '~/plugins/swiper.js', ssr: false },
 		{ src: '~/plugins/vue-scroll-parallax/index.js', ssr: false },
-		{ src: '~/plugins/index.js', ssr: false },
+		{ src: '~/plugins/ga.js', ssr: false },
 	],
 	/*
 	** Nuxt.js dev-modules
