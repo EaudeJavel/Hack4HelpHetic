@@ -23,7 +23,7 @@ module.exports = {
 			{ rel: 'mask-icon', href: '/favicon/safari-pinned-tab.svg', color: '#5bbad5' }
 		],
 		script: [
-			{ }
+			{ src: "https://www.googletagmanager.com/gtag/js?id=UA-154807894-1"},
 		]
 	},
 
