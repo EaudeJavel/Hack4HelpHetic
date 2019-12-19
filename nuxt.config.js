@@ -23,7 +23,7 @@ module.exports = {
 			{ rel: 'mask-icon', href: '/favicon/safari-pinned-tab.svg', color: '#5bbad5' }
 		],
 		script: [
-
+			{ }
 		]
 	},
 
@@ -46,6 +46,7 @@ module.exports = {
 	plugins: [
 		{ src: '~/plugins/swiper.js', ssr: false },
 		{ src: '~/plugins/vue-scroll-parallax/index.js', ssr: false },
+		{ src: '~/plugins/index.js', ssr: false },
 	],
 	/*
 	** Nuxt.js dev-modules
