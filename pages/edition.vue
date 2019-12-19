@@ -10,7 +10,7 @@
 		<blockVideo :hasEdition="true" :isWinner="true" :edition="texts.BLOCKVIDEO_WINNER_EDITION" :title="texts.BLOCKVIDEO_WINNER_TITLE" :video="texts.BLOCKVIDEO_WINNER_VIDEO_SOURCE" :items="texts.BLOCKVIDEO_WINNER_ITEMS" />
 		<quote :title="texts.QUOTE_TITLE" :name="texts.QUOTE_NAME" :job="texts.QUOTE_JOB" :image="texts.QUOTE_IMG" />
 		<contact :title="texts.CONTACT_TITLE" :list="texts.CONTACT_LIST" :description="texts.CONTACT_DESCRIPTION" />
-		<footerDefault />
+		<footerDefault :title="texts.FOOTER_TITLE" :logo="texts.FOOTER_LOGO" :items="texts.FOOTER_ITEMS" :titleLiens="texts.FOOTER_TITLE_LIENS" :titleFollow="texts.FOOTER_TITLE_FOLLOW" :reseaux="texts.FOOTER_RESEAUX" :copyright="texts.FOOTER_COPYRIGHT" :sites="texts.FOOTER_SITES" />
 	</div>
 </template>
 
