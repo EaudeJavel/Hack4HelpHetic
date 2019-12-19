@@ -108,9 +108,6 @@
 
       @include tabletLandscape {
         width: 100%;
-      }
-
-      @include tablet {
         margin: 0px auto 60px;
       }
 
