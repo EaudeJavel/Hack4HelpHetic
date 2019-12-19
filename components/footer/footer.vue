@@ -29,7 +29,7 @@
 							<div class="footer-container__placer__footer-list__items-container">
 								<li class="footer-container__placer__footer-list__items-container__item" v-for="(reseau, i) in reseaux" :key="`number-${i}`">
 									<a :href="reseau.url">
-										<img :src="`/_nuxt/assets/icons/${reseau.url_image}`" :alt="`${reseau.alt}`">
+										<img :src="`/images/${reseau.url_image}`" :alt="`${reseau.alt}`">
 									</a>
 								</li>
 							</div>
