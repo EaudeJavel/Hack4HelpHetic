@@ -48,6 +48,10 @@
   @include tablet {
     height: 100%;
   }
+
+  @include tablet-intermediate {
+    height: 100%;
+  }
 }
 
 .container-block-video {
@@ -69,11 +73,25 @@
     margin: 40px;
   }
 
+  @include tablet-intermediate {
+    justify-content: center;
+    align-items: initial;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 40px;
+  }
+
     &__text {
       width: 45%;
       transform: translateX(20px);
 
       @include tablet {
+        width: 100%;
+        padding: 20px;
+        transform: translateX(0px);
+      }
+
+      @include tablet-intermediate {
         width: 100%;
         padding: 20px;
         transform: translateX(0px);
@@ -111,6 +129,7 @@
   }
 
     &__video-container {
+      max-width: 680px;
       width: 47%;
       display: flex;
       justify-content: center;
@@ -120,6 +139,12 @@
 
       @include tablet {
         width: 100%;
+        margin-bottom: 30px;
+      }
+
+      @include tablet-intermediate {
+        width: 100%;
+        margin-bottom: 30px;
       }
 
       video {
