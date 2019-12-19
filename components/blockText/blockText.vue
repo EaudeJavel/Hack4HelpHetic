@@ -76,7 +76,6 @@
 <script>
   import { mapGetters } from 'vuex'
   import { TweenLite } from 'gsap'
-  import imgBlock from './img.vue'
 
 	export default {
     name: 'blockImg',
