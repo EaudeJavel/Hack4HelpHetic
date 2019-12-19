@@ -195,5 +195,25 @@
     "QUOTE_TITLE": "Le numérique n'est pas une solution. C'est un outil.",
     "QUOTE_NAME": "Victoria Manfield",
     "QUOTE_JOB": "Head & Founder Solinium",
-    "QUOTE_IMG": "victoria-quote.png"
+    "QUOTE_IMG": "victoria-quote.png",
+    "BLOCKVIDEO_EDITION": "ÉDITION 2019",
+    "BLOCKVIDEO_TITLE": "Créer une solution utilisant le numérique pour que la société intègre mieux les personnes sans-abris",
+    "BLOCKVIDEO_ITEMS": [
+        {
+            "text" : "2 promotions concernées, soit 180 étudiants",
+            "url": "~/assets/images/puce.svg"
+        },
+        {
+            "text" : "2 semaines dédiées du 9 au 20 décembre 2019 au sein du campus HETIC",
+            "url": "~/assets/images/puce.svg"
+        },
+        {
+            "text" : "Un travail en collaboration avec l'écosystème de la tech (entrepreneurs et experts métiers engagés)",
+            "url": "~/assets/images/puce.svg"
+        }    
+    ],
+    "BLOCKVIDEO_VIDEO_SOURCE": "~/assets/videos/video.mp4",
+    "BLOCKVIDEO_PAGE_TEXT": "Le projet retenu par le jury incubé et concrétisé pendant 1 an au sein du Hub Hetic autour d'une équipe renforcée",
+    "BLOCKVIDEO_PAGE_TEXT2": "Regardez la vidéo Récap' #2 et retrouvez tous les moments forts de ces deux semaines de Hacktaton",
+    "BLOCKVIDEO_PAGE_VIDEO_SOURCE": "~/assets/videos/video.mp4"
 }
