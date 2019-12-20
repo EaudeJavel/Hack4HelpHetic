@@ -38,11 +38,15 @@
     <!-- IF WINNER -->
     <div class="winner" v-if="isSay">
       <div v-bind:class="[isSay ? 'container-block-video container isImg' : 'container-block-video container isImg']">
-        <img ref="img" class="img" :src="`/images/${image}`">
+        <div v-swiper:mySwiper="swiperOption" v-if="listImages && listImages.length">
+          <div class="swiper-wrapper">
+            <img ref="img" :src="`/images/gagnant/${item.image}`" v-for="(item, i) in listImages" :key="`number-${i}`" class="swiper-slide img">
+          </div>
+        </div>
         <div class="contentText-placer">
           <div class="contentText">
             <h2 class="is-h2 text">{{ titleWinner }}</h2>
-            <p class="text" v-html="description"></p>
+            <div class="text" v-html="description"></div>
           </div>
         </div>
       </div>
@@ -70,6 +74,48 @@
 
 .winner {
   position: relative;
+
+  .swiper-container {
+    width: 50%;
+    height: 450px;
+    margin-left: 0;
+
+    @include tabletLandscape {
+      display: none;
+    }
+  }
+
+  .contentText-placer {
+    width: 40% !important;
+    padding-top: 10px !important;
+
+    @include tabletLandscape {
+      width: 100% !important;
+    }
+  }
+
+  .text {
+    /deep/ h2 {
+      font-family: $nunito;
+      font-weight: 600;
+      font-size: 23px;
+      line-height: 1.7;
+      color: $black;
+    }
+
+    /deep/ p {
+      font-family: $nunito;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /deep/ a {
+      font-family: $nunito;
+      font-size: 16px;
+      line-height: 1.7;
+      border-bottom: 1px solid $black;
+    }
+  }
 }
 
 .contentBg {
@@ -87,6 +133,8 @@
 
 .videoImg {
   flex-wrap: wrap;
+  box-shadow: $box-shadow;
+  z-index: 2;
 }
 
 .home {
@@ -98,6 +146,10 @@
 .isImg {
   align-items: flex-start !important;
 
+  @include tabletLandscape {
+    margin-top: 20px;
+  }
+
   .contentText-placer {
     display: flex;
     justify-content: flex-start;
@@ -106,7 +158,7 @@
     width: 100%;
 
     @include tabletLandscape {
-      padding: 50px 0;
+      padding: 40px 0 0;
       min-height: inherit;
     }
 
@@ -114,6 +166,10 @@
       max-width: 480px;
       margin: 0 auto 30px;
       padding: 0 20px;
+
+      @include tabletLandscape {
+        max-width: 100%;
+      }
 
       @include tablet {
         margin: 0 auto;
@@ -136,9 +192,10 @@
 
   .img {
     width: 60%;
+    object-fit: contain;
 
     @include tabletLandscape {
-      display: none;
+      width: 100%;
     }
   }
 }
@@ -312,9 +369,9 @@
         type: String,
         default: ''
       },
-      image: {
-        type: String,
-        default: ''
+      listImages: {
+        type: Array,
+        default: () => []
       },
       edition: {
         type: String,
@@ -362,6 +419,17 @@
         this.videoElement.play()
         this.videoElement.controls = "controls"
         this.playpause.style.display = "none"
+      }
+    },
+    data () {
+      return {
+        swiperOption: {
+          slidesPerView: 1,
+          centeredSlides: true,
+          autoplay: {
+            delay: 5000,
+          },
+        }
       }
     }
   }

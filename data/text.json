@@ -286,12 +286,12 @@
             "text" : "Un travail en <b>collaboration avec l’écosystème de la tech</b> (entrepreneurs et experts métiers engagés...)"
         }
     ],
-    "BLOCKVIDEO_VIDEO_SOURCE": "video-recap.mp4",
+    "BLOCKVIDEO_VIDEO_SOURCE": "hack4help-tv-update.mp4",
 
     "BLOCKVIDEO_MORE_TITLE": "2 semaines de hackathon, 12 propositions, 1 projet incubé par Hetic",
-    "BLOCKVIDEO_MORE_VIDEO_SOURCE": "video-recap.mp4",
+    "BLOCKVIDEO_MORE_VIDEO_SOURCE": "recap-hetic.mp4",
     "BLOCKVIDEO_MORE_PAGE_TEXT": "Le projet retenu par le jury sera incubé et concrétisé pendant 1 an au sein du Hub Hetic autour d’une équipe renforcée. <br /> Regardez la <b>vidéo Récap’ #2</b> et retrouvez tous les <b>moments forts</b> de ces deux semaines de Hackathon.",
-    "BLOCKVIDEO_WINNER_VIDEO_SOURCE": "video-recap.mp4",
+    "BLOCKVIDEO_WINNER_VIDEO_SOURCE": "recap-hetic.mp4",
     "BLOCKVIDEO_WINNER_PAGE_TEXT": "Le projet retenu par le jury incubé et concrétisé pendant 1 an au sein du Hub Hetic autour d'une équipe renforcée",
     "FOOTER_LOGO": "logo-hack-white.svg",
     "FOOTER_TITLE": "Nous contacter",
@@ -333,7 +333,20 @@
         }
     ],
     "FOOTER_COPYRIGHT": "Copyright 2019 - HACK4HELP - Tout droits réservés",
-    "BLOCKVIDEO_WINNER_TITLE": "VIDEO",
-    "BLOCKVIDEO_WINNER_DESCRIPTION": "Le projet retenu par le jury incubé et concrétisé pendant 1 an au sein du Hub Hetic autour d'une équipe renforcée",
-    "BLOCKVIDEO_WINNER_IMAGE": "victoria-quote.png"
+    "BLOCKVIDEO_WINNER_TITLE": "Le projet retenue pour l’édition 2019 est ...",
+    "BLOCKVIDEO_WINNER_DESCRIPTION": "<h2>Une adresse pour tous</h2> <br> <p>Nous proposons une adresse aux personnes SDF qui n’en n’ont pas. Pour ce faire, nous utilisons une liste d’adresses proposées par une société de domiciliation pour que les  associations les re-distribuent aux personnes SDF dans le besoin </p> <br> <a target='_blank' href='https://adresse-pour-tous.netlify.com/'>Accéder au site</a>",
+    "BLOCKVIDEO_WINNER_LIST_IMAGE": [
+        {
+            "image": "gagnant1.png"
+        },
+        {
+            "image": "gagnant2.png"
+        },
+        {
+            "image": "gagnant3.png"
+        },
+        {
+            "image": "gagnant4.png"
+        }
+    ]
 }
