@@ -8,7 +8,5 @@
 
 ## Usage
 
-- Clone the repo : `git clone https://github.com/tristan-lanoye/boilerplate-nuxt.git`
-- Change directory : `cd boilerplate-nuxt`
 - Install packages : `yarn`
 - Launch project : `yarn dev`
